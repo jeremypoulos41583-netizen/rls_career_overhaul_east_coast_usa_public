@@ -1,6 +1,6 @@
 {
   "description":"",
-  "dir":"/mods/unpacked/rls_career_overhaul_east_coast_usa4.7.4/levels/east_coast_usa/facilities/delivery/",
+  "dir":"/levels/east_coast_usa/facilities/delivery/",
   "filename":"freight.sites.json",
   "locations":{},
   "name":"freight.sites.json",
@@ -19,7 +19,7 @@
       },
       "isMultiSpot":false,
       "name":"bigWarehouse_parking",
-      "oldId":1071,
+      "oldId":170,
       "pos":[
         597.5296631,
         920.0511475,
@@ -55,7 +55,7 @@
       },
       "isMultiSpot":false,
       "name":"bigWarehouseDelivery_parking",
-      "oldId":1072,
+      "oldId":171,
       "pos":[
         607.6972656,
         888.0553589,
@@ -91,7 +91,7 @@
       },
       "isMultiSpot":true,
       "name":"bigWarehouseTrailerDelivery_parking",
-      "oldId":1073,
+      "oldId":172,
       "pos":[
         584.1765747,
         909.7910156,
@@ -127,7 +127,7 @@
       },
       "isMultiSpot":true,
       "name":"bigWarehouseTrailerPickup_parking",
-      "oldId":1074,
+      "oldId":173,
       "pos":[
         606.6800537,
         914.151123,
@@ -163,7 +163,7 @@
       },
       "isMultiSpot":false,
       "name":"coastWarehousePickup_parking",
-      "oldId":1075,
+      "oldId":174,
       "pos":[
         918.4486084,
         -721.1057129,
@@ -199,7 +199,7 @@
       },
       "isMultiSpot":false,
       "name":"coastWarehouseParking",
-      "oldId":1076,
+      "oldId":175,
       "pos":[
         889.2425537,
         -675.0516968,
@@ -235,7 +235,7 @@
       },
       "isMultiSpot":false,
       "name":"coastWarehouseDelivery_parking",
-      "oldId":1077,
+      "oldId":176,
       "pos":[
         932.1422119,
         -671.2336426,
@@ -271,7 +271,7 @@
       },
       "isMultiSpot":true,
       "name":"coastWarehouseTrailer_parking",
-      "oldId":1078,
+      "oldId":177,
       "pos":[
         898.0410767,
         -695.3666992,
@@ -307,7 +307,7 @@
       },
       "isMultiSpot":true,
       "name":"firwoodSupply_parking",
-      "oldId":1079,
+      "oldId":178,
       "pos":[
         -855.5650024,
         -888.7268677,
@@ -343,7 +343,7 @@
       },
       "isMultiSpot":true,
       "name":"firwoodSupplyTrailer_parking",
-      "oldId":1080,
+      "oldId":179,
       "pos":[
         -871.2116699,
         -899.0608521,
@@ -379,7 +379,7 @@
       },
       "isMultiSpot":false,
       "name":"port_parking",
-      "oldId":1081,
+      "oldId":180,
       "pos":[
         429.8637695,
         -982.2128296,
@@ -415,7 +415,7 @@
       },
       "isMultiSpot":true,
       "name":"portTrailerPickup_parking",
-      "oldId":1082,
+      "oldId":181,
       "pos":[
         402.2667847,
         -1016.380371,
@@ -451,7 +451,7 @@
       },
       "isMultiSpot":false,
       "name":"portTrailerDropoff_parking",
-      "oldId":1083,
+      "oldId":182,
       "pos":[
         402.3454895,
         -1006.292419,
@@ -487,7 +487,7 @@
       },
       "isMultiSpot":false,
       "name":"portParcel_parking",
-      "oldId":1084,
+      "oldId":183,
       "pos":[
         458.3683472,
         -992.87146,
@@ -523,7 +523,7 @@
       },
       "isMultiSpot":false,
       "name":"sawmillParking",
-      "oldId":1085,
+      "oldId":184,
       "pos":[
         286.0916138,
         -758.7495117,
@@ -559,7 +559,7 @@
       },
       "isMultiSpot":true,
       "name":"sawmillTrailerParking",
-      "oldId":1086,
+      "oldId":185,
       "pos":[
         303.2294922,
         -799.0341797,
@@ -595,7 +595,7 @@
       },
       "isMultiSpot":false,
       "name":"forestrySiteA_parking",
-      "oldId":1087,
+      "oldId":186,
       "pos":[
         -755.6590576,
         878.4827271,
@@ -631,7 +631,7 @@
       },
       "isMultiSpot":false,
       "name":"loggingLoaner",
-      "oldId":1088,
+      "oldId":187,
       "pos":[
         287.1316833,
         -745.9653931,
@@ -667,7 +667,7 @@
       },
       "isMultiSpot":false,
       "name":"forestrySiteB_parking",
-      "oldId":1089,
+      "oldId":188,
       "pos":[
         -860.0307617,
         -688.6085815,
@@ -703,7 +703,7 @@
       },
       "isMultiSpot":false,
       "name":"forestrySiteB_trailer",
-      "oldId":1090,
+      "oldId":189,
       "pos":[
         -866.3175659,
         -680.8668823,
@@ -739,7 +739,7 @@
       },
       "isMultiSpot":false,
       "name":"forestrySiteA_trailer",
-      "oldId":1091,
+      "oldId":190,
       "pos":[
         -749.9136353,
         866.3793335,
@@ -789,7 +789,7 @@
         "values":{}
       },
       "name":"lumberLoadingZone",
-      "oldId":1099,
+      "oldId":169,
       "top":{
         "active":false,
         "normal":[
@@ -823,6 +823,69 @@
           287.47702026367,
           -770.15985107422,
           46.055973052979
+        ]
+      ]
+    },
+    {
+      "bot":{
+        "active":false,
+        "normal":[
+          0,
+          0,
+          -1
+        ],
+        "pos":[
+          0,
+          0,
+          -10
+        ]
+      },
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "name":"scrapLoadingZone",
+      "oldId":196,
+      "top":{
+        "active":false,
+        "normal":[
+          0,
+          0,
+          1
+        ],
+        "pos":[
+          0,
+          0,
+          10
+        ]
+      },
+      "vertices":[
+        [
+          208.53828430176,
+          -658.26458740234,
+          40.858154296875
+        ],
+        [
+          213.16491699219,
+          -658.09191894531,
+          40.858154296875
+        ],
+        [
+          214.13438415527,
+          -627.99951171875,
+          40.856567382813
+        ],
+        [
+          208.24969482422,
+          -627.97137451172,
+          40.856727600098
         ]
       ]
     }

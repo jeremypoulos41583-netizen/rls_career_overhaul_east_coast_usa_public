@@ -1,6 +1,6 @@
 {
   "description":"Vehicle mechanics facilities",
-  "dir":"/mods/unpacked/rls_career_overhaul_east_coast_usa4.7.4/levels/east_coast_usa/facilities/delivery/",
+  "dir":"/levels/east_coast_usa/facilities/delivery/",
   "filename":"mechanics.sites.json",
   "locations":{},
   "name":"mechanics.sites.json",
