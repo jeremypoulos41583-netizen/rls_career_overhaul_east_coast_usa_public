@@ -1,0 +1,3 @@
+{"internalName":"tree_oak_dead_b","class":"ForestBrushElement","persistentId":"535f94c3-5b4c-40b3-bb6e-5b582e518914","__parent":"ForestBrush_Trees_Dead","forestItemData":"tree_oak_dead_b","scaleMax":1.20000005,"scaleMin":0.800000012,"slopeMax":30}
+{"internalName":"tree_beech_dead_b","class":"ForestBrushElement","persistentId":"cc0afc7f-6aea-4c23-b509-91f084ac00da","__parent":"ForestBrush_Trees_Dead","forestItemData":"tree_beech_dead_b","probability":2,"scaleMax":1.20000005,"scaleMin":0.5}
+{"internalName":"tree_oak_dead_a","class":"ForestBrushElement","persistentId":"f33893fb-4b23-4e66-8a73-e429252468cb","__parent":"ForestBrush_Trees_Dead","forestItemData":"tree_oak_dead_a","scaleMax":1.20000005,"scaleMin":0.800000012,"slopeMax":30}

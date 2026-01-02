@@ -1,0 +1,56 @@
+{
+  "features": "levels.east_coast_usa.info.features",
+  "suitablefor": "levels.east_coast_usa.info.suitablefor",
+  "authors": "jpoulos",
+  "roads": "levels.east_coast_usa.info.roads",
+  "title": "levels.east_coast_usa.info.title",
+  "description": "levels.east_coast_usa.info.description",
+  "defaultSpawnPointName": "spawns_highway",
+  "country": "levels.common.country.usa",
+  "biome": "levels.east_coast_usa.info.biome",
+  "size": [2048, 2048],
+  "previews": [
+    "east_coast_usa_preview1_v2.jpg",
+    "east_coast_usa_preview2_v2.jpg",
+    "east_coast_usa_preview3_v2.jpg"
+  ],
+  "spawnPoints": [
+    {
+      "translationId": "levels.east_coast_usa.spawnpoints.townIndustrial",
+      "objectname": "spawns_townindustrial",
+      "preview": "spawns_townindustrial.jpg"
+    },
+    {
+      "translationId": "levels.east_coast_usa.spawnpoints.farmHouse",
+      "objectname": "spawns_farmhouse",
+      "preview": "spawns_farmhouse.jpg"
+    },
+    {
+      "translationId": "levels.east_coast_usa.spawnpoints.gasStation",
+      "objectname": "spawns_gasstation",
+      "preview": "spawns_gasstation.jpg"
+    },
+    {
+      "translationId": "levels.east_coast_usa.spawnpoints.sawmill",
+      "objectname": "spawns_sawmill",
+      "preview": "spawns_sawmill.jpg"
+    },
+    {
+      "translationId": "levels.east_coast_usa.spawnpoints.highway",
+      "objectname": "spawns_highway",
+      "preview": "spawns_highway.jpg"
+    }
+  ],
+  "roadRules": {
+    "turnOnRed": true
+  },
+  "extensions": [
+    "career.modules.ambulance"
+  ],
+  "dependencies": [
+    "util_configListGenerator",
+    "gameplay_parking",
+    "freeroam_facilities",
+    "gameplay_sites_sitesManager"
+  ]
+}

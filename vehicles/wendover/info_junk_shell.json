@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunk",
+  "Population":500,  
+  "Configuration":"( Junk Shell )",
+  "Description":"This Wendover SE 3800 was abandonned a long time ago.",
+  "Drivetrain":"FWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":198,
+  "Torque":196,
+  "Transmission":"Automatic",
+  "Value":"1200",
+  "Weight":1713,
+  "Years":{
+    "max":1991,
+    "min":1987
+  },
+}

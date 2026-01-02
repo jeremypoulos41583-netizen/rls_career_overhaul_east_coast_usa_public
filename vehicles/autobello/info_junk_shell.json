@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Junk Shell )",
+  "Description":"Most of its components have been pulled out. Next stop: the junkyard.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":45,
+  "Torque":45,
+  "Transmission":"Manual",
+  "Value":"250",
+  "Weight":575,
+  "Years":{
+    "max":1963,
+    "min":1957
+  },
+}

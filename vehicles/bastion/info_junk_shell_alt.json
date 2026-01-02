@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Alternate Junk Shell )",
+  "Description":"Shell of what's remaining of what was once a nice Bastion. Even if almost all the body parts are still present, all the valuable parts have been removed. Mainly for scrap.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":180,
+  "Torque":182,
+  "Transmission":"Automatic",
+  "Value":"1000",
+  "Weight":1420,
+  "Years":{
+    "max":2022,
+    "min":2016
+  },
+}

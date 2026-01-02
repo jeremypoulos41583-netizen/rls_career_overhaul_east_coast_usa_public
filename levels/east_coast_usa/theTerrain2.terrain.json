@@ -1,0 +1,27 @@
+{
+  "binaryFormat": "version(char), size(unsigned int), heightMap(heightMapSize * heightMapItemSize), layerMap(layerMapSize * layerMapItemSize), layerTextureMap(layerMapSize * layerMapItemSize), materialNames",
+  "datafile": "/levels/east_coast_usa/theTerrain2.ter",
+  "heightMapItemSize": 2,
+  "heightMapSize": 4194304,
+  "heightmapImage": "/levels/east_coast_usa/theTerrain2.terrainheightmap.png",
+  "layerMapItemSize": 1,
+  "layerMapSize": 4194304,
+  "materials": [
+    "Grass",
+    "RockyDirt",
+    "Dirt",
+    "rocks_large",
+    "ROCK",
+    "GROUNDMODEL_ASPHALT1",
+    "forest_floor",
+    "asphalt",
+    "asphalt2",
+    "Grass2",
+    "Grass3",
+    "Grass4",
+    "dirt_grass",
+    "Mud"
+  ],
+  "size": 2048,
+  "version": 9
+}

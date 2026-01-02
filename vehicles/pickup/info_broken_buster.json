@@ -1,0 +1,17 @@
+{
+    "Config Type": "joesJunk",
+    "Configuration": "Broken Buster",
+    "Description": "Used to be a very expensive, top of the line dually D Series, now everything is broken and busted. At least now its cheap thanks to the stolen OEM wheels that got replaced by some oversized meal trays.",
+    "Drivetrain": "4WD",
+    "Fuel Type": "Diesel",
+    "Power": 167,
+    "Torque": 170,
+    "Value": 2950,
+    "Weight": 2728,
+    "Years": {
+      "max": 2003,
+      "min": 1998
+    }  
+}
+
+

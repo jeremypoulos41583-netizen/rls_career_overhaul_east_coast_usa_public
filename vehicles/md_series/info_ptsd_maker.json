@@ -1,0 +1,17 @@
+{
+    "Config Type": "joesJunk",
+    "Configuration": "PTSD Maker",
+    "Description": "The fact that the usual driver of this bus was drunk 98% of the time didn't help keeping that bus in good condition. Was still used in Detroit not so long ago amazingly.",
+    "Drivetrain": "RWD",
+    "Fuel Type": "Diesel",
+    "Power": 152,
+    "Torque": 154,
+    "Value": 3950,
+    "Weight": 8404,
+    "Years": {
+      "max": 1992,
+      "min": 1986
+    }  
+}
+
+

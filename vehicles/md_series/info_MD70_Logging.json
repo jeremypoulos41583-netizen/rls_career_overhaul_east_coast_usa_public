@@ -1,0 +1,128 @@
+{
+  "0-100 km/h":24.5,
+  "0-100 mph":46.7,
+  "0-60 mph":23.3,
+  "100-0 km/h":48.3,
+  "60-0 mph":147.3,
+  "60-100 mph":23.3,
+  "Body Style":"Fifth Wheel Truck ",
+  "BoundingBox":[
+    [
+      -0.8854,
+      -1.3335,
+      -0.9454
+    ],
+    [
+      1.7534,
+      4.8952,
+      1.7794
+    ]
+  ],
+  "Braking G":0.813,
+  "Config Type":"Service",
+  "Configuration":"MD70_Logging",
+  "Drivetrain":"4WD",
+  "Fuel Type":"Diesel",
+  "Induction Type":"Turbo",
+  "Name":"MD70_Logging",
+  "Off-Road Score":35,
+  "Population":13000,
+  "Power":527,
+  "PowerPeakRPM":3150,
+  "Propulsion":"ICE",
+  "Source":"Custom",
+  "Top Speed":54.79808426,
+  "Torque":1275,
+  "TorquePeakRPM":"2150 - 2850",
+  "Transmission":"Manual",
+  "Value":26000,
+  "Weight":6750,
+  "Weight/Power":12.80834915,
+  "aggregates":{
+    "0-100 km/h":{
+      "max":24.5,
+      "min":24.5
+    },
+    "0-60 mph":{
+      "max":23.3,
+      "min":23.3
+    },
+    "Body Style":{
+      "Fifth Wheel Truck ":true
+    },
+    "Brand":{
+      "Gavril":true
+    },
+    "Config Type":{
+      "Service":true
+    },
+    "Country":{
+      "United States":true
+    },
+    "Derby Class":{
+      "Heavy Truck":true
+    },
+    "Drivetrain":{
+      "4WD":true
+    },
+    "Fuel Type":{
+      "Diesel":true
+    },
+    "Induction Type":{
+      "Turbo":true
+    },
+    "Off-Road Score":{
+      "max":35,
+      "min":35
+    },
+    "Propulsion":{
+      "ICE":true
+    },
+    "Source":{
+      "Custom":true,
+      "Mod":true
+    },
+    "Top Speed":{
+      "max":54.79808426,
+      "min":54.79808426
+    },
+    "Transmission":{
+      "Manual":true
+    },
+    "Type":{
+      "Truck":true
+    },
+    "Value":{
+      "max":26000,
+      "min":26000
+    },
+    "Weight":{
+      "max":6750,
+      "min":6750
+    },
+    "Weight/Power":{
+      "max":12.80834915,
+      "min":12.80834915
+    },
+    "Years":{
+      "max":1990,
+      "min":1979
+    }
+  },
+  "defaultPaint":{
+    "baseColor":[
+      0.1932880878,
+      0.13230519,
+      0.08351886272,
+      2
+    ],
+    "clearcoat":0.8000000119,
+    "clearcoatRoughness":0.0700000003,
+    "metallic":0.8000000119,
+    "roughness":0.6499999762
+  },
+  "defaultPaintName1":"Chestnut",
+  "defaultPaintName2":"Chestnut",
+  "is_default_config":false,
+  "preview":"/vehicles/md_series/MD70_Logging.jpg"
+}

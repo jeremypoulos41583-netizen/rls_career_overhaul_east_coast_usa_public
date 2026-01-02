@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunk",
+  "Population":500,  
+  "Configuration":"( Junk Shell )",
+  "Description":"Insurances totaled this Scintilla after its been stolen and vandalized both in the same day. Something suspicious was poured in the fuel tank...",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":623,
+  "Torque":615,
+  "Transmission":"Automatic",
+  "Value":"20000",
+  "Weight":1465,
+  "Years":{
+    "max":2022,
+    "min":2020
+  },
+}

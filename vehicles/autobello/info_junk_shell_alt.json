@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Alternate Junk Shell )",
+  "Description":"Most of its components have been pulled out but the the shell is still in good condition and complete for the most part. Could make a nice project or a metal pancake.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":0,
+  "Torque":0,
+  "Transmission":"Manual",
+  "Value":"450",
+  "Weight":518,
+  "Years":{
+    "max":1963,
+    "min":1957
+  },
+}

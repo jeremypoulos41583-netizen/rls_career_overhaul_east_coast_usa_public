@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":600,  
+  "Configuration":"( Alternative Junk Shell )",
+  "Description":"This very rare Kingsnake was driven very hard in the 80s and was a project car for someone after it broke down after too many races. Was left abandonned for many decades after the former owner passed away.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":270,
+  "Torque":267,
+  "Transmission":"Manual",
+  "Value":"1900",
+  "Weight":1635,
+  "Years":{
+    "max":1971,
+    "min":1969
+  },
+}

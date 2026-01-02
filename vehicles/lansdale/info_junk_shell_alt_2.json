@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Another Alternate Junk Shell )",
+  "Description":"Stripped beyond recovery.",
+  "Drivetrain":"FWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":0,
+  "Torque":0,
+  "Transmission":"Automatic",
+  "Value":"450",
+  "Weight":966,
+  "Years":{
+    "max":2002,
+    "min":1996
+  },
+}

@@ -1,0 +1,11 @@
+ {
+   "pickup_skin_ecusa_police": {			
+   "information":{
+       "authors":"JPoulos",					
+       "name":"ecusa_police",			
+       "value":1200,
+   }
+   "slotType" : "paint_design",
+   "globalSkin" : "ecusa_police",			
+   },
+   }

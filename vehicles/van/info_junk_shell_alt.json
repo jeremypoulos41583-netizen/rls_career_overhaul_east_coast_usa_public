@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Alternate Junk Shell )",
+  "Description":"Old delivery company H Series that worked overtime more than once.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":218,
+  "Torque":215,
+  "Transmission":"Automatic",
+  "Value":"700",
+  "Weight":2547,
+  "Years":{
+    "max":2005,
+    "min":1993
+  },
+}

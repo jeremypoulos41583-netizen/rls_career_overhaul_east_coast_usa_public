@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Junk Shell )",
+  "Description":"This top-of-the-line Vivace Arsenic S was retrieved from a chop-shop where all its special parts were ripped-off. The car then sat at an insurance auction for many months. Its now time to end its suffering.",
+  "Drivetrain":"AWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":0,
+  "Torque":0,
+  "Transmission":"Automatic",
+  "Value":"1500",
+  "Weight":937,
+  "Years":{
+    "max":2024,
+    "min":2020
+  },
+}

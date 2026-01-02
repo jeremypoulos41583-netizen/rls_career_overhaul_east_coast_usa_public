@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Alternate Junk Shell )",
+  "Description":"Was totaled after being driven into a river, someone still took all the mechanical and interior parts, leaving only the frame and the body parts.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":0,
+  "Torque":0,
+  "Transmission":"Automatic",
+  "Value":"1250",
+  "Weight":2141,
+  "Years":{
+    "max":1997,
+    "min":1992
+  },
+}

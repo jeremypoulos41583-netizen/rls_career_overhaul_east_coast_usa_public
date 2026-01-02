@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Junk Shell )",
+  "Description":"H Series shell that some homeless people used to sleep in.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":0,
+  "Torque":0,
+  "Transmission":"Automatic",
+  "Value":"500",
+  "Weight":1698,
+  "Years":{
+    "max":2005,
+    "min":1993
+  },
+}

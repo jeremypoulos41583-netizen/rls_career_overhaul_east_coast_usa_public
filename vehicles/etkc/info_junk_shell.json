@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Junk Shell )",
+  "Description":"ETK decided to scrap this ETK Coupe after it was crashed during a special driving event.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":0,
+  "Torque":0,
+  "Transmission":"Manual",
+  "Value":"2500",
+  "Weight":1106,
+  "Years":{
+    "max":2022,
+    "min":2016
+  },
+}

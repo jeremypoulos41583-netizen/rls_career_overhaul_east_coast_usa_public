@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Alternate Junk Shell )",
+  "Description":"This pre-production ETK K was used as a test car for its development back in 2015. It was later disassembled and marked for destruction.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":0,
+  "Torque":0,
+  "Transmission":"Automatic",
+  "Value":"1500",
+  "Weight":1014,
+  "Years":{
+    "max":2022,
+    "min":2016
+  },
+}

@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Junk Shell )",
+  "Description":"There is not much left on this one, inly a crappy engine and old bits here and there.",
+  "Drivetrain":"FWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":0,
+  "Torque":0,
+  "Transmission":"Automatic",
+  "Value":"250",
+  "Weight":1140,
+  "Years":{
+    "max":1988,
+    "min":1984
+  },
+}

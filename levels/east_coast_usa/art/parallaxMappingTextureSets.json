@@ -1,0 +1,16 @@
+{
+  "data":{
+    "1":[
+      "/core/art/white.jpg",
+      "",
+      "/art/shapes/common/materials/t_asphalt_02_b.color.dds",
+      "",
+      "",
+      ""
+    ]
+  },
+  "header":{
+    "info":"1=top; 2=left; 3=back; 4=right; 5=bottom; 6=front",
+    "version":1
+  }
+}

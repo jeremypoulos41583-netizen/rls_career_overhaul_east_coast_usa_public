@@ -1,0 +1,1997 @@
+{
+ "policeWork": {
+    "name": "Firwood Police Department",
+    "description": "",
+    "icon": "beamCurrency",
+    "loanableVehicles": [
+      {
+        "model": "fullsize",
+        "config": "police",
+        "reputationLvl": -1,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 804672000,
+          "0": 321868800,
+          "1": 160934400,
+          "2": 160934400,
+          "3": 80467200,
+          "4": 80467200,
+          "5": 40233600
+        }
+      },
+      {
+        "model": "fullsize",
+        "config": "unmarked",
+        "reputationLvl": 0,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 76443840,
+          "3": 76443840,
+          "4": 38221920,
+          "5": 38221920
+        }
+      },
+	  {
+        "model": "hopper",
+        "config": "sheriff",
+        "reputationLvl": -1,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 804672000,
+          "0": 321868800,
+          "1": 160934400,
+          "2": 160934400,
+          "3": 80467200,
+          "4": 80467200,
+          "5": 40233600
+        }
+      },
+      {
+        "model": "wendover",
+        "config": "interceptor",
+        "reputationLvl": 0,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 76443840,
+          "3": 76443840,
+          "4": 38221920,
+          "5": 38221920
+        }
+      },
+      {
+        "model": "fullsize",
+        "config": "interceptor",
+        "reputationLvl": 1,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 76443840,
+          "3": 76443840,
+          "4": 38221920,
+          "5": 38221920
+        }
+      },
+      {
+        "model": "roamer",
+        "config": "sheriff",
+        "reputationLvl": 1,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 860999040,
+          "0": 258299712,
+          "1": 258299712,
+          "2": 86099904,
+          "3": 86099904,
+          "4": 86099904,
+          "5": 17219980.8
+        }
+      },
+      {
+        "model": "bastion",
+        "config": "police_v6_awd_A",
+        "reputationLvl": 1,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 76443840,
+          "3": 76443840,
+          "4": 38221920,
+          "5": 17220
+        }
+      },
+      {
+        "model": "bastion",
+        "config": "police_v8_awd_A",
+        "reputationLvl": 2,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 265541760,
+          "1": 177027840,
+          "2": 88513920,
+          "3": 88513920,
+          "4": 17219981,
+          "5": 17220
+        }
+      },
+	   {
+        "model": "pickup",
+        "config": "ecusa_police",
+        "reputationLvl": 2,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 76443840,
+          "3": 76443840,
+          "4": 38221920,
+          "5": 38221920
+        }
+      },
+      {
+        "model": "bastion",
+        "config": "police_unmarked_v8_awd_A",
+        "reputationLvl": 3,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 76443840,
+          "3": 76443840,
+          "4": 38221920,
+          "5": 17220
+        }
+      },
+      {
+        "model": "md_series",
+        "config": "md_60_armored_police",
+        "reputationLvl": 3,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 44256960,
+          "3": 17702784,
+          "4": 8851392,
+          "5": 17220
+        }
+      },
+      {
+        "model": "bastion",
+        "config": "police_unmarked_v8_awd_A_Blue",
+        "reputationLvl": 3,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 76443840,
+          "3": 41038272,
+          "4": 8207654,
+          "5": 17220
+        }
+      },
+      {
+        "model": "bastion",
+        "config": "police_unmarked_v8_awd_A_Red",
+        "reputationLvl": 3,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 76443840,
+          "3": 41038272,
+          "4": 8207654,
+          "5": 17220
+        }
+      },
+      {
+        "model": "bastion",
+        "config": "police_unmarked_v8_awd_A_Silver",
+        "reputationLvl": 3,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 76443840,
+          "3": 41038272,
+          "4": 8207654,
+          "5": 17220
+        }
+      },
+      {
+        "model": "bastion",
+        "config": "police_redtail",
+        "reputationLvl": 4,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 72420480,
+          "3": 36210240,
+          "4": 14484096,
+          "5": 17220
+        }
+      },
+      {
+        "model": "bastion",
+        "config": "undercover_redtail",
+        "reputationLvl": 4,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 72420480,
+          "3": 36210240,
+          "4": 14484096,
+          "5": 17220
+        }
+      }
+    ],
+    "reputationValues": {
+      "returnLoanerDamaged": -10
+    },
+    "reputationLevels": [
+      {
+        // Level -1
+        "label": "Recruit",
+        "min": -200,
+		"hiddenFromDealerList": true
+      },
+      {
+        // Level 0
+        "label": "Rookie",
+		"hiddenFromDealerList": true
+      },
+      {
+        // Level 1
+        "deliveryBonus": {
+          "value": 1.20
+        },
+        "label": "Sergeant",
+		"hiddenFromDealerList": true
+      },
+      {
+        // Level 2
+        "deliveryBonus": {
+          "value": 1.45
+        },
+        "label": "Deputy"
+      },
+      {
+        // Level 3
+        "deliveryBonus": {
+          "value": 1.75
+        },
+        "label": "Under-Sheriff"
+      },
+      {
+        // Level 4
+        "deliveryBonus": {
+          "value": 3
+        },
+        "requiredValue": 1000,
+        "levelLabel": "Reputation: Level 4",
+        "label": "Sheriff"
+      },
+      {
+        // Level 5
+        "deliveryBonus": {
+          "value": 10
+        },
+        "requiredValue": 5000,
+        "max": 7500,
+        "levelLabel": "Reputation: Level 5",
+        "label": "State Trooper"
+      }
+    ]
+  },
+  "ecuParamedicWork": {
+    "name": "Firwood Regional Medical Center",
+    "description": "",
+    "icon": "beamCurrency",
+    "loanableVehicles": [
+      {
+        "model": "van",
+        "config": "EMT H45",
+        "reputationLvl": 0,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 804672000,
+          "0": 321868800,
+          "1": 160934400,
+          "2": 160934400,
+          "3": 80467200,
+          "4": 80467200,
+          "5": 40233600
+        }
+      },
+      {
+        "model": "pickup",
+        "config": "EMT D45",
+        "reputationLvl": 0,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 76443840,
+          "3": 76443840,
+          "4": 38221920,
+          "5": 38221920
+        }
+      },
+	  {
+        "model": "pickup",
+        "config": "EMT D45 offroad",
+        "reputationLvl": 0,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 804672000,
+          "0": 321868800,
+          "1": 160934400,
+          "2": 160934400,
+          "3": 80467200,
+          "4": 80467200,
+          "5": 40233600
+        }
+      },
+      {
+        "model": "md_series",
+        "config": "EMT MD60",
+        "reputationLvl": 0,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 76443840,
+          "3": 76443840,
+          "4": 38221920,
+          "5": 38221920
+        }
+      },
+      {
+        "model": "md_series",
+        "config": "EMT MD60 offroad",
+        "reputationLvl": 0,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 76443840,
+          "3": 76443840,
+          "4": 38221920,
+          "5": 38221920
+        }
+      }
+    ],
+    "reputationValues": {
+      "returnLoanerDamaged": -10
+    },
+    "reputationLevels": [
+      {
+        // Level -1
+        "label": "Recruit",
+        "min": -200,
+		"hiddenFromDealerList": true
+      },
+      {
+        // Level 0
+        "label": "Rookie",
+		"hiddenFromDealerList": true
+      },
+      {
+        // Level 1
+        "deliveryBonus": {
+          "value": 1.20
+        },
+        "label": "EMR",
+		"hiddenFromDealerList": true
+      },
+      {
+        // Level 2
+        "deliveryBonus": {
+          "value": 1.45
+        },
+        "label": "EMT"
+      },
+      {
+        // Level 3
+        "deliveryBonus": {
+          "value": 1.75
+        },
+        "label": "AEMT"
+      },
+      {
+        // Level 4
+        "deliveryBonus": {
+          "value": 3
+        },
+        "requiredValue": 1000,
+        "levelLabel": "Reputation: Level 4",
+        "label": "Paramedic"
+      },
+      {
+        // Level 5
+        "deliveryBonus": {
+          "value": 10
+        },
+        "requiredValue": 5000,
+        "max": 7500,
+        "levelLabel": "Reputation: Level 5",
+        "label": "Paramedic FTO"
+      }
+    ]
+  },
+  "firwoodDeliveryAssociation": {
+    "name":"firwood Delivery Association",
+    "description":"Logistics coordinator for Firwood County",
+    "icon":"garage02",
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "port": {
+    "name":"Port",
+    "description":"Source for all imported goods to East Coast USA",
+    "icon":"garage02",
+	"loanableVehicles": [
+    {
+      "model": "tiltdeck",
+      "config": "22ft_gooseneck_cargo",
+      "reputationLvl": 0,
+      "deliveryLvl": 0,
+      "mileages": {
+        "-1": 804672000,
+        "0": 321868800,
+        "1": 160934400,
+        "2": 160934400,
+        "3": 80467200,
+        "4": 80467200,
+        "5": 40233600
+      }
+    },
+    {
+      "model": "tiltdeck",
+      "config": "30ft_gooseneck_cargo",
+      "reputationLvl": 1,
+      "deliveryLvl": 1,
+      "mileages": {
+        "-1": 804672000,
+        "0": 321868800,
+        "1": 160934400,
+        "2": 160934400,
+        "3": 80467200,
+        "4": 80467200,
+        "5": 40233600
+      }
+    },    
+    {
+      "model": "TPUMedForklift",
+      "config": "FL45D Triplex",
+      "reputationLvl": -1,
+      "deliveryLvl": 0,
+      "mileages": {
+        "-1": 804672000,
+        "0": 321868800,
+        "1": 160934400,
+        "2": 160934400,
+        "3": 80467200,
+        "4": 80467200,
+        "5": 40233600
+      }
+    },  
+    {
+        "model": "md_series",
+        "config": "md_70_cargobox_port",
+        "reputationLvl": 1,
+        "deliveryLvl": 1,
+        "mileages": {
+          "1": 100000000,
+          "2": 1000000,
+          "3": 10000
+        }
+    },
+	  {
+        "model": "us_semi",
+        "config": "tc82_base",
+        "reputationLvl": 2,
+        "deliveryLvl": 3,
+        "mileages": {
+          "-1": 100000000,
+          "0": 100000000,
+          "1": 100000000,
+          "2": 100000000,
+          "3": 100000000
+        }
+      },
+      {
+        "model": "us_semi",
+        "config": "t83_base",
+        "reputationLvl": 1,
+        "deliveryLvl": 3,
+        "mileages": {
+          "-1": 5000000,
+          "0": 5000000,
+          "1": 5000000,
+          "2": 5000000,
+          "3": 5000000
+        }
+      },
+      {
+        "model": "md_series",
+        "config": "md_70_fifthwheel",
+        "reputationLvl": 0,
+        "deliveryLvl": 3,
+        "mileages": {
+          "-1": 800000000,
+          "0": 300000000,
+          "1": 100000000,
+          "2": 1000000,
+          "3": 10000
+        }
+      },
+      {
+        "model": "md_series",
+        "config": "md_60_pickup_4wd",
+        "reputationLvl": 0,
+        "deliveryLvl": 2,
+        "mileages": {
+          "-1": 800000000,
+          "0": 300000000,
+          "1": 100000000,
+          "2": 1000000,
+          "3": 10000
+        }
+      },
+      {
+        "model": "us_semi",
+        "config": "t83s_rollback_rental",
+        "reputationLvl": 0,
+        "deliveryLvl": 3,
+        "mileages": {
+          "-1": 100000000,
+          "0": 100000000,
+          "1": 100000000,
+          "2": 100000000,
+          "3": 100000000
+        }
+      }
+    ],
+	"reputationValues": {
+      "returnLoanerDamaged": 20
+    },
+  	
+	"reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "sawmill": {
+    "name":"Sawmill",
+    "description":"Produces lumber for the building trades",
+    "icon":"garage02",
+	"loanableVehicles": [
+    {
+        "model": "md_series",
+        "config": "MD70_Logging",
+        "reputationLvl": 1,
+        "deliveryLvl": 2,
+        "mileages": {
+          "-1": 800000000,
+          "0": 300000000,
+          "1": 100000000,
+          "2": 1000000,
+          "3": 10000
+        }
+      },
+	  {
+        "model": "md_series",
+        "config": "river_forest_714",
+        "reputationLvl": 1,
+        "deliveryLvl": 2,
+        "mileages": {
+          "-1": 800000000,
+          "0": 300000000,
+          "1": 100000000,
+          "2": 1000000,
+          "3": 10000
+        }
+      },
+      {
+        "model": "us_semi",
+        "config": "tc82_custom",
+        "reputationLvl": 2,
+        "deliveryLvl": 2,
+        "mileages": {
+          "-1": 100000000,
+          "0": 100000000,
+          "1": 100000000,
+          "2": 100000000,
+          "3": 100000000
+        }
+      },
+    {
+        "model": "us_semi",
+        "config": "woody_t_series",
+        "reputationLvl": 2,
+        "deliveryLvl": 3,
+        "mileages": {
+          "-1": 5000000,
+          "0": 5000000,
+          "1": 5000000,
+          "2": 5000000,
+          "3": 5000000
+        }
+      },
+    {
+        "model": "us_semi",
+        "config": "tc83_forest_mule",
+        "reputationLvl": 3,
+        "deliveryLvl": 3,
+        "mileages": {
+          "-1": 1000000,
+          "0": 1000000,
+          "1": 1000000,
+          "2": 1000000,
+          "3": 1000000
+        }
+      },
+    {
+        "model": "boxutility_large",
+        "config": "unloaded",
+        "reputationLvl": -1,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 1000000,
+          "0": 1000000,
+          "1": 1000000,
+          "2": 1000000,
+          "3": 1000000
+        }
+      },
+    {
+        "model": "tiltdeck",
+        "config": "22ft_standard",
+        "reputationLvl": -1,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 804672000,
+          "0": 321868800,
+          "1": 160934400,
+          "2": 160934400,
+          "3": 80467200,
+          "4": 80467200,
+          "5": 40233600
+        }
+      }
+    ],
+	  "reputationValues": {
+      "returnLoanerDamaged": 20
+    },
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "bigWarehouse": {
+    "name":"Firwood Restaurant Supply",
+    "description":"Handles all restaurant related supplies",
+    "icon":"garage02",
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "coastWarehouse": {
+    "name":"Coast Warehouse",
+    "description":"General Goods Provider",
+    "icon":"garage02",
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "firwoodSupply": {
+    "name":"Firwood Supply",
+    "description":"Provides building materials",
+    "icon":"garage02",
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "firwoodMotorCompany": {
+    "name":"Firwood Motor Company",
+    "description":"Dealership/Mechanic",
+    "icon":"garage02",
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "gemClassics": {
+    "name":"Gem Classic Cars",
+    "description":"Dealership/Mechanic",
+    "icon":"garage02",
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "discountedDealership": {
+    "name":"Trusted Auto-Firwood Garage",
+    "description":"Dealership/Mechanic",
+    "icon":"garage02",
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "hendersonsGarage": {
+    "name":"Henderson's Garage",
+    "description":"Dealership/Mechanic",
+    "icon":"garage02",
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "onlineDealer": {
+    "name":"Online Dealer",
+    "description":"Dealership",
+    "icon":"garage02",
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "commercialDealer": {
+    "name":"Commercial Dealer",
+    "description":"Dealership/Mechanic",
+    "icon":"garage02",
+	"loanableVehicles": [
+      {
+        "model": "md_series",
+        "config": "md_60_pickup_4wd",
+        "reputationLvl": 0,
+        "deliveryLvl": 2,
+        "mileages": {
+          "-1": 800000000,
+          "0": 300000000,
+          "1": 100000000,
+          "2": 1000000,
+          "3": 10000
+        }
+      },
+      {
+        "model": "us_semi",
+        "config": "t83s_rollback_rental",
+        "reputationLvl": 0,
+        "deliveryLvl": 3,
+        "mileages": {
+          "-1": 100000000,
+          "0": 100000000,
+          "1": 100000000,
+          "2": 100000000,
+          "3": 100000000
+        }
+      }
+    ],
+	"reputationValues": {
+      "returnLoanerDamaged": 20
+    },
+	
+	"reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "smithsAutoRepair": {
+    "name":"Smith's Auto Repair",
+    "description":"Mechanic",
+    "icon":"garage02",
+    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "offroadDealership": {
+    "name":"TJ's Offroad Dealership",
+    "description":"Dealership/Mechanic",
+    "icon":"garage02",
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "watchtowerInn": {
+    "name":"Watchtower Inn",
+    "description":"Restaurant",
+    "icon":"garage02",
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "firwoodInn": {
+    "name":"Firwood Inn",
+    "description":"Restaurant",
+    "icon":"garage02",
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "kikisDiner": {
+    "name":"Kiki's Diner",
+    "description":"Restaurant",
+    "icon":"garage02",
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "nodeoline": {
+    "name":"",
+    "description":"Convenience Store",
+    "icon":"garage02",
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "firwoodManufacturing": {
+    "name":"Firwood Manufacturing",
+    "description":"Produces industrial goods",
+    "icon":"garage02",
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "jimsAutoParts": {
+    "name":"Jim's Auto Parts",
+    "description":"Auto Parts Store",
+    "icon":"garage02",
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "officePax": {
+    "name":"Office Pax",
+    "description":"Office Supplies",
+    "icon":"garage02",
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "jujusComputers": {
+    "name":"Juju's Computers",
+    "description":"Computer Store",
+    "icon":"garage02",
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "firwoodParcelService": {
+    "name":"Firwood Parcel Service",
+    "description":"Parcel Service",
+    "icon":"garage02",
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  },
+  "joesJunkyard": {
+    "name":"Joe's Junkyard",
+    "description":"scrap car processor and used parts supplier",
+    "icon":"garage02",
+    "loanableVehicles": [
+      {
+        "model": "tiltdeck",
+        "config": "22ft_standard",
+        "reputationLvl": -1,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 804672000,
+          "0": 321868800,
+          "1": 160934400,
+          "2": 160934400,
+          "3": 80467200,
+          "4": 80467200,
+          "5": 40233600
+        }
+      },
+      {
+        "model": "tiltdeck",
+        "config": "30ft_pintle",
+        "reputationLvl": 1,
+        "deliveryLvl": 1,
+        "mileages": {
+          "-1": 804672000,
+          "0": 321868800,
+          "1": 160934400,
+          "2": 160934400,
+          "3": 80467200,
+          "4": 80467200,
+          "5": 40233600
+        }
+      },
+      {
+        "model": "tiltdeck",
+        "config": "40ft_standard",
+        "reputationLvl": 1,
+        "deliveryLvl": 1,
+        "mileages": {
+          "-1": 804672000,
+          "0": 321868800,
+          "1": 160934400,
+          "2": 160934400,
+          "3": 80467200,
+          "4": 80467200,
+          "5": 40233600
+        }
+      },
+     ],
+	    "reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Jank"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Old"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+  }
+}  

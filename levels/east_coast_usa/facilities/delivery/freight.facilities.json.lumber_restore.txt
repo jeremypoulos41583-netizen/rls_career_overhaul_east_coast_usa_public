@@ -1,0 +1,66 @@
+LUMBER RESTORE FILE
+===================
+This file contains all lumber-related content that was temporarily removed from freight.facilities.json
+Restore these items when ready to re-enable lumber logistics.
+
+1. MANUAL ACCESS POINT (sawmill provider):
+   Lines 16-21:
+        {
+          "psName": "lumberPickup",
+          "isInspectSpot": false,
+          "logisticTypesProvided": ["lumber"],
+          "logisticTypesReceived": []
+        },
+
+2. LOGISTIC GENERATORS - lumberProps (3 instances):
+
+   a) sawmill provider (lines 65-73):
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 1,
+          "max": 4,
+          "offerDuration": {"min": 300, "max": 300},
+          "filter": "lumberProps",
+          "logisticTypes": ["lumber"]
+        },
+
+   b) port provider (lines 567-574):
+        {
+          "type": "vehOfferReceiver",
+          "interval": 300,
+          "min": 1,
+          "max": 4,
+          "offerDuration": {"min": 300, "max": 300},
+          "filter": "lumberProps",
+          "logisticTypes": ["lumber"]
+        },
+
+   c) firwoodSupply provider (lines 770-777):
+        {
+          "type": "vehOfferReceiver",
+          "interval": 300,
+          "min": 1,
+          "max": 4,
+          "offerDuration": {"min": 300, "max": 300},
+          "filter": "lumberProps",
+          "logisticTypes": ["lumber"]
+        },
+
+3. LOGISTIC TYPES TO ADD BACK:
+
+   In "sawmill" provider:
+   - Line 19: "logisticTypesProvided": ["lumber"],
+   - Line 38: Add "lumber" to "logisticTypesProvided" array (first item)
+
+   In "port" provider:
+   - Line 544: Add "lumber" to "logisticTypesReceived" array (first item)
+   - Line 549: Add "lumber" to "logisticTypesReceived" array (second item, after "vehForRecycle")
+
+   In "firwoodSupply" provider:
+   - Line 747: Add "lumber" to "logisticTypesReceived" array (first item)
+   - Line 752: Add "lumber" to "logisticTypesReceived" array (first item)
+
+NOTE: The "singleAxleLumberTrailers" and "doubleAxleLumberTrailers" filter references were NOT removed
+as they are used for trailer deliveries, not the lumber logistics type itself.
+

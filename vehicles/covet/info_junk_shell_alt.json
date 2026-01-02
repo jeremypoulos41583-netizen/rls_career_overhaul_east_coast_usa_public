@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Alternate Junk Shell )",
+  "Description":"Shell of a prototype Covet MR Evolution",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":0,
+  "Torque":0,
+  "Transmission":"Manual",
+  "Value":"1000",
+  "Weight":780,
+  "Years":{
+    "max":2022,
+    "min":2016
+  },
+}

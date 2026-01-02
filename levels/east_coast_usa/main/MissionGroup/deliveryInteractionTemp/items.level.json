@@ -1,0 +1,2 @@
+{"name":"sawmill_area","class":"BeamNGGameplayArea","persistentId":"392085d3-f1b4-4b89-b08a-8c3aa11039e2","__parent":"deliveryInteractionTemp","position":[176.764,-797.745,48.746],"scale":[3.212,6.411,4.394]}
+{"name":"sawmill_icon","class":"BeamNGPointOfInterest","persistentId":"47405c86-e5cb-402d-807e-22d60af2c8c9","__parent":"deliveryInteractionTemp","position":[176.037,-797.341,49.970]}

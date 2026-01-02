@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":600,  
+  "Configuration":"( Junk Shell )",
+  "Description":"Ain't going nowhere in that thing...",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":107,
+  "Torque":106,
+  "Transmission":"Automatic",
+  "Value":"450",
+  "Weight":1475,
+  "Years":{
+    "max":1963,
+    "min":1962
+  },
+}

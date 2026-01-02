@@ -1,0 +1,18 @@
+{
+  "type":"custom",
+  "data":[
+    {
+      "config":"ecusa_police",
+      "model":"pickup"
+    },
+	{
+      "config":"interceptor",
+      "model":"wendover"
+    },
+  ],
+  "name":"East Coast USA - Police",
+  "tags":[
+    "east_coast_usa",
+    "police"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Junk Shell )",
+  "Description":"Was a nice D Series at some point.. That was before it passed a few years in a U Push junkyard.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":194,
+  "Torque":192,
+  "Transmission":"Automatic",
+  "Value":"700",
+  "Weight":1879,
+  "Years":{
+    "max":1997,
+    "min":1992
+  },
+}

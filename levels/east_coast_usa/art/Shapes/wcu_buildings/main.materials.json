@@ -1,0 +1,52 @@
+{
+  "metal_plates": {
+    "name": "metal_plates",
+    "mapTo": "metal_plates",
+    "class": "material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "wirefence": {
+    "name": "wirefence",
+    "mapTo": "wirefence",
+    "class": "material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  }
+}

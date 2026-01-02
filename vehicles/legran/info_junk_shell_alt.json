@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Alternate Junk Shell )",
+  "Description":"Shell of a Legran with sill a lot of good parts on it. The engine and transmission still works and the interior is mostly complete. Could maybe be rebuilt.. Or not.",
+  "Drivetrain":"FWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":129,
+  "Torque":130,
+  "Transmission":"Automatic",
+  "Value":"450",
+  "Weight":1504,
+  "Years":{
+    "max":1988,
+    "min":1984
+  },
+}

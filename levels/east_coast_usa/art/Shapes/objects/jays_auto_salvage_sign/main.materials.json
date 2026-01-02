@@ -1,0 +1,28 @@
+{
+  "signMat": {
+    "name": "signMat",
+    "mapTo": "signMat",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "jays_auto_salvage_16x9",
+        "specular": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "specular": null
+      },
+      {
+        "specular": null
+      },
+      {
+        "specular": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  }
+}

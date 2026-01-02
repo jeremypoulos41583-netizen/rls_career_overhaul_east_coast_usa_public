@@ -1,0 +1,128 @@
+{
+  "0-100 km/h":19.6,
+  "0-60 mph":19,
+  "100-0 km/h":51.3,
+  "60-0 mph":157.3,
+  "Body Style":"Fifth Wheel Truck ",
+  "BoundingBox":[
+    [
+      -0.946,
+      -1.406,
+      -0.9454
+    ],
+    [
+      1.7534,
+      4.849,
+      2.1785
+    ]
+  ],
+  "Braking G":0.767,
+  "Config Type":"Offroad",
+  "Configuration":"River/Forest 714",
+  "Description":"Desert Reactor's MD70 with offroad suspension purpose built to run log trailers out of the woods in East Coast USA.",
+  "Drivetrain":"4WD",
+  "Fuel Type":"Diesel",
+  "Induction Type":"Turbo",
+  "Name":"River/Forest 714",
+  "Off-Road Score":35,
+  "Population":10000,
+  "Power":688,
+  "PowerPeakRPM":3150,
+  "Propulsion":"ICE",
+  "Source":"Custom",
+  "Top Speed":43.6805687,
+  "Torque":1635,
+  "TorquePeakRPM":"2400 - 2950",
+  "Transmission":"Manual",
+  "Value":75000,
+  "Weight":6590,
+  "Weight/Power":9.578488372,
+  "aggregates":{
+    "0-100 km/h":{
+      "max":19.6,
+      "min":19.6
+    },
+    "0-60 mph":{
+      "max":19,
+      "min":19
+    },
+    "Body Style":{
+      "Fifth Wheel Truck ":true,
+      "Logging Truck":true
+    },
+    "Brand":{
+      "Gavril":true
+    },
+    "Config Type":{
+      "Offroad":true
+    },
+    "Country":{
+      "United States":true
+    },
+    "Derby Class":{
+      "Medium Truck":true
+    },
+    "Drivetrain":{
+      "4WD":true
+    },
+    "Fuel Type":{
+      "Diesel":true
+    },
+    "Induction Type":{
+      "Turbo":true
+    },
+    "Off-Road Score":{
+      "max":35,
+      "min":35
+    },
+    "Propulsion":{
+      "ICE":true
+    },
+    "Source":{
+      "Custom":true,
+      "Mod":true
+    },
+    "Top Speed":{
+      "max":43.6805687,
+      "min":43.6805687
+    },
+    "Transmission":{
+      "Manual":true
+    },
+    "Type":{
+      "Truck":true
+    },
+    "Value":{
+      "max":75000,
+      "min":75000
+    },
+    "Weight":{
+      "max":6590,
+      "min":6590
+    },
+    "Weight/Power":{
+      "max":9.578488372,
+      "min":9.578488372
+    },
+    "Years":{
+      "max":2025,
+      "min":2010
+    }
+  },
+  "defaultPaint":{
+    "baseColor":[
+      0.4,
+      0.05,
+      0.05,
+      1.2
+    ],
+    "clearcoat":0,
+    "clearcoatRoughness":0,
+    "metallic":0,
+    "roughness":0.07
+  },
+  "defaultPaintName1":"Oxide Red",
+  "defaultPaintName2":"Cream",
+  "is_default_config":false,
+  "preview":"/vehicles/md_series/Dezrtrx MD70 ECUSA 1.jpg"
+}

@@ -1,0 +1,124 @@
+{
+  "0-100 km/h":14.1,
+  "0-100 mph":30.8,
+  "0-200 km/h":47.9,
+  "0-60 mph":13.5,
+  "100-0 km/h":46.8,
+  "100-200 km/h":33.7,
+  "60-0 mph":142.1,
+  "60-100 mph":17.3,
+  "Body Style":"Semi Truck",
+  "BoundingBox":[
+    [
+      -0.9714,
+      -3.4636,
+      -0.7706
+    ],
+    [
+      1.8224,
+      3.4987,
+      2.3084
+    ]
+  ],
+  "Braking G":0.84,
+  "Config Type":"Factory",
+  "Configuration":"Forest Mule",
+  "Drivetrain":"6x4",
+  "Fuel Type":"Diesel",
+  "Induction Type":"Turbo",
+  "Name":"T-Series Forest Mule",
+  "Off-Road Score":33,
+  "Power":727,
+  "PowerPeakRPM":"2900 - 3450",
+  "Propulsion":"ICE",
+  "Source":"Custom",
+  "Top Speed":61.49947739,
+  "Torque":1975,
+  "TorquePeakRPM":1200,
+  "Transmission":"Manual",
+  "Weight":9115,
+  "Weight/Power":12.53782669,
+  "aggregates":{
+    "0-100 km/h":{
+      "max":14.1,
+      "min":14.1
+    },
+    "0-60 mph":{
+      "max":13.5,
+      "min":13.5
+    },
+    "Body Style":{
+      "Semi Truck":true
+    },
+    "Brand":{
+      "Gavril":true
+    },
+    "Config Type":{
+      "Factory":true
+    },
+    "Country":{
+      "United States":true
+    },
+    "Derby Class":{
+      "Heavy Truck":true
+    },
+    "Drivetrain":{
+      "6x4":true
+    },
+    "Fuel Type":{
+      "Diesel":true
+    },
+    "Induction Type":{
+      "Turbo":true
+    },
+    "Off-Road Score":{
+      "max":33,
+      "min":33
+    },
+    "Propulsion":{
+      "ICE":true
+    },
+    "Source":{
+      "Custom":true,
+      "Mod":true
+    },
+    "Top Speed":{
+      "max":61.49947739,
+      "min":61.49947739
+    },
+    "Transmission":{
+      "Manual":true
+    },
+    "Type":{
+      "Truck":true
+    },
+    "Weight":{
+      "max":9115,
+      "min":9115
+    },
+    "Weight/Power":{
+      "max":12.53782669,
+      "min":12.53782669
+    },
+    "Years":{
+      "max":1986,
+      "min":1971
+    }
+  },
+  "defaultPaint":{
+    "baseColor":[
+      0.83,
+      0.83,
+      0.83,
+      1.2
+    ],
+    "clearcoat":0,
+    "clearcoatRoughness":0,
+    "metallic":0,
+    "roughness":0.07
+  },
+  "defaultPaintName1":"White",
+  "defaultPaintName2":"Vibrant Red",
+  "is_default_config":false,
+  "preview":"/vehicles/us_semi/tc83_forest_mule.jpg"
+}

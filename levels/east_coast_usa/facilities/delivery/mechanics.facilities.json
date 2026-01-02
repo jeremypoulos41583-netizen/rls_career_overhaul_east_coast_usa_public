@@ -1,0 +1,578 @@
+{
+  "deliveryProviders": [
+    {
+      "id": "firwoodMotorCompany",
+      "alwaysVisible": true,
+      "name": "Firwood Motor Company",
+      "description": "Ships and receives car parts and accessories.",
+      "facilityInformation": "Firwood Motor Company; Cheap prices and friendly staff!",
+      "associatedOrganization": "firwoodMotorCompany",
+      "preview": "firwoodMotors.png",
+      "manualAccessPoints": [
+        {
+          "psName": "firwoodMotorCompany_delivery",
+          "isInspectSpot": true,
+          "logisticTypesProvided": ["vehForScrap", "vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns"],
+          "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"]
+        }
+      ],
+      "sitesFile": "mechanics.sites.json",
+      "logisticTypesProvided": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns", "vehForScrap"],
+      "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"],
+          "min": 1,
+          "max": 10,
+          "interval": 120
+        },
+        {
+          "type": "parcelProvider",
+          "logisticTypes": ["refundReturns"],
+          "min": 1,
+          "max": 10,
+          "interval": 120
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 1,
+          "max": 4,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "newCarVehFilter",
+          "logisticTypes": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished"]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 1,
+          "max": 5,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "compactVehFilter",
+          "logisticTypes": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished"]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 3,
+          "max": 8,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "joesJunkVehFilter",
+          "logisticTypes": ["vehForScrap"]
+        }
+      ]
+    },
+    {
+      "id": "gemClassics",
+      "name": "Gem Classic Cars",
+      "description": "Ships and receives car parts and accessories.",
+      "associatedOrganization": "gemClassics",
+      "preview": "gemClassics.png",
+      "manualAccessPoints": [
+        {
+          "psName": "gemClassicsParking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": ["vehForScrap", "vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns"],
+          "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"]
+        }
+      ],
+      "sitesFile": "mechanics.sites.json",
+      "logisticTypesProvided": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns", "vehForScrap"],
+      "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"],
+          "min": 1,
+          "max": 10,
+          "interval": 120
+        },
+        {
+          "type": "parcelProvider",
+          "logisticTypes": ["refundReturns"],
+          "min": 1,
+          "max": 10,
+          "interval": 120
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "classicVehFilter",
+          "logisticTypes": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished"]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "highEndVehFilter",
+          "logisticTypes": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished"]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 3,
+          "max": 8,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "joesJunkVehFilter",
+          "logisticTypes": ["vehForScrap"]
+        }
+      ]
+    },
+    {
+      "id": "hendersonsGarage",
+      "name": "Hendersons Garage",
+      "description": "Vehicle Sales and Service",
+      "associatedOrganization": "hendersonsGarage",
+      "preview": "hendersonsGarage.png",
+      "manualAccessPoints": [
+        {
+          "psName": "hendersonsParking01",
+          "isInspectSpot": true,
+          "logisticTypesProvided": ["vehForScrap", "vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns"],
+          "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"]
+        }
+      ],
+      "sitesFile": "mechanics.sites.json",
+      "logisticTypesProvided": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns", "vehForScrap"],
+      "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"],
+          "min": 1,
+          "max": 10,
+          "interval": 120
+        },
+        {
+          "type": "parcelProvider",
+          "logisticTypes": ["refundReturns"],
+          "min": 1,
+          "max": 10,
+          "interval": 120
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "customVehFilter",
+          "logisticTypes": ["vehNeedsRepair", "vehForPrivate", "vehForPrivate"]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "highEndVehFilter",
+          "logisticTypes": ["vehNeedsRepair", "vehForPrivate", "vehForPrivate"]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 3,
+          "max": 8,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "joesJunkVehFilter",
+          "logisticTypes": ["vehForScrap"]
+        }
+      ]
+    },
+    {
+      "id": "smithsAutoRepair",
+      "name": "Smith's Auto Repair",
+      "description": "Mechanic and Body Shop",
+      "associatedOrganization": "smithsAutoRepair",
+      "preview": "smithsAutoRepair.png",
+      "manualAccessPoints": [
+        {
+          "psName": "smithsAutoRepair_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "vehNeedsRepair"]
+        },
+        {
+          "psName": "smithsLoaner_parking",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1,
+          "loanerNonTrailerPriority": 1 
+        },
+        {
+          "psName": "smithsDeliveryVeh_parking",
+          "isInspectSpot": false,
+          "logisticTypesProvided": ["vehRepairFinished", "refundReturns", "vehForScrap"],
+          "logisticTypesReceived": []
+        }
+      ],
+      "sitesFile": "mechanics.sites.json",
+      "logisticTypesProvided": ["vehRepairFinished", "refundReturns", "vehForScrap"],
+      "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "vehNeedsRepair"],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"],
+          "min": 1,
+          "max": 10,
+          "interval": 120
+        },
+        {
+          "type": "parcelProvider",
+          "logisticTypes": ["refundReturns"],
+          "min": 1,
+          "max": 10,
+          "interval": 120
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 1,
+          "max": 4,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "junkVehFilter",
+          "logisticTypes": ["vehNeedsRepair", "vehRepairFinished"]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "compactVehFilter",
+          "logisticTypes": ["vehNeedsRepair", "vehRepairFinished"]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "policeVehFilter",
+          "logisticTypes": ["vehNeedsRepair", "vehRepairFinished"]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "ambulanceVehFilter",
+          "logisticTypes": ["vehNeedsRepair", "vehRepairFinished"]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "customVehFilter",
+          "logisticTypes": ["vehNeedsRepair", "vehForPrivate", "vehForPrivate"]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "highEndVehFilter",
+          "logisticTypes": ["vehNeedsRepair", "vehForPrivate", "vehForPrivate"]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "classicVehFilter",
+          "logisticTypes": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished"]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 3,
+          "max": 8,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "joesJunkVehFilter",
+          "logisticTypes": ["vehForScrap"]
+        }
+      ]
+    },
+    {
+      "id": "tjsOffroadDealership",
+      "name": "TJ's Offroad Dealership",
+      "description": "Ships and receives car parts and accessories.",
+      "associatedOrganization": "offroadDealership",
+      "preview": "offroadDealership.png",
+      "manualAccessPoints": [
+        {
+          "psName": "tjShippingParking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": ["vehNeedsRepair", "vehRepairFinished", "vehForPrivate", "refundReturns"],
+          "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"]
+        }
+      ],
+      "sitesFile": "mechanics.sites.json",
+      "logisticTypesProvided": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns"],
+      "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"],
+          "min": 1,
+          "max": 10,
+          "interval": 120
+        },
+        {
+          "type": "parcelProvider",
+          "logisticTypes": ["refundReturns"],
+          "min": 1,
+          "max": 10,
+          "interval": 120
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 3,
+          "max": 8,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "pickupVehFilter",
+          "logisticTypes": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished"]
+        }
+      ]
+    },
+    {
+      "id": "discountedDealership",
+      "name": "Trusted Auto Sales-Firwood Garage",
+      "description": "Ships and receives car parts and accessories.",
+      "associatedOrganization": "discountedDealership",
+      "preview": "firwoodGarage.png",
+      "manualAccessPoints": [
+        {
+          "psName": "firwoodGarage_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": ["vehForScrap", "vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns"],
+          "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "takeout"]
+        }
+      ],
+      "sitesFile": "facilities.sites.json",
+      "logisticTypesProvided": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns", "vehForScrap"],
+      "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "takeout", "vehNeedsRepair"],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "takeout"],
+          "min": 1,
+          "max": 10,
+          "interval": 120
+        },
+        {
+          "type": "parcelProvider",
+          "logisticTypes": ["refundReturns"],
+          "min": 1,
+          "max": 10,
+          "interval": 120
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 3,
+          "max": 8,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "junkVehFilter",
+          "logisticTypes": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished"]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "compactVehFilter",
+          "logisticTypes": ["vehNeedsRepair", "vehRepairFinished"]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 3,
+          "max": 8,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "joesJunkVehFilter",
+          "logisticTypes": ["vehForScrap"]
+        }
+      ]
+    },
+    {
+      "id": "logisticsGarage",
+      "name": "Commercial Mechanic Shop and Dealership",
+      "description": "Commercial Vehicle Sales and Service",
+      "associatedOrganization": "commercialDealer",
+      "preview": "logisticsDealer.png",
+      "manualAccessPoints": [
+        {
+          "psName": "logisticsGarage_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": ["vehLargeTruck", "refundReturns"],
+          "logisticTypesReceived": ["pcofficeSupplies", "freightSupplies", "freight2Supplies", "freight3Supplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "takeout", "vehLargeTruckNeedsRepair"]
+        },
+        {
+          "psName": "commercialRental_parking",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1,
+          "loanerNonTrailerPriority": 1
+        }
+      ],
+      "sitesFile": "mechanics.sites.json",
+      "logisticTypesProvided": ["vehLargeTruck", "refundReturns", "vehForScrap"],
+      "logisticTypesReceived": ["pcofficeSupplies", "freightSupplies", "freight2Supplies", "freight3Supplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "takeout", "vehLargeTruckNeedsRepair"],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": ["pcofficeSupplies", "freightSupplies", "freight2Supplies", "freight3Supplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "takeout"],
+          "min": 1,
+          "max": 10,
+          "interval": 120
+        },
+        {
+          "type": "parcelProvider",
+          "logisticTypes": ["refundReturns"],
+          "min": 1,
+          "max": 10,
+          "interval": 120
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 3,
+          "max": 8,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "semiVehFilter",
+          "logisticTypes": ["vehLargeTruck", "vehLargeTruckNeedsRepair"]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 3,
+          "max": 8,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "newSemiVehFilter",
+          "logisticTypes": ["vehLargeTruck", "vehLargeTruckNeedsRepair"]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 3,
+          "max": 8,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "joesJunkVehFilter",
+          "logisticTypes": ["vehForScrap"]
+        }
+      ]
+    },
+    {
+      "id": "joesJunkyard",
+      "name": "Joe's Junkyard",
+      "description": "scrap car processor and used parts supplier",
+      "associatedOrganization": "joesJunkyard",
+      "preview": "joesJunkyard.png",
+      "manualAccessPoints": [
+        {
+          "psName": "joesJunk_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": ["parcel", "takeout"]
+        },
+        {
+          "psName": "junkyardLoaner_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": ["scrap"],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1,
+          "loanerNonTrailerPriority": 1
+        },
+        {
+          "psName": "junkyardPickup_parking",
+          "isInspectSpot": false,
+          "logisticTypesProvided": ["vehForRecycle"],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "junkyardDropoff_parking",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": ["vehForScrap"]
+        },
+        {
+          "psName": "junkyardCargo_parking",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        }
+      ],
+      "sitesFile": "mechanics.sites.json",
+      "logisticTypesProvided": ["vehForScrap", "scrap"],
+      "logisticTypesReceived": ["vehForScrap","parcel","takeout"],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": ["parcel", "takeout"],
+          "min": 1,
+          "max": 10,
+          "interval": 120
+        },
+        {
+          "type": "parcelProvider",
+          "logisticTypes": ["parcel"],
+          "min": 1,
+          "max": 10,
+          "interval": 120
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 3,
+          "max": 8,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "joesJunkVehFilter",
+          "logisticTypes": ["vehForScrap"]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 3,
+          "max": 8,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "joesJunkshellVehFilter",
+          "logisticTypes": ["vehForRecycle"]
+        },
+        {
+          "type": "materialProvider",
+          "logisticTypes": ["scrap"],
+          "materialType": "scrap",
+          "capacity": 10000,
+          "target": 5000,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        }
+      ]
+    }
+  ]
+}

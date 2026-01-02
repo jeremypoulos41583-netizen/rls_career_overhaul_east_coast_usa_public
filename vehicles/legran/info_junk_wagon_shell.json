@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Junk Wagon Shell )",
+  "Description":"Was crappy when it was new, its not better now.",
+  "Drivetrain":"FWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":0,
+  "Torque":0,
+  "Transmission":"Automatic",
+  "Value":"300",
+  "Weight":1027,
+  "Years":{
+    "max":1988,
+    "min":1984
+  },
+}

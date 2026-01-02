@@ -1,0 +1,623 @@
+{
+  "garages": [
+    {
+      "id": "watersideShack",
+      "name": "Waterside Shack",
+      "description": "You're the one that moved across the country. Take what you can get.",
+      "preview": "watersideShack.png",
+      "zoneNames": [
+	  
+        "watersideShack"
+      ],
+      "parkingSpotNames": [
+	  
+        "watersideShack_parking"
+	  ],
+      "icon": "poi_garage_2_round",
+      "tags": [
+        "truck"
+      ],
+      "defaultPrice": 15000,
+      "capacity": 1,
+      "starterGarage": true
+	},
+	{
+      "id": "policeWork",
+      "name": "Police Work",
+      "description": "Vehicle storage and taxi spot for police officers on the beat",
+      "preview": "policeDealer.png",
+      "zoneNames": [
+	  
+        "policeWork"
+      ],
+      "parkingSpotNames": [
+	  
+        "policeWork_parking"
+	  ],
+      "icon": "poi_garage_2_round",
+      "tags": [
+        "truck"
+      ],
+      "defaultPrice": 0,
+      "capacity": 1,
+      "starterGarage": false
+	},
+	{
+      "id": "farmHouse",
+      "name": "Farm House",
+      "description": "A great place to get away from it all",
+      "preview": "farmHouse.png",
+      "zoneNames": [
+	  
+        "farmHouse"
+      ],
+      "parkingSpotNames": [
+	  
+        "farmHouse_parking1",
+		"farmHouse_parking2",
+		"farmHouse_parking3"
+		"farmHouse_parking4"
+      ],
+      "icon": "poi_garage_2_round",
+      "tags": [
+        "truck"
+      ],
+      "defaultPrice": 160000,
+      "capacity": 3,
+      "starterGarage": false
+	},
+	{
+      "id": "smithsAutoRepair",
+      "name": "Smith's Auto Repair",
+      "description": "Popular with all the crawlers and trail runners",
+      "preview": "smithsAutoRepair.png",
+      "zoneNames": [
+	  
+        "smithsAutoRepair"
+      ],
+      "parkingSpotNames": [
+	  
+        "smithsAutoRepairParking1",
+		"smithsAutoRepairParking2",
+		"smithsAutoRepairParking3",
+		"smithsAutoRepairParking4",
+		"smithsAutoRepairParking5",
+      ],
+      "icon": "poi_garage_2_round",
+      "tags": [
+        "truck"
+      ],
+      "defaultPrice": 500000,
+      "capacity": 5,
+      "starterGarage": false,
+	},
+	{
+      "id": "logisticsGarage",
+      "name": "Logistics Garage",
+      "description": "Sure it ain't pretty but it's a good place to start your logistics empire.",
+      "preview": "brickwood.png",
+      "zoneNames": [
+	  
+        "logisticsGarage"
+      ],
+      "parkingSpotNames": [
+	  
+        "logisticsGarage_parking1",
+		"logisticsGarage_parking2",
+		"logisticsGarage_parking3",
+		"logisticsGarage_parking4",
+		"logisticsGarage_parking5",
+		"logisticsGarage_parking6",
+		"logisticsGarage_parking7",
+		"logisticsGarage_parking8"
+      ],
+      "icon": "poi_garage_2_round",
+      "tags": [
+        "truck"
+      ],
+      "defaultPrice": 750000,
+      "capacity": 8,
+      "starterGarage": false,
+	},
+	{
+      "id": "451LanieRd",
+      "name": "451 Lanie Rd",
+      "description": "A great home overlooking the fishing village. ",
+      "preview": "lanieRd.png",
+      "zoneNames": [
+	  
+        "451LanieRd"
+      ],
+      "parkingSpotNames": [
+	  
+        "451LanieRd_parking1",
+		"451LanieRd_parking2",
+		"451LanieRd_parking"
+	],
+      "icon": "poi_garage_2_round",
+      "tags": [
+        "truck"
+      ],
+      "defaultPrice": 100000,
+      "capacity": 3,
+      "starterGarage": false
+	},
+	 {
+      "id": "countryGarage",
+      "name": "Country Garage",
+      "description": "Centrally Located in ECUSA, get away from it all with this quaint country bungalow.",
+      "preview": "countryGarage.png",
+      "zoneNames": [
+	  
+        "countryGarage"
+      ],
+      "parkingSpotNames": [
+	  
+        "countryGarage_parking",
+		"countryGarage_parking2",
+		"countryGarage_parking3",
+		"countryGarage_parking4"
+      ],
+      "icon": "poi_garage_2_round",
+      "tags": [
+        "truck"
+      ],
+      "defaultPrice": 175000,
+      "capacity": 4,
+      "starterGarage": false
+	},
+	{
+      "id": "secludedCabin",
+      "name": "Secluded Cabin",
+      "description": "Hidden Gem on the water just below Firwood",
+      "preview": "secludedCabin.png",
+      "zoneNames": [
+	  
+        "secludedCabin"
+      ],
+      "parkingSpotNames": [
+	  
+        "secludedCabin_parking1",
+		"secludedCabin_parking2"
+	  ],
+      "icon": "poi_garage_2_round",
+      "tags": [
+        "truck"
+      ],
+      "defaultPrice": 75000,
+      "capacity": 2,
+      "starterGarage": false
+	},
+	{
+      "id": "thirdStreetGarage",
+      "name": "415 Third Street",
+      "description": "A nice place in the city plan your shenanigans",
+      "preview": "thirdStreetGarage.png",
+      "zoneNames": [
+	  
+        "415thirdStreet"
+      ],
+      "parkingSpotNames": [
+	  
+        "415thirdStreet_parking1",
+		"415thirdStreet_parking2",
+		"415thirdStreet_parking3",
+		"415thirdStreet_parking4"
+	  ],
+      "icon": "poi_garage_2_round",
+      "tags": [
+        "truck"
+      ],
+      "defaultPrice": 250000,
+      "capacity": 4,
+      "starterGarage": false
+	}
+  ],	
+  "computers": [
+    {
+      "id": "policeWork",
+      "garageId": "policeWork",
+      "name": "Police Work",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "policeDealer.png",
+      "doors": [
+        [
+          "policeWorkComputer_area",
+          "policeWorkComputer_icon"
+        ]
+      ],
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "functions": {
+        "painting": false,
+        "tuning": false,
+        "vehicleInventory": true,
+        "vehicleShop": false,
+        "partShop": false,
+        "partInventory": false,
+        "insurances": false,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Store Vehicle"
+        },
+        {
+          "keyLabel": "sleep"
+        }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+	},
+	{
+      "id": "thirdStreetGarage",
+      "garageId": "thirdStreetGarage",
+      "name": "415 Third Street",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "thirdStreetGarage.png",
+      "doors": [
+        [
+          "thirdStreetComputer_area",
+          "thirdStreetComputer_icon"
+        ]
+      ],
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "functions": {
+        "painting": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true,
+        "partShop": true,
+        "partInventory": true,
+        "insurances": true,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        },
+        {
+          "keyLabel": "Vehicle & Parts Shopping"
+        }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+	},
+	{
+      "id": "watersideShack",
+      "garageId": "watersideShack",
+      "name": "Waterside Shack",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "watersideShack.png",
+      "doors": [
+        [
+          "watersideShackComputer_area",
+          "watersideShackComputer_icon"
+        ]
+      ],
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "functions": {
+        "painting": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true,
+        "partShop": true,
+        "partInventory": true,
+        "insurances": true,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        },
+        {
+          "keyLabel": "Vehicle & Parts Shopping"
+        }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+	},
+	{
+      "id": "logisticsGarage",
+      "garageId": "logisticsGarage",
+      "name": "Logistics Garage",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "brickwood.png",
+      "doors": [
+        [
+          "logisticsGarageComputer_area",
+          "logisticsGarageComputer_icon"
+        ]
+      ],
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "functions": {
+        "painting": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true,
+        "partShop": true,
+        "partInventory": true,
+        "insurances": true,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        },
+        {
+          "keyLabel": "Vehicle & Parts Shopping"
+        }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+	},
+	{
+      "id": "farmHouse",
+      "garageId": "farmHouse",
+      "name": "Farm House",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "farmHouse.png",
+      "doors": [
+        [
+          "farmHouseComputer_area",
+          "farmHouseComputer_icon"
+        ]
+      ],
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "functions": {
+        "painting": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true,
+        "partShop": true,
+        "partInventory": true,
+        "insurances": true,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        },
+        {
+          "keyLabel": "Vehicle & Parts Shopping"
+        }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+	},
+	{
+      "id": "smithsAutoRepair",
+      "garageId": "smithsAutoRepair",
+      "name": "Smith's Auto Repair",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "smithsAutoRepair.png",
+      "doors": [
+        [
+          "smithsAutoRepairComputer_area",
+          "smithsAutoRepairComputer_icon"
+        ]
+      ],
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "functions": {
+        "painting": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true,
+        "partShop": true,
+        "partInventory": true,
+        "insurances": true,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        },
+        {
+          "keyLabel": "Vehicle & Parts Shopping"
+        }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+	},
+	{
+      "id": "451LanieRd",
+      "garageId": "451LanieRd",
+      "name": "451 Lanie Rd",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "lanieRd.png",
+      "doors": [
+        [
+          "LanieRdComputer_area",
+          "LanieRdComputer_icon"
+        ]
+      ],
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "functions": {
+        "painting": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true,
+        "partShop": true,
+        "partInventory": true,
+        "insurances": true,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        },
+        {
+          "keyLabel": "Vehicle & Parts Shopping"
+        }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+	},
+	{
+      "id": "countryGarageComputer_area",
+      "garageId": "countryGarage",
+      "name": "Country Garage",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "countryGarage.png",
+      "doors": [
+        [
+          "countryGarageGameplay_area",
+          "countryGarageGameplay_icon"
+        ]
+      ],
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "functions": {
+        "painting": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true,
+        "partShop": true,
+        "partInventory": true,
+        "insurances": true,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        },
+        {
+          "keyLabel": "Vehicle & Parts Shopping"
+        }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+	},
+	{
+      "id": "secludedCabinComputer_area",
+      "garageId": "secludedCabin",
+      "name": "Secluded Cabin",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "secludedCabin.png",
+      "doors": [
+        [
+          "secludedCabinComputer_area",
+          "secludedCabinComputer_icon"
+        ]
+      ],
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "functions": {
+        "painting": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true,
+        "partShop": true,
+        "partInventory": true,
+        "insurances": true,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        },
+        {
+          "keyLabel": "Vehicle & Parts Shopping"
+        }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+	},
+  ],
+  "gasStations":[
+    {
+      "id":"fuel_node_city",
+	  "name":"levels.east_coast_usa.gasStationPoints.fuel_node_city.title",
+      "description":"levels.east_coast_usa.gasStationPoints.fuel_node_city.description",
+      "preview":"fuel_node_city.jpg",
+      "energyTypes":["gasoline","diesel","unknown"],
+      "pumps":[
+        ["fuel_node_city_pump_area_1", "fuel_node_city_pump_icon_1"],
+        ["fuel_node_city_pump_area_2", "fuel_node_city_pump_icon_2"]
+        ["fuel_node_city_pump_area_3", "fuel_node_city_pump_icon_3"]
+      ],
+	  "prices":{
+        "gasoline":{
+          "priceBaseline": 10.37,
+          "priceRandomnessGain": 0.100,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax":true,
+       },
+	    "diesel":{
+          "priceBaseline": 10.53,
+          "priceRandomnessGain": 0.100,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax":true,
+        }
+      }
+    },{
+      "id":"fuel_node_dealer",
+	  "name":"levels.east_coast_usa.gasStationPoints.fuel_node_dealer.title",
+      "description":"levels.east_coast_usa.gasStationPoints.fuel_node_dealer.description",
+      "preview":"fuel_node_dealer.jpg",
+      "energyTypes":["gasoline","diesel","unknown"],
+      "pumps":[
+        ["fuel_node_dealer_pump_area_1", "fuel_node_dealer_pump_icon_1"],
+        ["fuel_node_dealer_pump_area_2", "fuel_node_dealer_pump_icon_2"]
+        ["fuel_node_dealer_pump_area_3", "fuel_node_dealer_pump_icon_3"]
+      ],
+      "prices":{
+        "gasoline":{
+          "priceBaseline": 10.37,
+          "priceRandomnessGain": 0.100,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax":true,
+       },
+	    "diesel":{
+          "priceBaseline": 10.53,
+          "priceRandomnessGain": 0.100,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax":true,
+        }
+     }
+	},{
+      "id":"fuel_charging_station_city",
+	  "name":"levels.east_coast_usa.gasStationPoints.fuel_charging_station_city.title",
+      "description":"levels.east_coast_usa.gasStationPoints.fuel_charging_station_city.description",
+      "preview":"fuel_charging_station_city.jpg",
+      "energyTypes":["electricEnergy"],
+      "pumps":[
+        ["fuel_charging_station_city_area_1", "fuel_charging_station_city_icon_1"],
+        ["fuel_charging_station_city_area_2", "fuel_charging_station_city_icon_2"]
+        ["fuel_charging_station_city_area_3", "fuel_charging_station_city_icon_3"]
+        ["fuel_charging_station_city_area_4", "fuel_charging_station_city_icon_4"]
+      ],
+      "prices":{
+        "electricEnergy":{
+          "priceRandomnessGain": 0.200,
+          "priceRandomnessBias": 0.2,
+          "priceBaseline": 0.6
+        }
+      }
+    }  
+  ]
+}

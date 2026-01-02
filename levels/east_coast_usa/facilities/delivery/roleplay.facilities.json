@@ -1,0 +1,59 @@
+{
+  "deliveryProviders": [
+    {
+      "id": "policeWork",
+      "name": "Firwood Police Department",
+      "description": "Use Police Vehicles to earn money. Try to return with no damage for bonus xp.",
+      "associatedOrganization": "policeWork",
+      "preview": "",
+      "manualAccessPoints": [
+        {
+          "psName": "policeWorkParking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "policeLoaner",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1,
+          "loanerNonTrailerPriority": 1
+        }
+      ],
+      "sitesFile": "roleplay.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [],
+      "logisticGenerators": []
+    },
+	{
+      "id": "frmc",
+      "name": "Firwood Regional Medical Center",
+      "description": "Work as a paramedic to earn money. Try to return with no damage for bonus xp.",
+      "associatedOrganization": "ecuParamedicWork",
+      "preview": "",
+      "manualAccessPoints": [
+        {
+          "psName": "paramedicWorkParking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "ambulanceLoaner",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1,
+          "loanerNonTrailerPriority": 1
+        }
+      ],
+      "sitesFile": "roleplay.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [],
+      "logisticGenerators": []
+    },
+    
+  ]
+}

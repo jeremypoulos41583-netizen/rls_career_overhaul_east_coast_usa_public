@@ -1,0 +1,3 @@
+{"internalName":"tree_aspen_bush_a","class":"ForestBrushElement","persistentId":"38e89ca3-bf8a-41c1-9500-54bf3ff4ea5d","__parent":"ForestBrush_Bushes_small","forestItemData":"tree_aspen_bush_a","probability":1.5,"scaleMax":1.20000005,"scaleMin":0.800000012,"sinkMax":0.100000001,"slopeMax":80}
+{"internalName":"tree_oak_bush_b","class":"ForestBrushElement","persistentId":"a8de0463-39b6-49cc-a536-e203b1d2b836","__parent":"ForestBrush_Bushes_small","forestItemData":"tree_oak_bush_b","scaleMax":1.29999995,"scaleMin":0.699999988,"slopeMax":80}
+{"internalName":"tree_beech_bush_a","class":"ForestBrushElement","persistentId":"c60f64eb-eeb0-42a3-9eaf-bef6bd0a8ec2","__parent":"ForestBrush_Bushes_small","forestItemData":"tree_beech_bush_a","slopeMax":80}

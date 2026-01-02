@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Alternate Junk Shell )",
+  "Description":"Pre-production Tograc that sat in the Cherrier HQ parking lot since 2018, it got stripped of all its prototype mechanical components. Cherrier marked this Tograc for destruction.",
+  "Drivetrain":"AWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":0,
+  "Torque":0,
+  "Transmission":"Automatic",
+  "Value":"500",
+  "Weight":1285,
+  "Years":{
+    "max":2024,
+    "min":2020
+  },
+}

@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Junk Shell )",
+  "Description":"Former owner drove it too hard and blew up the engine and many more things before parking it for many years. Could be a nice project car for someone or nice inventory for a junkyard.",
+  "Drivetrain":"FWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":91,
+  "Torque":92,
+  "Transmission":"Automatic",
+  "Value":"750",
+  "Weight":1419,
+  "Years":{
+    "max":2000,
+    "min":1996
+  },
+}

@@ -1,0 +1,25 @@
+{"name":"ForestBrush_Brush","internalName":"Brush","class":"ForestBrush","__parent":"ForestBrushGroup"}
+{"name":"ForestBrush_Bushes_huge","internalName":"Bushes_huge","class":"ForestBrush","persistentId":"f0276fe5-25b6-47fb-962c-5e2cb95a743f","__parent":"ForestBrushGroup","forestItemData":"Bushes_huge"}
+{"name":"ForestBrush_Bushes_large","internalName":"Bushes_large","class":"ForestBrush","persistentId":"44c6c2d6-94c4-406c-9ea9-e274731f0982","__parent":"ForestBrushGroup","forestItemData":"Bushes_large"}
+{"name":"ForestBrush_Bushes_small","internalName":"Bushes_small","class":"ForestBrush","persistentId":"8725acc2-a36b-413f-bda9-1c467fe861f7","__parent":"ForestBrushGroup","forestItemData":"Bushes_small"}
+{"name":"ForestBrush_Coast_bush","internalName":"Coast_bush","class":"ForestBrush","persistentId":"68c64c25-60df-42eb-991d-0191cdb29a54","__parent":"ForestBrushGroup"}
+{"name":"ForestBrush_ECA_manmade","internalName":"ECA_manmade","class":"ForestBrush","persistentId":"b800b669-ef34-4da7-ac86-3f4c69bea294","__parent":"ForestBrushGroup","forestItemData":"ECA_manmade"}
+{"name":"ForestBrush_Ferns","internalName":"Ferns","class":"ForestBrush","persistentId":"5b282ad2-14ed-405b-90e2-e07fc01e7826","__parent":"ForestBrushGroup"}
+{"name":"ForestBrush_Forest ground","internalName":"Forest ground","class":"ForestBrush","persistentId":"11defea3-1432-449d-a923-28329842c27a","__parent":"ForestBrushGroup"}
+{"name":"ForestBrush_MossRock_large","internalName":"Moss_rocks_large","class":"ForestBrush","persistentId":"7a3aa0a7-e02c-4068-8d47-1e687a592122","__parent":"ForestBrushGroup","forestItemData":"MosssRock_large"}
+{"name":"ForestBrush_MossRock_small","internalName":"Moss_rocks_small","class":"ForestBrush","persistentId":"49503b4f-ecdc-450b-aca6-3e6b3517145c","__parent":"ForestBrushGroup","forestItemData":"MossRock_small"}
+{"name":"ForestBrush_Trees_Aspen","internalName":"Trees_Aspen","class":"ForestBrush","persistentId":"7af1c651-5ba6-4e20-88cc-e1e121320446","__parent":"ForestBrushGroup","forestItemData":"Trees_Aspen"}
+{"name":"ForestBrush_Trees_Beech","internalName":"Trees_Beech","class":"ForestBrush","persistentId":"cff46ca4-5fd2-43e9-be36-2a1fd704dc46","__parent":"ForestBrushGroup","forestItemData":"Trees_Beech"}
+{"name":"ForestBrush_Trees_Dead","internalName":"Trees_Dead","class":"ForestBrush","persistentId":"fecefea9-cf91-45c8-abe3-27c7fbd839db","__parent":"ForestBrushGroup","forestItemData":"Trees_Dead"}
+{"name":"ForestBrush_Trees_Douglas_Fir","internalName":"Trees_Douglas_Fir","class":"ForestBrush","persistentId":"c0fe7c34-a9c2-4698-9009-4eb99fc2465b","__parent":"ForestBrushGroup","forestItemData":"Trees_Douglas_Fir"}
+{"name":"ForestBrush_Trees_Stumps","internalName":"Trees_Stumps","class":"ForestBrush","persistentId":"f5ae6bb8-940a-4758-9616-4e2236a4a94c","__parent":"ForestBrushGroup","forestItemData":"Trees_Stumps"}
+{"name":"ForestBrush_Trees_oak","internalName":"Trees_oak","class":"ForestBrush","persistentId":"95baf547-4ec3-4923-9b2a-bc5222fbf10d","__parent":"ForestBrushGroup","forestItemData":"Trees_oak"}
+{"name":"ForestBrush_Undergrowth East Coast","internalName":"Undergrowth East Coast","class":"ForestBrush","persistentId":"5be2ec55-069f-43b0-91e4-42254cad4baf","__parent":"ForestBrushGroup","forestItemData":"Undergrowth East Coast"}
+{"name":"ForestBrush_eca_rocks","internalName":"eca_rocks_large","class":"ForestBrush","persistentId":"564beee7-c962-4e7b-8553-9666cc0e5271","__parent":"ForestBrushGroup"}
+{"name":"ForestBrush_eca_rocks_small","internalName":"eca_rocks_small","class":"ForestBrush","persistentId":"cf7fd52f-f095-4106-88c1-04e328511ffa","__parent":"ForestBrushGroup"}
+{"name":"ForestBrush_garbage","internalName":"garbage","class":"ForestBrush","persistentId":"44fec928-54d9-4e1b-8c72-3f0daa404db9","__parent":"ForestBrushGroup","forestItemData":"garbage"}
+{"internalName":"eca_bld_fence_a","class":"ForestBrushElement","persistentId":"158cc611-8c46-4240-8f4d-df46b0e344eb","__parent":"ForestBrushGroup","forestItemData":"eca_bld_fence_a"}
+{"internalName":"eca_bld_wood_fence_b","class":"ForestBrushElement","persistentId":"879b4f8f-7e4a-48ec-9485-3eed1b5cd41c","__parent":"ForestBrushGroup","forestItemData":"eca_bld_wood_fence_b"}
+{"internalName":"eca_bld_wood_fence_a","class":"ForestBrushElement","persistentId":"951bc626-62da-47bb-ace1-54422100f27c","__parent":"ForestBrushGroup","forestItemData":"eca_bld_wood_fence_a"}
+{"internalName":"tall_plant2","class":"ForestBrushElement","persistentId":"feef0393-f9dd-4752-84e6-d935b264acf5","__parent":"ForestBrushGroup","forestItemData":"tall_plant2","scaleMax":1.20000005}
+{"internalName":"Element1","class":"ForestBrushElement","__parent":"ForestBrushGroup"}

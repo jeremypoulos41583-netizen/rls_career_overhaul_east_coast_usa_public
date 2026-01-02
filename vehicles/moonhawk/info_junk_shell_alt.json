@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Alternate Junk Shell )",
+  "Description":"Mostly complete but it wa a cheap, base model so no one gave a fudge about it. Please discard this car in the nearest lake.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":88,
+  "Torque":87,
+  "Transmission":"Manual",
+  "Value":"650",
+  "Weight":1457,
+  "Years":{
+    "max":1975,
+    "min":1973
+  },
+}

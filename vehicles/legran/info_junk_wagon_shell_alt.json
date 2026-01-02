@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Alternate Junk Wagon Shell )",
+  "Description":"There is absolutely nothing left on this car except for a junk engine and the steering wheel. There is no coming back for this one.",
+  "Drivetrain":"FWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":71,
+  "Torque":71,
+  "Transmission":"Automatic",
+  "Value":"250",
+  "Weight":1076,
+  "Years":{
+    "max":1988,
+    "min":1984
+  },
+}

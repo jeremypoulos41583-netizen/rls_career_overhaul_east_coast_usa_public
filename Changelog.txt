@@ -1,0 +1,168 @@
+Changelog beta3.6
+
+-AI pathing adjustments
+-various parking spot changes at garages for improved vehicle spawn
+-increased zone size at secluded cabin (fixes vehicle not showing "in garage"
+-improved parking at dealerships to (hopefully) prevent taxi for purchase not working properly
+-delivery vehicle adjustments to the various car jockey providers/receivers
+-adjustments to available vehicles at dealerships
+-Changed AI Police vehicles
+-Changed widowmaker crawl to damage factor scoring
+-Fixed parcels not showing at Sawmill and Firwood Restaurant Supply
+-Added Commercial Vehicle Sales and Service delivery point
+-Added dealership for Commercial and Service vehicles and trailers
+-Added Kiki's Diner delivery point 
+-Changed restaurant parcels to unique id's and names
+-Adjustments to parcels for freight facilities
+-Added loading ramp to Ferry for smoother transition
+-Changed names on "Trail Run" FRE's to "overlander
+===================================================
+3.6.5
+
+- Added map image for Kiki's Diner
+- more AI pathing adjustments
+- fixed level restrictions for car jockeys
+- fixed missing trailer weights
+- added extra parking at kiki's diner for trailer spawn
+- re-configured parking at Logistics Garage
+- re-configured parking at Lanie Rd house
+- made adjustments to Overland 2 terrain
+- fixed underground checkpoints for Overland 1
+- removed construction materials trailers from Firwood Restaurant Supply
+- added hospital to the map
+===================================================
+3.6.6
+- AI pathing adjustments
+- terrain adjustments on FRE's
+===================================================
+3.6.7
+
+- changed police assignment back to the standard $10k 4 hours
+- fixed vanilla crawls not paying
+- made all vanilla events visable and startable "always"
+- added damage factor to more FRE's
+====================================================
+4.1
+
+- AI pathing and speed limits adjustments
+- Logistics reward adjustments
+- Added "returns" parcels to mechanics facilities
+- Logistics items/cars adjustments to various facilities
+- Fixed taxi to vehicle for Firwood Motors and Henderson's
+- Added icon & picture for no prep drag
+- Added custom config and livery for AI police
+- Added "Port" as an organization
+  - Also had to add "Local Delivery Association" for the time being. Reputation may start over. 
+=====================================================
+4.1.2
+- removed organizations as they were causing a lua error
+=====================================================
+4.1.3
+- fixed delivery parking spots having parked cars spawn in them
+=====================================================
+4.2
+- Added Summit overlander FRE
+- Added lookout point overlander FRE
+- Reworked Watchtower Inn parking lot and removed overlapping parking spots
+- Raised the target time for the no prep drag to 11 seconds
+- fixed delivery spot at Nodeoline Store having parked car spawn
+=====================================================
+4.3
+- grouped "takeout" deliveries to city, fishing village, tj's/smiths, and bait shop
+- increased value of "takeout"
+- added organizations for all delivery providers
+- adjusted day/night cycle time
+- added "Ditch Dweller Crawl FRE
+- made finish trigger for no prep drag bigger
+======================================================
+4.4
+- Adjusted trailer types available in ECUSA
+- Added log hauling to sawmill from forestry sites and returns of empties
+- Added loaners to Sawmill with custom configs
+- Added forestry sites for hauling logs
+- Added a parking spot on the road where you enter logging site B for holding a trailer if running doubles
+- Added loaner vehicles to Port with custom configs
+- Raised the insidious tree on the road the Port is on
+- Added another parking spot to Farm House (+40k cost, should be a free upgrade in existing saves)
+- Added police loaner vehicles 
+- Added a police work "garage" for taxi back when a police loaner gets damaged.
+  -added benefits, can save game at the police station and respawn there
+  -no work can be done to vehicles and there is only 1 spot--but its free!
+- Added loaners to commercial dealer
+- Adjustments to freeroam missions
+- made Police dealer area larger
+=======================================================
+4.5
+-Created ambulance missions
+  -now you can play as an EMT! Purchase an ambulance and change the license plate to 911. Upon entering the ambulance a message will appear indicating "Medical Assistance Needed!" and you will be directed to a pick up location. Drive the patient to the hospital for a reward. 
+  -Drive carefully as the police will still pull you over for speeding, collisions etc. (if your not into this element you can disable police from the RLS menu)
+  -a new mission will spawn after a random amount of time passes so drive around the map just like a real EMT 
+=========================================================
+4.5.1
+-updates to ambulance missions
+   - took away filter for pickup spot distance from player (makes it truly random)
+   - adjusted reward calculation based on total distance thereby increasing reward
+   - fixed drop off marker not disappearing after drop off
+   - adjusted random delay time range before next mission spawn
+==========================================================
+4.5.2
+-updates to ambulance missions
+   - removed parked cars spawning in patient dropoff spot
+   - added logic to reduce reward for rough driving
+   - made ambulance invisible to AI police
+-added paramedic work organization with ambulance loaners and rep system
+-added "ambulance loaner" parking spot at the hospital around the back
+   - added loaners that work for ambulance missions
+   - still working on applying rep. to organization for EMT work
+-spruced up the hospital a bit and made navigation to the patient dropoff work properly
+===========================================================
+4.5.3
+- added reputation gain and reward adjustments based on rep to paramedic work
+- fixed police work rep going to Belasco PD instead of Firwood PD
+===========================================================
+4.5.4
+- file structure changes
+===========================================================
+4.5.5
+- reworked Port
+  -added a drive at back of main building to make pulling out with long trailers easier
+- reworked Forestry site B
+  -removed trees and props to make maneuvering easier
+===========================================================
+4.5.6
+-added sign to hospital
+ -designed and created by Corey
+-moved shed at police station so vehicles don't get stuck there anymore
+===========================================================
+4.6
+-compatibility update
+============================================================
+4.7
+-fixed East Coast breaking trailers and car Jockeys on other maps
+-added Joe's Junkyard
+============================================================
+4.7.1
+-fixed hill next to garage at junkyard
+-moved loaner spot onto asphalt and made it an inspect spot
+-added spot at smiths for provided logistics
+-added spot at smiths for loaner and made fork truck loanable there
+=============================================================
+4.7.2
+-fixed ECUSA breaking car jockeys and trailer logistics
+=============================================================
+4.7.3
+-added "Joe's Junkyard"
+ -haul junk cars from dealerships to Joe's Junkyard via "car jockey"
+  -all junk vehicles should be driveable please report any that are not.
+ -haul scrap vehicles from Joe's Junkyard to the Port
+  -forklift available at Joe's junk because cars are not driveable 
+=============================================================
+-added lumberProps as a car jockey from Sawmill to various facilities
+  -use the provided forklift at the Sawmill to manually load lumber stacks onto trailers or into the back of pickups and haul them to the drop-off location
+  -uses the car jockey system
+
+
+
+
+
+

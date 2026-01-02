@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunk",
+  "Population":600,  
+  "Configuration":"Race Over",
+  "Description":"The former owner, an online content creator focused on gaming and racing, crashed it while skid marking during an online live stream then fixed it back using tape, tears, zip files and hope.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":295,
+  "Torque":299,
+  "Transmission":"Manual",
+  "Value":"5500",
+  "Weight":1353,
+  "Years":{
+    "max":1988,
+    "min":1981
+  },
+}

@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":600,  
+  "Configuration":"( Alternate Junk Shell )",
+  "Description":"Not too many parts are left on this one. Are the ones that are are probably junk anyway.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":258,
+  "Torque":255,
+  "Transmission":"Automatic",
+  "Value":"450",
+  "Weight":1401,
+  "Years":{
+    "max":1963,
+    "min":1962
+  },
+}

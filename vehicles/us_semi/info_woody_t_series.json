@@ -1,0 +1,66 @@
+{
+  "0-100 km/h":26.4,
+  "0-100 mph":71.6,
+  "0-60 mph":24.8,
+  "100-0 km/h":50,
+  "60-0 mph":150.5,
+  "60-100 mph":46.7,
+  "BoundingBox":[
+    [
+      -1.2044,
+      -3.44374,
+      -0.770097461
+    ],
+    [
+      2.0607,
+      3.3399,
+      3.2384
+    ]
+  ],
+  "Braking G":0.787,
+  "Configuration":"Big Red's Woody",
+  "Population": 10000,
+  "Drivetrain":"6x4",
+  "Fuel Type":"Diesel",
+  "Induction Type":"Turbo",
+  "Name":"Big Red's",
+  "Off-Road Score":44,
+  "Power":404,
+  "PowerPeakRPM":2050,
+  "Propulsion":"ICE",
+  "Source":"Custom",
+  "Top Speed":45.23777008,
+  "Torque":1495,
+  "TorquePeakRPM":"1300 - 1850",
+  "Transmission":"Manual",
+  "Value":175000,
+  "Weight":9405,
+  "Weight/Power":23.27970297,
+  "aggregates":{
+    "Body Style":{
+      "Semi Truck":true
+    },
+    "Brand":{
+      "Gavril":true
+    },
+    "Country":{
+      "United States":true
+    },
+    "Derby Class":{
+      "Heavy Truck":true
+    },
+    "Source":{
+      "Custom":true,
+      "Mod":true
+    },
+    "Type":{
+      "Truck":true
+    },
+    "Years":{
+      "max":1986,
+      "min":1971
+    }
+  },
+  "is_default_config":false,
+  "preview":"/vehicles/us_semi/Vanilla Cab Over Log Truck.jpg"
+}

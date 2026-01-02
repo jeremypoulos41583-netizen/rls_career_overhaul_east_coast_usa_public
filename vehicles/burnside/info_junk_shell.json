@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":600,  
+  "Configuration":" ( Junk Shell )",
+  "Description":"Its not because a car is old and vintage that its worth something. This car is the living proof of it.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":115,
+  "Torque":114,
+  "Transmission":"Automatic",
+  "Value":"900",
+  "Weight":1577,
+  "Years":{
+    "max":1963,
+    "min":1957
+  },
+}

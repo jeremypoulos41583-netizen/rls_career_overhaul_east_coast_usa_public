@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Alternate Junk Shell )",
+  "Description":"Former Belasco City Police Department cruiser, this one had a hard life and its now time for it to rest. Most if not all police equipement has been removed from it. Dont be fooled by its appearence, this car is junk.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":202,
+  "Torque":200,
+  "Transmission":"Automatic",
+  "Value":"750",
+  "Weight":1911,
+  "Years":{
+    "max":1994,
+    "min":1992
+  },
+}

@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":500,  
+  "Configuration":"( Alternate Junk Shell )",
+  "Description":"Junk Pessima shell. Nothing left in it and nothing left to do with it except shipping it to the nearest scrapyard.",
+  "Drivetrain":"FWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":0,
+  "Torque":0,
+  "Transmission":"Manual",
+  "Value":"400",
+  "Weight":796,
+  "Years":{
+    "max":2000,
+    "min":1996
+  },
+}

@@ -1,0 +1,77 @@
+{
+  "Material_004": {
+    "name": "Material_004",
+    "mapTo": "Material.004",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.0356009901,
+          0.0666260123,
+          0.109461702,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "Material_005": {
+    "name": "Material_005",
+    "mapTo": "Material.005",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.366250187,
+          0.318547189,
+          0.2345507,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "Material_006": {
+    "name": "Material_006",
+    "mapTo": "Material.006",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.693867087,
+          0.62396121,
+          0.502886713,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  }
+}

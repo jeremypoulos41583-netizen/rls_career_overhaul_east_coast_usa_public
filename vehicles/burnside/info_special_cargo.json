@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunk",
+  "Population":600,  
+  "Configuration":"Special Cargo",
+  "Description":"The Burnside Special was beloved by the Mafia in the late 50s and early 60s for the spacious and comfortable interior, the large and easy-to-clean trunk and for its engine powerful enough to outrun the cops, even with the car ( and trunk ) at full capacity.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":233,
+  "Torque":233,
+  "Transmission":"Automatic",
+  "Value":"2750",
+  "Weight":1734,
+  "Years":{
+    "max":1963,
+    "min":1957
+  },
+}

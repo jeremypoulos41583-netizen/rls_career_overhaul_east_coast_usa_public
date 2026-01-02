@@ -1,0 +1,801 @@
+{
+  "dealerships":[
+{
+"id":"firwoodMotorCompany",
+"name":"Firwood Motor Company",
+"description":"Firwood Motor Company - Custom used cars",
+"stock": 30,
+"range": [0.5, 0.80, 1.25, 1.5],
+"associatedOrganization":"firwoodMotorCompany",
+"preview":"firwoodMotors.png",
+"doors":[["firwoodMotorCompany_area","firwoodMotorCompany_icon", 30]],
+"parkingSpotNames":["firwoodMotorCompanyParking1"],
+"activityAcceptProps":[
+  {"keyLabel":"Used Vehicles"}
+],
+"filter": {
+  "blackList":{"Type":["Trailer"], "Config Type":["Police","Service","Frame"],"Body Style":["Semi Truck","Bus", "Tanker Truck", "Flatbed Truck","Box Truck","Truck","Fifth Wheel Truck", "Chassis Cab","Dump Truck","Flatbed","Mixer Truck","Logging Truck"]}
+},
+"subFilters": [
+  {
+  "probability":4,
+  "whiteList":{"Mileage":{"min":8800028, "max":264000845}, "Config Type":["Custom"],"Brand":["Bruckell"]}
+  },
+  {
+  "probability":4,
+  "whiteList":{"Mileage":{"min":8800028, "max":264000845}, "Config Type":["Custom"],"Brand":["Burnside"]}
+  },
+  {
+  "probability":4,
+  "whiteList":{"Mileage":{"min":8800028, "max":264000845}, "Config Type":["Custom"],"Brand":["Gavril"],"Body Style":["Pickup"]}
+  },
+  {
+  "probability":4,
+  "whiteList":{"Mileage":{"min":8800028, "max":264000845}, "Config Type":["Custom"],"Brand":["Gavril"],"Type":["Car"]}
+  },
+  {
+  "probability":4,
+  "whiteList":{"Mileage":{"min":8800028, "max":264000845}, "Config Type":["Custom"],"Brand":["Soliad"]}
+  },
+  {
+  "probability":1,
+  "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["Civetta"]}
+  },
+  {
+  "probability":2,
+  "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["ETK"]}
+  },
+  {
+  "probability":2,
+  "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["Cherrier"]}
+  },
+  {
+  "probability":1,
+  "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["Autobello"]}
+  },
+  {
+  "probability":1,
+  "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["FPU"]}
+  },
+  {
+  "probability":2,
+  "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["Ibishu"]}
+  },
+  {
+  "probability":2,
+  "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["Hirochi"]}
+  },
+  {
+  "probability":1,
+  "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["Arima"]}
+  }
+],
+"fees": 649,
+"containsStarterVehicles": false,
+"testDrive": {
+  "abandonFees" : 250,
+  "timeLimit" : 120,
+  "licencePlate" : "FMC"
+},
+"iconOffsetHeight":1.0,
+"iconLift":0.25,
+"playModeIconName":"poi_entrance_round"
+},
+{
+"id":"frameDealership",
+"name":"Smash Rollers",
+"description":"Smash Rollers - The perfect start to your build",
+"stock": 7,
+"range": [0.2, 0.70, 1.35, 1.9],
+"preview":"USDM_Dealer_TB.png",
+"doors":[["onlineDealerGameplay_area","onlineDealer_icon", 30]],
+"parkingSpotNames":["onlineDealership_parking"],
+"activityAcceptProps":[
+  {"keyLabel":"Used Vehicles"}
+],
+"filter": {
+  "blackList":{"Type":["Trailer"]}
+},
+"subFilters": [
+  {
+  "probability":1,
+  "whiteList":{"Mileage":{"min":10, "max":100000},"Config Type":["Frame"]}
+  }
+],
+"fees": 0,
+"containsStarterVehicles": false,
+"testDrive": {
+  "abandonFees" : 250,
+  "timeLimit" : 120,
+  "licencePlate" : ""
+},
+},
+{
+  "id":"hendersonsGarage",
+  "name":"Henderson's Garage",
+  "description":"New & quality used vehicle sales from your local Mom and Pop.",
+  "stock": 20,
+  "associatedOrganization":"hendersonsGarage",
+  "preview":"hendersonsGarage.png",
+  "doors":[["hendersonsGarageComputer_area","hendersonsGarageComputer_icon", 30]],
+  "parkingSpotNames":["hendersonsParking01"],
+  "activityAcceptProps":[
+  {"keyLabel":"New & Used Vehicles"}
+  ],
+
+  "filter":{
+  "whiteList":{"Type":["Car"],"Years": {"min":1990, "max":2025}, "Mileage":{"min":9000, "max":70000000},"Config Type":["Factory"],"Value":{"max":65000} },
+      "blackList":{"Type":["Trailer"],"Body Style":["ATV","Buggy"]}
+  },
+
+  "subFilters": [
+  {
+      "probability":5,
+      "whiteList":{"Brand":["Bruckell"]}
+  },  
+  {
+      "probability":5,
+      "whiteList":{"Brand":["Burnside"]}
+  },
+
+  {
+      "probability":5,
+      "whiteList":{"Brand":["Gavril"]}
+  },
+
+  {
+      "probability":5,
+      "whiteList":{"Brand":["Soliad"]}
+  },
+
+  {
+      "probability":1,
+      "whiteList":{"Brand":["ETK","Cherrier","Autobello","Ibishu","Hirochi","Arima"]}
+  }
+
+
+  ],
+
+  "fees": 749,
+  "containsStarterVehicles": false,
+  "testDrive" : {
+  "abandonFees" : 100,
+  "timeLimit" : 120,
+  "licencePlate" : "Hendersons"
+  },
+  "iconOffsetHeight":1.0,
+  "iconLift":0.25,
+  "playModeIconName":"poi_entrance_round"
+},
+{
+  "id":"gemClassics",
+  "name":"Gem Classic Cars",
+  "description":"Prestige auto sales, only the finest quality vehicles are sold here!",
+  "stock": 15,
+  "range": [0.75, 0.8, 1.25, 1.3],
+  "associatedOrganization":"gemClassics",
+  "preview":"gemClassics.png",
+  "doors":[["gemClassics_area","gemClassics_icon", 30]],
+  "parkingSpotNames":["gemClassicsParking"],
+  "activityAcceptProps":[
+      {"keyLabel":"New Vehicles"},
+      {"keyLabel":"Prestige and High Quality"}
+  ],
+  "filter": {
+      "whiteList":{"Type":["Car"]},
+      "blackList":{"Type":["Trailer","Truck"], "Config Type":["Police","Frame","Race"],"Configuration":["Drag","Drag (A)","Drag (M)","Drag (DCT)","Drag (Sequential","Drift (Sequential","Drift (DCT)","Drift (M)","Drift (A)","Drift","Rally"]}
+  },
+  "subFilters": [
+      {
+      "probability":2,
+      "whiteList":{"Years": {"min":1900, "max":1973},"Mileage":{"min":0, "max":132000422},"Value":{"min":12000}}
+      },
+      {
+      "probability":4,
+      "whiteList":{"Years": {"min":1973, "max":1990},"Mileage":{"min":0, "max":132000422},"Value":{"min":12000}}
+      },
+      {
+      "probability":0,
+      "whiteList":{"Years": {"min":1991, "max":2000},"Mileage":{"min":0, "max":18000000},"Value":{"min":12000}}
+      },
+      {
+      "probability":0,
+      "whiteList":{"Years": {"min":2017},"Mileage":{"min":0, "max":50000},"Value":{"min":12000}}
+      }
+  ],
+  "fees": 1250,
+  "containsStarterVehicles": false,
+  "testDrive": {
+      "abandonFees" : 300,
+      "timeLimit" : 120,
+      "licencePlate" : "prestige"
+  },
+  "iconOffsetHeight":1.0,
+  "iconLift":0.25,
+  "playModeIconName":"poi_entrance_round"
+},
+{
+  "id":"carsrus",
+  "name":"Cars-R-Us",
+  "description":"Online Dealership",
+  "stock": 20,
+  "range": [0.75, 0.80, 1.10, 1.2],
+  "associatedOrganization":"carsrus",
+  "preview":"USDM_Dealer_TB.png",
+  "doors":[["onlineDealerGameplay_area","onlineDealer_icon", 30]],
+  "parkingSpotNames":["onlineDealership_parking"],
+  "activityAcceptProps":[
+      {"keyLabel":"Used Vehicles"},
+      {"keyLabel":"Low Fees"}
+  ],
+  "filter": {
+      "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Body Style":["Pickup","Van","Chassis Cab"], "Config Type":["Factory"] },
+      "blackList":{"Type":["Trailer","car"], "Config Type":["Police","Service","Frame"]}
+  },
+  "subFilters": [
+    {
+        "probability":3,
+        "whiteList":{"Brand":["Bruckell"]}
+    },  
+    {
+        "probability":3,
+        "whiteList":{"Brand":["Burnside"]}
+    },
+  
+    {
+        "probability":3,
+        "whiteList":{"Brand":["Gavril"]}
+    },
+  
+    {
+        "probability":3,
+        "whiteList":{"Brand":["Soliad"]}
+    },
+  
+    {
+        "probability":1,
+        "whiteList":{"Brand":["ETK"]}
+    },
+  
+    {
+        "probability":2,
+        "whiteList":{"Brand":["Cherrier"]}
+    },
+  
+    {
+        "probability":1,
+        "whiteList":{"Brand":["Autobello"]}
+    },
+  
+    {
+        "probability":2,
+        "whiteList":{"Brand":["Ibishu"]}
+    },
+  
+    {
+        "probability":1,
+        "whiteList":{"Brand":["Hirochi"]}
+    },
+  
+    {
+        "probability":1,
+        "whiteList":{"Brand":["Arima"]}
+    }
+  
+    ],
+
+  "fees": 249,
+  "containsStarterVehicles": true,
+  "testDrive": {
+      "abandonFees" : 50,
+      "timeLimit" : 120,
+      "licencePlate" : "carsRus"
+  },
+},
+{
+"id":"discountedDealership",
+"name":"Trusted Auto Sales-Firwood Garage",
+"description":"Trusted Auto Sales - Discounted cars",
+"preview":"firwoodGarage.png",
+"stock": 25,
+"range": [0.5, 0.70, 1.15, 1.4],
+"doors":[["firwoodGarage_area","firwoodGarage_icon", 30]],
+"parkingSpotNames":["firwoodGarage_parking"],
+"activityAcceptProps":[
+  {"keyLabel":"Used Vehicles"}
+],
+"filter": {
+"whiteList":{"Mileage":{"min":00, "max":616001971}},
+"blackList":{"Body Style":["ATV","Buggy","Semi Truck"], "Config Type":["Police","Service","Frame"]}
+},
+"subFilters": [
+  {
+      "probability":3,
+      "whiteList":{"Brand":["Nix"]}
+  }, 
+  {
+      "probability":3,
+      "whiteList":{"Brand":["Bruckell"]}
+  },  
+  {
+      "probability":3,
+      "whiteList":{"Brand":["Burnside"]}
+  },
+
+  {
+      "probability":3,
+      "whiteList":{"Brand":["Gavril"]}
+  },
+
+  {
+      "probability":3,
+      "whiteList":{"Brand":["Soliad"]}
+  },
+
+  {
+      "probability":3,
+      "whiteList":{"Brand":["PGD"]}
+  },
+
+  {
+      "probability":2,
+      "whiteList":{"Brand":["Cherrier"]}
+  },
+
+  {
+      "probability":1,
+      "whiteList":{"Brand":["Autobello"]}
+  },
+
+  {
+      "probability":2,
+      "whiteList":{"Brand":["Ibishu"]}
+  },
+
+  {
+      "probability":1,
+      "whiteList":{"Brand":["Hirochi"]}
+  },
+
+  {
+      "probability":1,
+      "whiteList":{"Brand":["Arima"]}
+  },
+  {
+      "probability":1,
+      "whiteList":{"Value":{"max":300000}}
+  }
+
+  ],
+"fees": 0,
+"containsStarterVehicles": false,
+"testDrive": {
+  "abandonFees" : 250,
+  "timeLimit" : 120,
+  "licencePlate" : ""
+},
+"iconOffsetHeight":1.0,
+"iconLift":0.25,
+"playModeIconName":"poi_entrance_round"
+}, 
+{
+  "id":"policeDealership",
+  "name":"Police Dealership",
+  "description":"Police Dealership - Purchase police Vehicles here",
+  "stock": 8,
+  "range": [0.6, 0.8, 1.1, 1.3],
+  "doors":[["policeDealerGameplay_area","policeDealerGameplay_icon", 30]],
+"parkingSpotNames":["policeDealer_parking"],
+  "preview":"policeDealer.png",
+  "activityAcceptProps":[
+    {"keyLabel":"Used Vehicles"}
+  ],
+  "filter": {
+      "whiteList":{"Mileage":{"min":2000, "max":88000282}, "Config Type":["Police"]},
+    "blackList":{"Type":["Trailer"],"Config Type":["Frame"]}
+  },
+
+  "subFilters": [
+      {
+          "probability":3,
+          "whiteList":{"Brand":["Bruckell"]}
+      },  
+      {
+          "probability":3,
+          "whiteList":{"Brand":["Burnside"]}
+      },
+  
+      {
+          "probability":3,
+          "whiteList":{"Brand":["Gavril"]}
+      },
+  
+      {
+          "probability":3,
+          "whiteList":{"Brand":["Soliad"]}
+      }
+  
+      ],
+  
+
+  "fees": 500,
+  "containsStarterVehicles": false,
+  "testDrive": {
+    "abandonFees" : 250,
+    "timeLimit" : 120,
+    "licencePlate" : "Police"
+	"iconOffsetHeight":1.0,
+	"iconLift":0.25,
+	"playModeIconName":"poi_entrance_round"
+  },
+},
+{
+  "id":"serviceDealership",
+  "name":"Service Dealership",
+  "description":"Service Dealership - Purchase Service Vehicles here",
+  "stock": 12,
+  "range": [0.6, 0.8, 1.1, 1.3],
+  "preview":"brickwood.png",
+  "doors":[["logisticsDealerGameplay_area","logisticsDealer_icon", 30]],
+  "parkingSpotNames":["commercialDealer_parking"],
+  "activityAcceptProps":[
+    {"keyLabel":"Used Vehicles"}
+  ],
+  "filter": {
+      "whiteList":{"Mileage":{"min":10000, "max":88000282}, "Config Type":["Service"]},
+    "blackList":{"Type":["Trailer"],"Config Type":["Frame"],"Body Style":["Semi Truck","Bus", "Tanker Truck", "Flatbed Truck","Truck","Fifth Wheel Truck", "Chassis Cab"]}
+  },
+  "subFilters": [
+      {
+          "probability":3,
+          "whiteList":{"Brand":["Bruckell"]}
+      },  
+      {
+          "probability":3,
+          "whiteList":{"Brand":["Burnside"]}
+      },
+  
+      {
+          "probability":3,
+          "whiteList":{"Brand":["Gavril"]}
+      },
+  
+      {
+          "probability":3,
+          "whiteList":{"Brand":["Soliad"]}
+      },
+  
+      {
+          "probability":1,
+          "whiteList":{"Brand":["ETK"]}
+      },
+  
+      {
+          "probability":2,
+          "whiteList":{"Brand":["Cherrier"]}
+      },
+  
+      {
+          "probability":1,
+          "whiteList":{"Brand":["Autobello"]}
+      },
+  
+      {
+          "probability":2,
+          "whiteList":{"Brand":["Ibishu"]}
+      },
+  
+      {
+          "probability":1,
+          "whiteList":{"Brand":["Hirochi"]}
+      },
+  
+      {
+          "probability":1,
+          "whiteList":{"Brand":["Arima"]}
+      }
+  
+      ],
+  "fees": 500,
+  "containsStarterVehicles": false,
+  "testDrive": {
+    "abandonFees" : 250,
+    "timeLimit" : 120,
+    "licencePlate" : "Police"
+  },
+},
+{
+  "id":"trailerShop",
+  "name":"Trailer Dealer",
+  "description":"Trailer Sales",
+  "preview":"brickwood.png",
+  "doors":[["logisticsDealerGameplay_area","logisticsDealer_icon", 30]],
+  "parkingSpotNames":["commercialDealer_parking"],
+  "stock": 10,
+  "activityAcceptProps":[
+    {"keyLabel":"Trucks and Trailers"},
+    {"keyLabel":"New & Used"}
+  ],
+
+  "filter":{
+    "whiteList":{"Type":["Trailer"]}
+  },
+
+  "subFilters": [
+    {
+      "whiteList":{"Type":["Trailer"],"Mileage":{"min":1613, "max":161290323}},
+      "probability":3
+    }
+  ],
+  "fees": 449,
+  "containsStarterVehicles": false,
+  "testDrive" : {
+    "abandonFees" : 100,
+    "timeLimit" : 120,
+    "licencePlate" : "belasco"
+  },
+},
+{
+  "id":"BruckellDealership",
+  "name":"Bruckell Online Dealership",
+  "description":"Bruckell Online Dealership",
+  "stock": 10,
+  "range": [0.8, 0.9, 1.15, 1.3],
+  "preview":"USDM_Dealer_TB.png",
+  "doors":[["onlineDealerGameplay_area","onlineDealer_icon", 30]],
+  "parkingSpotNames":["onlineDealership_parking"],
+  "activityAcceptProps":[
+    {"keyLabel":"New Vehicles"}
+  ],
+  "filter": {
+    "blackList":{"Type":["Trailer"],"Config Type":["Frame"]}
+  },
+  "subFilters": [
+    {
+      "probability":1,
+      "whiteList":{"Mileage":{"min":4800, "max":16093},"Config Type":["Factory"],"Brand":["Bruckell"]}
+    }
+  ],
+  "fees": 2500,
+  "containsStarterVehicles": false,
+  "testDrive": {
+    "abandonFees" : 250,
+    "timeLimit" : 120,
+    "licencePlate" : ""
+  },
+},
+{
+  "id":"GavrilcarDealership",
+  "name":"Gavril-Car Online Dealership",
+  "description":"Gavril-Car Online Dealership",
+  "stock": 10,
+  "range": [0.8, 0.9, 1.15, 1.3],
+  "preview":"USDM_Dealer_TB.png",
+  "doors":[["onlineDealerGameplay_area","onlineDealer_icon", 30]],
+  "parkingSpotNames":["onlineDealership_parking"],
+  "activityAcceptProps":[
+    {"keyLabel":"New Vehicles"}
+  ],
+  "filter": {
+    "blackList":{"Type":["Trailer"],"Config Type":["Frame"]}
+  },
+  "subFilters": [
+    {
+      "probability":1,
+      "whiteList":{"Mileage":{"min":4800, "max":16093},"Config Type":["Factory"],"Brand":["Gavril"],"Type":["Car"]}
+    }
+  ],
+  "fees": 2500,
+  "containsStarterVehicles": false,
+  "testDrive": {
+    "abandonFees" : 250,
+    "timeLimit" : 120,
+    "licencePlate" : ""
+  },
+},   
+{
+  "id":"GavriltruckDealership",
+  "name":"Gavril-Truck Online Dealership",
+  "description":"Gavril-Truck Online Dealership",
+  "stock": 10,
+  "range": [0.8, 0.9, 1.15, 1.3],
+  "preview":"USDM_Dealer_TB.png",
+  "doors":[["onlineDealerGameplay_area","onlineDealer_icon", 30]],
+  "parkingSpotNames":["onlineDealership_parking"],
+  "activityAcceptProps":[
+    {"keyLabel":"New Vehicles"}
+  ],
+  "filter": {
+    "blackList":{"Type":["Trailer"],"Config Type":["Frame"]}
+  },
+  "subFilters": [
+    {
+      "probability":1,
+      "whiteList":{"Mileage":{"min":4800, "max":16093},"Config Type":["Factory"],"Brand":["Gavril"],"Type":["Truck"]}
+    },
+    {
+      "probability":4,
+      "whiteList":{"Mileage":{"min":4800, "max":16093},"Config Type":["Factory"],"Brand":["Gavril"],"Type":["Pickup"]}
+    }
+  ],
+  "fees": 2500,
+  "containsStarterVehicles": false,
+  "testDrive": {
+    "abandonFees" : 250,
+    "timeLimit" : 120,
+    "licencePlate" : ""
+  },
+},
+{
+      "id":"offroadDealership",
+      "name":"TJs Offroad & Customs",
+      "description":"TJs Offroad World - The only choice in Offroad from East to West.",
+      "preview":"offroadDealership.png",
+      "stock": 16,
+      "range": [0.8, 0.90, 1.35, 1.8],
+      "doors":[["offroadDealership_area","offroadDealership_icon", 30]],
+      "parkingSpotNames":["offroadDealershipParking"],
+      "activityAcceptProps":[
+        {"keyLabel":"Used Vehicles"}
+      ],
+      "filter": {
+        "blackList":{"Type":["Trailer"],"Config Type":["Frame"]}
+      },
+      "subFilters": [
+        {
+          "probability":1,
+          "whiteList":{"Mileage":{"min":11000, "max":17600056},"Body Style":["ATV"],"Config Type":["Factory","Race"]}
+        },
+        {
+          "probability":1,
+          "whiteList":{"Mileage":{"min":11000, "max":17600056}, "Brand":["SP"]}
+        },
+        {
+          "probability":1,
+          "whiteList":{"Mileage":{"min":11000, "max":17600056}, "Brand":["Trackfab"]}
+        },
+        {
+          "probability":1,
+          "whiteList":{"Mileage":{"min":11000, "max":17600056}, "Brand":["HelTom Fab"]}
+        },
+        {
+          "probability":1,
+          "whiteList":{"Mileage":{"min":11000, "max":17600056}, "Brand":["DW"]}
+        },
+        {
+          "probability":1,
+          "whiteList":{"Mileage":{"min":11000, "max":17600056},"Body Style":["Custom Buggy"]}
+        },
+		{
+          "probability":2,
+          "whiteList":{"Mileage":{"min":11000, "max":17600056},"Brand":["Ibishu"],"Type":["Truck"],"Config Type":["Factory","Custom"]}
+        },
+        {
+          "probability":2,
+          "whiteList":{"Mileage":{"min":11000, "max":17600056},"Body Style":["Pickup"],"Config Type":["Custom"]}
+        }
+      ],
+      "fees": 1500,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees" : 250,
+        "timeLimit" : 120,
+        "licencePlate" : "4x4"
+      },
+      "iconOffsetHeight":1.0,
+      "iconLift":0.25,
+      "playModeIconName":"poi_entrance_round"
+    }, 
+
+{
+  "id":"truckShop",
+  "name":"Commercial Vehicle Sales",
+  "description":"Tractors and Trailers",
+  "associatedOrganization":"commercialVehicleSales",
+  "preview":"brickwood.png",
+  "doors":[["logisticsDealerGameplay_area","logisticsDealer_icon", 30]],
+  "parkingSpotNames":["commercialDealer_parking"],
+  "stock": 20,
+  "range": [0.8, 0.9, 1.15, 1.3],
+  "activityAcceptProps":[
+    {"keyLabel":"Trucks and Trailers"},
+    {"keyLabel":"New & Used"}
+  ],
+  "filter":{
+    "whiteList":{"Mileage":{"min":1760006, "max":970000000}},
+    "blackList":{"hasLoad":[true],"Config Type":["Frame"],"Type":["Trailer"],"Tags":["Ambulance"],"Body Style":["Ambulance","Pickup"]}
+  },
+
+  "subFilters": [
+    {
+      "whiteList":{"Body Style":["Semi Truck", "Tanker Truck", "Flatbed Truck", "Fifth Wheel Truck", "Chassis Cab","Truck","Forklift"]},
+      "probability":5
+    },
+    {
+      "whiteList":{"Body Style":["Bus"]},
+      "probability":1
+    }
+  ],
+  "fees": 1449,
+  "containsStarterVehicles": false,
+  "testDrive" : {
+    "abandonFees" : 100,
+    "timeLimit" : 120,
+    "licencePlate" : "belasco"
+  },
+}
+  ],
+  "privateSellers":[
+      {
+        "id": "private",
+        "name": "Private",
+        "stock": 30,
+        "filter": {
+          "whiteList":{"Mileage":{"min":25000000, "max":380000000}, "Value":{"min":950}},
+          "blackList":{"Type":["Trailer", "Semi Truck"]}
+        },
+        "subFilters": [
+          {
+              "probability":3,
+              "whiteList":{"Brand":["Bruckell"]}
+          },  
+          {
+              "probability":3,
+              "whiteList":{"Brand":["Burnside"]}
+          },
+        
+          {
+              "probability":3,
+              "whiteList":{"Brand":["Gavril"]}
+          },
+        
+          {
+              "probability":3,
+              "whiteList":{"Brand":["Soliad"]}
+          },
+        
+          {
+              "probability":1,
+              "whiteList":{"Brand":["ETK"]}
+          },
+        
+          {
+              "probability":2,
+              "whiteList":{"Brand":["Cherrier"]}
+          },
+          {
+            "probability":1,
+            "whiteList":{"Brand":["Civetta"]}
+        },
+        
+          {
+              "probability":1,
+              "whiteList":{"Brand":["Autobello"]}
+          },
+        
+          {
+              "probability":2,
+              "whiteList":{"Brand":["Ibishu"]}
+          },
+        
+          {
+              "probability":1,
+              "whiteList":{"Brand":["Hirochi"]}
+          },
+        
+          {
+              "probability":3,
+              "whiteList":{"Body Style":["Boat"]}
+          },
+  
+  
+          {
+            "probability":4,
+            "whiteList":{"Years": {"min":1901, "max":2025}}
+        }
+        
+          ]
+      }
+    ]
+
+}

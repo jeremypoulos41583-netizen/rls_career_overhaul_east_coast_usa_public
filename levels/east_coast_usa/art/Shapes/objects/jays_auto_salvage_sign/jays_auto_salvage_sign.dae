@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <unit name="meter" meter="1"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_geometries>
+    <geometry id="signGeo" name="jays_auto_salvage_sign">
+      <mesh>
+        <source id="sign_positions">
+          <float_array id="sign_positions_array" count="12">
+            -2.0 0.0 0.0 2.0 0.0 0.0 2.0 2.25 0.0 -2.0 2.25 0.0
+          </float_array>
+          <technique_common>
+            <accessor source="#sign_positions_array" count="4" stride="3">
+              <param name="X" type="float"/><param name="Y" type="float"/><param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sign_uvs">
+          <float_array id="sign_uvs_array" count="8">
+            0 0 1 0 1 1 0 1
+          </float_array>
+          <technique_common>
+            <accessor source="#sign_uvs_array" count="4" stride="2">
+              <param name="S" type="float"/><param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="sign_vertices">
+          <input semantic="POSITION" source="#sign_positions"/>
+        </vertices>
+        <triangles material="jays_salvage_sign" count="2">
+          <input semantic="VERTEX" source="#sign_vertices" offset="0"/>
+          <input semantic="TEXCOORD" source="#sign_uvs" offset="1" set="0"/>
+          <p>0 0 1 1 2 2 0 0 2 2 3 3</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene">
+      <node id="Sign" name="Sign">
+        <instance_geometry url="#signGeo"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene><instance_visual_scene url="#Scene"/></scene>
+</COLLADA>

@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunk",
+  "Population":600,  
+  "Configuration":"Barn Side Special",
+  "Description":"Sat next to a barn in East Coast for the last 47 years, it cannot be that bad, right?",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":124,
+  "Torque":125,
+  "Transmission":"Automatic",
+  "Value":"2350",
+  "Weight":1597,
+  "Years":{
+    "max":1963,
+    "min":1957
+  },
+}

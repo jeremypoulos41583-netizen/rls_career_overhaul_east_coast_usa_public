@@ -1,0 +1,18 @@
+{
+  "Config Type":"joesJunkshell",
+  "Population":600,  
+  "Configuration":" ( Alternate Junk Shell )",
+  "Description":"This car is perfect for someone who needs interior parts. Or for someone that have a car crusher to feed.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Power":0,
+  "Torque":0,
+  "Transmission":"Automatic",
+  "Value":"700",
+  "Weight":1114,
+  "Years":{
+    "max":1963,
+    "min":1957
+  },
+}
