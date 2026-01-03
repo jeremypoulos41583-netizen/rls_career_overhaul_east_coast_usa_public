@@ -156,10 +156,6 @@ Changelog beta3.6
   -all junk vehicles should be driveable please report any that are not.
  -haul scrap vehicles from Joe's Junkyard to the Port
   -forklift available at Joe's junk because cars are not driveable 
-=============================================================
--added lumberProps as a car jockey from Sawmill to various facilities
-  -use the provided forklift at the Sawmill to manually load lumber stacks onto trailers or into the back of pickups and haul them to the drop-off location
-  -uses the car jockey system
 
 
 

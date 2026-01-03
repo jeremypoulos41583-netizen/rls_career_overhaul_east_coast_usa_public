@@ -261,14 +261,14 @@
                 {
                 "type": "parcelProvider",
                 "logisticTypes": ["pcofficeSupplies"],
-                "min": -1,
+                "min": 5,
                 "max": 20,
                 "interval": 60
                 },
 				{
                 "type": "parcelReceiver",
                 "logisticTypes": ["takeout","parcel","officeSupplies","pcofficeSupplies"],
-                "min": -1,
+                "min": 5,
                 "max": 20,
                 "interval": 60
                 },
@@ -289,50 +289,20 @@
           "psName": "cityCommercial_parking5",
           "isInspectSpot": true,
           "logisticTypesProvided": ["freightSupplies","freight2Supplies","freight3Supplies","trailerDeliveryConstructionMaterials","trailerDeliveryResidential","vehLargeTruckNeedsRepair"],
-          "logisticTypesReceived": ["vehLargeTruck","vehRepairFinished","trailerDeliveryConstructionMaterials","trailerDeliveryResidential","takeout","parcel","shopSupplies","officeSupplies","industrial","woodcrate","woodplanksLarge","woodplanksSmall"]
+          "logisticTypesReceived": ["vehLargeTruck","vehRepairFinished","trailerDeliveryConstructionMaterials","trailerDeliveryResidential","takeout","parcel","shopSupplies","officeSupplies","industrial"]
         }
         ],
           "sitesFile": "local.sites.json",
           "logisticTypesProvided": ["freightSupplies","freight2Supplies","freight3Supplies","trailerDeliveryConstructionMaterials","trailerDeliveryResidential","vehLargeTruckNeedsRepair"],
-          "logisticTypesReceived": ["vehLargeTruck","vehRepairFinished","trailerDeliveryConstructionMaterials","trailerDeliveryResidential","takeout","parcel","shopSupplies","officeSupplies","industrial","woodcrate","woodplanksLarge","woodplanksSmall"],
+          "logisticTypesReceived": ["vehLargeTruck","vehRepairFinished","trailerDeliveryConstructionMaterials","trailerDeliveryResidential","takeout","parcel","shopSupplies","officeSupplies","industrial"],
           "logisticMaxItems": 10,
           "logisticGenerators": [
-		{
+        {
           "type": "parcelReceiver",
           "logisticTypes": ["takeout","parcel","shopSupplies","officeSupplies","industrial"],
           "min": 1,
           "max": 3,
           "interval": 60
-        },
-		{
-          "type": "materialReceiver",
-          "logisticTypes": ["woodcrate"],
-          "materialType": "woodcrate",
-          "capacity": 10000,
-          "target": 5000,
-          "variance": 1000,
-          "interval": 300,
-          "rate": 500
-        },
-		{
-          "type": "materialReceiver",
-          "logisticTypes": ["woodplanksLarge"],
-          "materialType": "woodplanksLarge",
-          "capacity": 10000,
-          "target": 5000,
-          "variance": 1000,
-          "interval": 300,
-          "rate": 500
-        },
-		{
-          "type": "materialReceiver",
-          "logisticTypes": ["woodplanksSmall"],
-          "materialType": "woodplanksSmall",
-          "capacity": 10000,
-          "target": 5000,
-          "variance": 1000,
-          "interval": 300,
-          "rate": 500
         },
 		{
           "type": "parcelProvider",

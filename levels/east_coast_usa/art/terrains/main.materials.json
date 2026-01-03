@@ -9,7 +9,7 @@
     "aoDetailTex": "/levels/east_coast_usa/art/terrains/t_dirt_rocky_ao.png",
     "aoMacroTex": "/levels/east_coast_usa/art/terrains/t_macro_holes_ao.png",
     "aoMacroTexSize": 40,
-    "baseColorBaseTex": "/levels/east_coast_usa/art/terrains/t_terrain_base_b.png",
+    "baseColorBaseTex": "levels/east_coast_usa/art/terrains/t_terrain_base_b.png",
     "baseColorBaseTexSize": 2048,
     "baseColorDetailStrength": [
       0.25,

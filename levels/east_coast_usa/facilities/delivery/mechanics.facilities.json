@@ -501,7 +501,7 @@
         {
           "psName": "junkyardLoaner_parking",
           "isInspectSpot": true,
-          "logisticTypesProvided": ["scrap"],
+          "logisticTypesProvided": [],
           "logisticTypesReceived": [],
           "loanerTrailerPriority": 1,
           "loanerNonTrailerPriority": 1
@@ -526,7 +526,7 @@
         }
       ],
       "sitesFile": "mechanics.sites.json",
-      "logisticTypesProvided": ["vehForScrap", "scrap"],
+      "logisticTypesProvided": ["vehForScrap"],
       "logisticTypesReceived": ["vehForScrap","parcel","takeout"],
       "logisticMaxItems": 10,
       "logisticGenerators": [
@@ -561,16 +561,6 @@
           "offerDuration": {"min": 300, "max": 900},
           "filter": "joesJunkshellVehFilter",
           "logisticTypes": ["vehForRecycle"]
-        },
-        {
-          "type": "materialProvider",
-          "logisticTypes": ["scrap"],
-          "materialType": "scrap",
-          "capacity": 10000,
-          "target": 5000,
-          "variance": 1000,
-          "interval": 300,
-          "rate": 500
         }
       ]
     }
