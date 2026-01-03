@@ -36,7 +36,6 @@
     "duplicationChance":[1,0.2],
     "offerDuration":360,
     "weight":[10,15,20],
-    "modChance":{},
     "modChance":{"post":1, "precious":0.25},
   },
   "specialPostParcel": {
@@ -50,7 +49,6 @@
     "duplicationChance":[1],
     "offerDuration":360,
     "weight":[4,6,8,10],
-    "modChance":{},
     "modChance":{"post":1, "precious":0.5},
   },
   "smallOfficeWares": {
@@ -59,7 +57,7 @@
     "slots":[16,32,64,128],
     "cargoType":"parcel",
     "rarity":1,
-    "worth":5,
+    "worth":3.5,
     "generationChance":5,
     "duplicationChance":[1,0.8,0.4],
     "offerDuration":360,
@@ -72,7 +70,7 @@
     "slots":[16,8],
     "cargoType":"parcel",
     "rarity":1,
-    "worth":5,
+    "worth":12,
     "generationChance":5,
     "duplicationChance":[0.8,0.9],
     "offerDuration":180,
@@ -86,7 +84,7 @@
     "cargoType":"parcel",
     "rarity":3,
     "worth":3,
-    "generationChance": 0.25,0.25,0.25
+    "generationChance": 0.25,
     "duplicationChance":[0,0,0],
     "offerDuration":360,
     "weight":[50,60,70],
@@ -142,7 +140,6 @@
     "duplicationChance":[1,0.8],
     "offerDuration":180,
     "weight":[30,35,41],
-    "modChance":{},
     "modChance":{"supplies":1},
   },
   "bigShopSupplies": {
@@ -156,7 +153,6 @@
     "duplicationChance":[1,0.8],
     "offerDuration":180,
     "weight":[25,30,35],
-    "modChance":{},
     "modChance":{"supplies":1},
   },
   "bigIndustrialGoods": {
