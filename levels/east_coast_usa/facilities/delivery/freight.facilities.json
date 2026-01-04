@@ -77,11 +77,11 @@
           "type": "materialProvider",
           "logisticTypes": ["woodcrate"],
           "materialType": "woodcrate",
-          "capacity": 10000,
-          "target": 5000,
-          "variance": 1000,
-          "interval": 300,
-          "rate": 500
+          "capacity": 30,
+          "target": 20,
+          "variance": 5,
+          "interval": 180,
+          "rate": 2
         },
         {
           "type": "vehOfferProvider",

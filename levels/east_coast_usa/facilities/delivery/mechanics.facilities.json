@@ -566,11 +566,11 @@
           "type": "materialProvider",
           "logisticTypes": ["scrap"],
           "materialType": "scrap",
-          "capacity": 10000,
-          "target": 5000,
-          "variance": 1000,
-          "interval": 300,
-          "rate": 500
+          "capacity": 50,
+          "target": 30,
+          "variance": 0,
+          "interval": 180,
+          "rate": 2
         }
       ]
     }
