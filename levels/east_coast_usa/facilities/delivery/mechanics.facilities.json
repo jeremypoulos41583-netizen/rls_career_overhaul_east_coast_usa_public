@@ -521,12 +521,12 @@
         {
           "psName": "junkyardCargo_parking",
           "isInspectSpot": false,
-          "logisticTypesProvided": [],
+          "logisticTypesProvided": ["mechanicalParts", "tiresSupplies"],
           "logisticTypesReceived": []
         }
       ],
       "sitesFile": "mechanics.sites.json",
-      "logisticTypesProvided": ["vehForScrap", "scrap"],
+      "logisticTypesProvided": ["vehForScrap", "scrap", "mechanicalParts", "tiresSupplies"],
       "logisticTypesReceived": ["vehForScrap","parcel","takeout"],
       "logisticMaxItems": 10,
       "logisticGenerators": [
@@ -540,6 +540,13 @@
         {
           "type": "parcelProvider",
           "logisticTypes": ["parcel"],
+          "min": 1,
+          "max": 10,
+          "interval": 120
+        },
+        {
+          "type": "parcelProvider",
+          "logisticTypes": ["mechanicalParts", "tiresSupplies"],
           "min": 1,
           "max": 10,
           "interval": 120
