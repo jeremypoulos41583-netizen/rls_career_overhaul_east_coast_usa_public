@@ -156,6 +156,10 @@ Changelog beta3.6
   -all junk vehicles should be driveable please report any that are not.
  -haul scrap vehicles from Joe's Junkyard to the Port
   -forklift available at Joe's junk because cars are not driveable 
+==============================================================
+4.7.4
+- ai traffic adjustments
+  - should fix ai having trouble crossing bridges
 
 
 
