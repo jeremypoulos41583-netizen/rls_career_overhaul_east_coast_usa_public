@@ -8,6 +8,7 @@
     "icon": "car",
     "units": "Vehicle",
     "slotsPerProp": 256,
+    "virtualContainerCapacity": 1536,
     "spawnGridSpacing": 2.0,
     "spawnZoneName": "scrapLoadingZone",
     "autoDiscover": true,
@@ -24,6 +25,7 @@
     "model_key": "woodplanks_load",
     "config": "large",
     "slotsPerProp": 256,
+    "virtualContainerCapacity": 1536,
     "spawnGridSpacing": 2.0,
     "spawnZoneName": "lumberLoadingZone"
   },
@@ -38,6 +40,7 @@
     "model_key": "woodplanks_load",
     "config": "small",
     "slotsPerProp": 256,
+    "virtualContainerCapacity": 1536,
     "spawnGridSpacing": 2.0,
     "spawnZoneName": "lumberLoadingZone"
   },
@@ -52,6 +55,7 @@
     "model_key": "woodcrate",
     "config": "large",
     "slotsPerProp": 256,
+    "virtualContainerCapacity": 1536,
     "spawnGridSpacing": 2.0,
     "spawnZoneName": "lumberLoadingZone"
   }
