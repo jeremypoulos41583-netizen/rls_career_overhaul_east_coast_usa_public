@@ -160,6 +160,9 @@ Changelog beta3.6
 4.7.4
 - ai traffic adjustments
   - should fix ai having trouble crossing bridges
+==============================================================
+4.7.4.1
+- removed ambulance.lua due to it being in the overhaul beta
 
 
 
