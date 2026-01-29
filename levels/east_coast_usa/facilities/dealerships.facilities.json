@@ -722,9 +722,9 @@
     "abandonFees" : 100,
     "timeLimit" : 120,
     "licencePlate" : "belasco"
-  },
-}
-  ],
+    },
+  }
+  ]
   "privateSellers":[
       {
         "id": "private",
