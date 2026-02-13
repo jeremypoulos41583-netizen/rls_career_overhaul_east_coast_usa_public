@@ -1,6 +1,6 @@
 {
   "description":"Vehicle mechanics facilities",
-  "dir":"/levels/east_coast_usa/facilities/delivery/",
+  "dir":"/mods/unpacked/rls_career_overhaul_east_coast_usa4.7.2/levels/east_coast_usa/facilities/delivery/",
   "filename":"mechanics.sites.json",
   "locations":{},
   "name":"mechanics.sites.json",
@@ -19,7 +19,7 @@
       },
       "isMultiSpot":true,
       "name":"firwoodMotorCompany_delivery",
-      "oldId":242,
+      "oldId":2221,
       "pos":[
         698.4741821,
         -348.6037598,
@@ -55,7 +55,7 @@
       },
       "isMultiSpot":true,
       "name":"gemClassicsParking",
-      "oldId":243,
+      "oldId":2222,
       "pos":[
         557.0668335,
         -763.3616943,
@@ -91,7 +91,7 @@
       },
       "isMultiSpot":false,
       "name":"hendersonsParking01",
-      "oldId":244,
+      "oldId":2223,
       "pos":[
         -78.63545227,
         -789.0501099,
@@ -127,7 +127,7 @@
       },
       "isMultiSpot":false,
       "name":"smithsAutoRepair_parking",
-      "oldId":245,
+      "oldId":2224,
       "pos":[
         -801.3691406,
         487.5257263,
@@ -163,7 +163,7 @@
       },
       "isMultiSpot":true,
       "name":"tjShippingParking",
-      "oldId":246,
+      "oldId":2225,
       "pos":[
         -763.1062622,
         546.9335938,
@@ -199,7 +199,7 @@
       },
       "isMultiSpot":false,
       "name":"logisticsGarage_parking",
-      "oldId":247,
+      "oldId":2226,
       "pos":[
         -193.2937317,
         546.7341919,
@@ -235,7 +235,7 @@
       },
       "isMultiSpot":false,
       "name":"firwoodMunicipal_parking",
-      "oldId":248,
+      "oldId":2227,
       "pos":[
         372.7112427,
         108.6388855,
@@ -271,7 +271,7 @@
       },
       "isMultiSpot":false,
       "name":"commercialRental_parking",
-      "oldId":249,
+      "oldId":2228,
       "pos":[
         -185.5917358,
         540.5336304,
@@ -307,7 +307,7 @@
       },
       "isMultiSpot":false,
       "name":"joesJunk_parking",
-      "oldId":250,
+      "oldId":2229,
       "pos":[
         275.88140869141,
         -669.65924072266,
@@ -343,7 +343,7 @@
       },
       "isMultiSpot":true,
       "name":"junkyardLoaner_parking",
-      "oldId":251,
+      "oldId":2230,
       "pos":[
         220.23280334473,
         -644.56286621094,
@@ -379,7 +379,7 @@
       },
       "isMultiSpot":true,
       "name":"junkyardPickup_parking",
-      "oldId":252,
+      "oldId":2231,
       "pos":[
         211.92358398438,
         -649.20782470703,
@@ -415,7 +415,7 @@
       },
       "isMultiSpot":false,
       "name":"junkyardDropoff_parking",
-      "oldId":253,
+      "oldId":2232,
       "pos":[
         190.54840087891,
         -555.81097412109,
@@ -451,7 +451,7 @@
       },
       "isMultiSpot":false,
       "name":"junkyardDelivery_pickup",
-      "oldId":254,
+      "oldId":2233,
       "pos":[
         225.10775756836,
         -565.99505615234,
@@ -487,7 +487,7 @@
       },
       "isMultiSpot":false,
       "name":"smithsDeliveryVeh_parking",
-      "oldId":255,
+      "oldId":2234,
       "pos":[
         -794.17700195313,
         496.09368896484,
@@ -523,7 +523,7 @@
       },
       "isMultiSpot":false,
       "name":"smithsLoaner_parking",
-      "oldId":256,
+      "oldId":2235,
       "pos":[
         -795.53051757813,
         483.29254150391,
@@ -546,69 +546,5 @@
       "spotRotation":0
     }
   ],
-  "zones":[
-    {
-      "bot":{
-        "active":false,
-        "normal":[
-          0,
-          0,
-          -1
-        ],
-        "pos":[
-          0,
-          0,
-          -10
-        ]
-      },
-      "color":[
-        1,
-        1,
-        1
-      ],
-      "customFields":{
-        "names":{},
-        "tags":{},
-        "types":{},
-        "values":{}
-      },
-      "name":"scrapLoadingZone",
-      "oldId":638,
-      "top":{
-        "active":false,
-        "normal":[
-          0,
-          0,
-          1
-        ],
-        "pos":[
-          0,
-          0,
-          10
-        ]
-      },
-      "vertices":[
-        [
-          208.41033935547,
-          -660.70318603516,
-          40.858154296875
-        ],
-        [
-          214.4792175293,
-          -660.85217285156,
-          40.858154296875
-        ],
-        [
-          215.15328979492,
-          -623.50787353516,
-          40.82776260376
-        ],
-        [
-          208.48262023926,
-          -623.62915039063,
-          40.703937530518
-        ]
-      ]
-    }
-  ]
+  "zones":{}
 }

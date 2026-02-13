@@ -31,8 +31,8 @@
     "type":"vehicle",
     "unlockTag":"joesJunkshellVeh",
     "filterName":"Joe's Junk Shell",
-    "baseReward":1000,
-    "rewardPerKm":220,
+    "baseReward":350,
+    "rewardPerKm":140,
     "filter": {
       "whiteList":{"Years": {"min":1900, "max":2020}, "Mileage":{"min":300000000, "max":650000000}, "Value":{"min":100, "max":30000},"Config Type":["joesJunkshell"],"Population":{"min":500}},
       "blackList":{"Type":["Trailer"]}
@@ -350,5 +350,16 @@
       "whiteList" : {"model_key" : ["log_trailer"],"hasLoad":[true]},
     },
     "subFilters": [],
+  },
+  "lumberProps":{
+    "type":"trailer",
+    "unlockTag":"lumberProps",
+    "filterName":"Lumber",
+    "baseReward":500,
+    "rewardPerKm":1500,
+    "filter" : {
+      "whiteList" : {"model_key" : ["woodplanks"], "key":["small","large"]}
+    },
+    "subFilters": []
   }
 }

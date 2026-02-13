@@ -1,0 +1,10 @@
+{
+    "Configuration":"1400kg Wood Planks",
+    "Name":"1400kg Wood Planks",
+    "Description":"A stack of wood planks weighing 1400kg, ready for transport",
+    "Type":"Trailer",
+    "Config Type":"Factory",
+    "Weight":1400,
+    "Value":400,
+    "Population":100
+}

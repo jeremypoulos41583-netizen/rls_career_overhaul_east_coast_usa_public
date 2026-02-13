@@ -560,26 +560,14 @@
         "config": "tc82_base",
         "reputationLvl": 2,
         "deliveryLvl": 3,
-        "mileages": {
-          "-1": 100000000,
-          "0": 100000000,
-          "1": 100000000,
-          "2": 100000000,
-          "3": 100000000
-        }
+        "mileage": 100000000
       },
       {
         "model": "us_semi",
         "config": "t83_base",
         "reputationLvl": 1,
         "deliveryLvl": 3,
-        "mileages": {
-          "-1": 5000000,
-          "0": 5000000,
-          "1": 5000000,
-          "2": 5000000,
-          "3": 5000000
-        }
+        "mileage": 5000000
       },
       {
         "model": "md_series",
@@ -612,13 +600,7 @@
         "config": "t83s_rollback_rental",
         "reputationLvl": 0,
         "deliveryLvl": 3,
-        "mileages": {
-          "-1": 100000000,
-          "0": 100000000,
-          "1": 100000000,
-          "2": 100000000,
-          "3": 100000000
-        }
+        "mileage": 100000000
       }
     ],
 	"reputationValues": {
@@ -704,72 +686,33 @@
           "3": 10000
         }
       },
-      {
+	  {
         "model": "us_semi",
         "config": "tc82_custom",
         "reputationLvl": 2,
         "deliveryLvl": 2,
-        "mileages": {
-          "-1": 100000000,
-          "0": 100000000,
-          "1": 100000000,
-          "2": 100000000,
-          "3": 100000000
-        }
+        "mileage": 100000000
       },
-    {
+      {
         "model": "us_semi",
         "config": "woody_t_series",
         "reputationLvl": 2,
         "deliveryLvl": 3,
-        "mileages": {
-          "-1": 5000000,
-          "0": 5000000,
-          "1": 5000000,
-          "2": 5000000,
-          "3": 5000000
-        }
+        "mileage": 5000000
       },
-    {
+      {
         "model": "us_semi",
         "config": "tc83_forest_mule",
         "reputationLvl": 3,
         "deliveryLvl": 3,
-        "mileages": {
-          "-1": 1000000,
-          "0": 1000000,
-          "1": 1000000,
-          "2": 1000000,
-          "3": 1000000
-        }
+        "mileage": 1000000
       },
-    {
+      {
         "model": "boxutility_large",
         "config": "unloaded",
         "reputationLvl": -1,
         "deliveryLvl": 0,
-        "mileages": {
-          "-1": 1000000,
-          "0": 1000000,
-          "1": 1000000,
-          "2": 1000000,
-          "3": 1000000
-        }
-      },
-    {
-        "model": "tiltdeck",
-        "config": "22ft_standard",
-        "reputationLvl": -1,
-        "deliveryLvl": 0,
-        "mileages": {
-          "-1": 804672000,
-          "0": 321868800,
-          "1": 160934400,
-          "2": 160934400,
-          "3": 80467200,
-          "4": 80467200,
-          "5": 40233600
-        }
+        "mileage": 1000000
       }
     ],
 	  "reputationValues": {
@@ -1262,13 +1205,7 @@
         "config": "t83s_rollback_rental",
         "reputationLvl": 0,
         "deliveryLvl": 3,
-        "mileages": {
-          "-1": 100000000,
-          "0": 100000000,
-          "1": 100000000,
-          "2": 100000000,
-          "3": 100000000
-        }
+        "mileage": 100000000
       }
     ],
 	"reputationValues": {
