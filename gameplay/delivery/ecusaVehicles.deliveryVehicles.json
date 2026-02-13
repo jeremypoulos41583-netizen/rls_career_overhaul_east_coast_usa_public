@@ -301,65 +301,142 @@
       "whiteList" : {"model_key" : ["cargotrailer"], "hasLoad":[true],"key":["loaded_couch","loaded_armchairs"]},
    },
   },
-
   //large trailer
-  "emptySemiTrailers": { //3
-    "type":"trailer",
-    "unlockTag":"emptySemiTrailer",
-    "filterName":"Empty Semi Trailer",
-    "connector":"towhitch",
-    "baseReward":1000,
-    "rewardPerKm":1000,
-    "filter" : {
-      "whiteList" : {"model_key" : ["flatbed","dryvan"]},
-      "blackList": {"hasLoad": [true]},
-   },
-  },
-  "loggingTrailers": { //3
-    "type":"trailer",
-    "unlockTag":"loggingTrailers",
-    "filterName":"Logging Trailers",
-    "connector":"towhitch",
-    "baseReward":2000,
-    "rewardPerKm":1500,
-    "filter" : {
-      "whiteList" : {"model_key" : ["log_trailer"]},
-      "blackList": {"hasLoad": [true]},
-   },
-  },
-
-  "loadedSemiTrailers":{ //4
-    "type":"trailer",
-    "unlockTag":"loadedSemiTrailers",
-    "filterName":"Loaded Semi Trailer",
-    "connector":"towhitch",
-    "baseReward":1750,
-    "rewardPerKm":1500,
-    "filter" : {
-      "whiteList" : {"model_key" : ["flatbed","dryvan"],"key":["28ft_single","32ft_wood","48ft_wood","53ft_wood","28ft","48ft","53ft","48ft_spreadaxle","53ft_spreadaxle"]},
-   },
-  },
-  "loggingMaterials":{ //4
-    "type":"trailer",
-    "unlockTag":"loadedSemiTrailers",
-    "filterName":"Loaded Semi Trailer",
-    "connector":"towhitch",
-    "baseReward":2500,
-    "rewardPerKm":1500,
-    "filter" : {
-      "whiteList" : {"model_key" : ["log_trailer"],"hasLoad":[true]},
-    },
-    "subFilters": [],
-  },
-  "lumberProps":{
-    "type":"trailer",
-    "unlockTag":"lumberProps",
-    "filterName":"Lumber",
-    "baseReward":500,
-    "rewardPerKm":1500,
-    "filter" : {
-      "whiteList" : {"model_key" : ["woodplanks"], "key":["small","large"]}
-    },
-    "subFilters": []
+  "emptyDryvanTrailers": { //3
+  "type":"trailer",
+  "unlockTag":"emptyDryvanTrailer",
+  "filterName":"Empty Dryvan Trailer",
+  "connector":"towhitch",
+  "baseReward":1000,
+  "rewardPerKm":400,
+  "filter": {
+    "whiteList": {
+      "model_key": ["dryvan"],
+      "Configuration": ["28ft Empty", "48ft Tandem Axle Empty", "48ft Spread Axle Empty", "53ft Offset Tandem Axle Empty", "53ft Spread Axle Empty"]
+    }
   }
-}
+  },
+  "emptyFlatbedTrailers": { //3
+  "type":"trailer",
+  "unlockTag":"emptyFlatbedTrailer",
+  "filterName":"Empty Flatbed Trailer",
+  "connector":"towhitch",
+  "baseReward":1000,
+  "rewardPerKm":400,
+  "filter" : {
+    "whiteList" : {"model_key" : ["flatbed"]},
+    "blackList": {"hasLoad": [true]},
+  },
+  },
+  "emptyLogTrailers": {
+  "type":"trailer",
+  "unlockTag":"loggingTrailers",
+  "filterName":"Empty Log Trailers",
+  "connector":"towhitch",
+  "baseReward":2000,
+  "rewardPerKm":400,
+  "filter" : {
+    "whiteList" : {"model_key" : ["log_trailer"]},
+    "blackList": {"hasLoad": [true]},
+  },
+  },
+  "loadedLogTrailers": {
+  "type": "trailer",
+  "unlockTag": "loadedLoggingTrailers",
+  "filterName": "Loaded Log Trailers",
+  "connector": "towhitch",
+  "baseReward": 2500,
+  "rewardPerKm": 600,
+  "filter": {
+    "whiteList": {
+      "model_key": ["log_trailer"],
+      "Configuration": ["40ft Dual - 12 Logs", "27ft Dual - 8 Logs", "40ft Dual - 8 Logs"]
+    }
+  }
+  },
+  "loadedDryvanTrailers":{ //4
+  "type":"trailer",
+  "unlockTag":"loadedDryvanTrailers",
+  "filterName":"Loaded Dryvan Trailer",
+  "connector":"towhitch",
+  "baseReward":1750,
+  "rewardPerKm":500,
+  "filter": {
+    "whiteList": {
+      "model_key": ["dryvan"],
+      "Configuration": ["28ft 4500kg Boxes", "48ft Spread Axle 6750kg Boxes", "53ft Offset Tandem Axle 13500kg Boxes"]
+    }
+  }
+  },
+  "lumberFlatbed": {
+  "type": "trailer",
+  "unlockTag": "loadedFlatbedTrailers",
+  "filterName": "Lumber Flatbed",
+  "connector": "towhitch",
+  "baseReward": 2000,
+  "rewardPerKm": 500,
+  "filter": {
+    "whiteList": {
+      "model_key": ["flatbed"],
+      "key": ["32ft_wood", "48ft_wood", "53ft_wood", "48ft_spreadaxle", "53ft_spreadaxle"],
+      "Configuration": ["32ft Tri Axle B-Train Lead (8.4T Planks)"]
+    }
+  }
+  },
+  "tastiColaDryvan": {
+  "type": "trailer",
+  "unlockTag": "loadedDryvanTrailers",
+  "filterName": "TastiCola Trailer",
+  "connector": "towhitch",
+  "baseReward": 2200,
+  "rewardPerKm": 400,
+  "filter": {
+    "whiteList": {
+      "model_key": ["dryvan"],
+      "Configuration": ["28ft 9600kg TastiCola", "48ft Tandem Axle 19200kg TastiCola", "53ft Spread Axle 22400kg TastiCola"]
+    }
+  }
+  },
+  "emptyTanker": {
+  "type": "trailer",
+  "unlockTag": "tankerTrailers",
+  "filterName": "Empty Tanker",
+  "connector": "towhitch",
+  "baseReward": 1500,
+  "rewardPerKm": 500,
+  "filter": {
+    "whiteList": {
+      "model_key": ["tanker"],
+      "Configuration": ["Empty", "Empty Short"]
+    }
+  }
+  },
+  "gasTanker": {
+  "type": "trailer",
+  "unlockTag": "tankerTrailers",
+  "filterName": "Petroleum Tanker",
+  "connector": "towhitch",
+  "baseReward": 2200,
+  "rewardPerKm": 600,
+  "filter": {
+    "whiteList": {
+      "model_key": ["tanker"],
+      "Configuration": ["17000L Petroleum", "34000L Petroleum", "8850L Petroleum", "17400L Petroleum"]
+    }
+  }
+  },
+  "dieselTanker": {
+  "type": "trailer",
+  "unlockTag": "tankerTrailers",
+  "filterName": "Diesel Tanker",
+  "connector": "towhitch",
+  "baseReward": 2200,
+  "rewardPerKm": 600,
+  "filter": {
+    "whiteList": {
+      "model_key": ["tanker"],
+      "Configuration": ["17000L Diesel", "34000L Diesel", "8850L Diesel", "17400L Diesel"]
+    }
+  }
+  }
+  }

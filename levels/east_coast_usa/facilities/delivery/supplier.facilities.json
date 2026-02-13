@@ -1,0 +1,151 @@
+{
+  "deliveryProviders": [
+    {
+      "id": "FRS",
+      "name": "Firwood Restaurant Supply",
+      "description": "Provides supplies to Firwood Restaurants",
+      "associatedOrganization": "FRS",
+      "preview": "bigWarehouse.png",
+      "manualAccessPoints": [
+        {"psName": "FRS_parking", "isInspectSpot": true, "logisticTypesProvided": [], "logisticTypesReceived": []},
+        {"psName": "FRSTrailerPickup_parking", "logisticTypesProvided": ["trailerDeliveryResidential", "vehLargeTruckNeedsRepair"], "logisticTypesReceived": [], "loanerNonTrailerPriority": 0, "loanerTrailerPriority": 3},
+        {"psName": "FRSTrailerDelivery_parking", "logisticTypesProvided": [], "logisticTypesReceived": ["trailerDeliveryConstructionMaterials", "trailerDeliveryResidential", "vehLargeTruck"]},
+        {"psName": "FRSDelivery_parking", "logisticTypesProvided": ["drinkSupplies", "snackSupplies", "spiritsSupplies", "prepSupplies", "sideDishSupplies", "mealSupplies"], "logisticTypesReceived": ["parcel", "defectiveReturns", "drinkSupplies", "snackSupplies", "spiritsSupplies", "officeSupplies", "prepSupplies", "sideDishSupplies", "mealSupplies"]}
+      ],
+      "sitesFile": "supplier.sites.json",
+      "logisticTypesProvided": ["drinkSupplies", "snackSupplies", "spiritsSupplies", "prepSupplies", "sideDishSupplies", "mealSupplies", "vehLargeTruckNeedsRepair"],
+      "logisticTypesReceived": ["trailerDeliveryConstructionMaterials", "parcel", "defectiveReturns", "drinkSupplies", "snackSupplies", "spiritsSupplies", "officeSupplies", "prepSupplies", "sideDishSupplies", "mealSupplies", "vehLargeTruck"],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {"type": "parcelProvider", "logisticTypes": ["drinkSupplies", "snackSupplies", "spiritsSupplies", "prepSupplies", "sideDishSupplies", "mealSupplies"], "min": 15, "max": 40, "interval": 60},
+        {"type": "parcelReceiver", "logisticTypes": ["parcel", "takeout", "officeSupplies", "defectiveReturns", "prepSupplies", "mealSupplies"], "min": 15, "max": 40, "interval": 60},
+        {"type": "vehOfferProvider", "interval": 300, "min": 1, "max": 4, "offerDuration": {"min": 300, "max": 300}, "filter": "semiVehFilter", "logisticTypes": ["vehLargeTruck", "vehLargeTruckNeedsRepair"]},
+        {"type": "vehOfferReceiver", "interval": 300, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 300}, "filter": "newSemiVehFilter", "logisticTypes": ["vehLargeTruck"]},
+        {"type": "trailerOfferProvider", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleEmptyTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
+        {"type": "trailerOfferProvider", "interval": 180, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleFurnitureTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
+        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleEmptyTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
+        {"type": "trailerOfferReceiver", "interval": 180, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleFurnitureTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
+        {"type": "trailerOfferProvider", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "doubleAxleEmptyTrailer", "logisticTypes": ["trailerDeliveryResidential"]},
+        {"type": "trailerOfferProvider", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "doubleAxleFurnitureTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
+        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "doubleAxleEmptyTrailer", "logisticTypes": ["trailerDeliveryResidential"]},
+        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "doubleAxleFurnitureTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
+        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "emptySemiTrailers", "logisticTypes": ["trailerDeliveryConstructionMaterials"]}
+      ]
+    },
+    {
+      "id": "firwoodSupply",
+      "name": "Firwood Supply Corporation",
+      "description": "Ships and receives a wide variety of cargo types.",
+      "associatedOrganization": "firwoodSupply",
+      "preview": "firwoodSupplyCo.png",
+      "manualAccessPoints": [
+        {"psName": "firwoodSupply_parking", "isInspectSpot": true, "logisticTypesProvided": ["freight2Supplies", "freight3Supplies", "freightSupplies", "shopSupplies", "industrial"], "logisticTypesReceived": ["freight2Supplies", "freight3Supplies", "freightSupplies", "parcel", "shopSupplies", "officeSupplies"]},
+        {"psName": "firwoodSupplyTrailer_parking", "isInspectSpot": false, "logisticTypesProvided": ["trailerDeliveryResidential", "vehLargeTruckNeedsRepair", "trailerDeliveryConstructionMaterials"], "logisticTypesReceived": ["trailerDeliveryResidential", "vehLargeTruck", "trailerDeliveryConstructionMaterials"]}
+      ],
+      "sitesFile": "supplier.sites.json",
+      "logisticTypesProvided": ["freight2Supplies", "freight3Supplies", "freightSupplies", "shopSupplies", "trailerDeliveryResidential", "vehLargeTruckNeedsRepair", "trailerDeliveryConstructionMaterials"],
+      "logisticTypesReceived": ["freight2Supplies", "freight3Supplies", "freightSupplies", "parcel", "shopSupplies", "officeSupplies", "vehLargeTruck", "trailerDeliveryConstructionMaterials"],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {"type": "parcelProvider", "logisticTypes": ["freight2Supplies", "freight3Supplies", "freightSupplies", "industrial", "shopSupplies", "officeSupplies"], "min": 6, "max": 30, "interval": 60},
+        {"type": "parcelReceiver", "logisticTypes": ["freight2Supplies", "freight3Supplies", "freightSupplies", "parcel", "industrial", "shopSupplies", "officeSupplies"], "min": 10, "max": 25, "interval": 60},
+        {"type": "vehOfferProvider", "interval": 300, "min": 1, "max": 3, "offerDuration": {"min": 300, "max": 300}, "filter": "semiVehFilter", "logisticTypes": ["vehLargeTruckNeedsRepair"]},
+        {"type": "vehOfferReceiver", "interval": 300, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 300}, "filter": "newSemiVehFilter", "logisticTypes": ["vehLargeTruck"]},
+        {"type": "trailerOfferProvider", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleEmptyTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
+        {"type": "trailerOfferProvider", "interval": 210, "min": 1, "max": 3, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleLumberTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
+        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleEmptyTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
+        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 3, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleLumberTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
+        {"type": "trailerOfferProvider", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "doubleAxleEmptyTrailer", "logisticTypes": ["trailerDeliveryResidential"]},
+        {"type": "trailerOfferProvider", "interval": 210, "min": 1, "max": 3, "offerDuration": {"min": 300, "max": 600}, "filter": "doubleAxleLumberTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
+        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "doubleAxleEmptyTrailer", "logisticTypes": ["trailerDeliveryResidential"]},
+        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 3, "offerDuration": {"min": 300, "max": 600}, "filter": "doubleAxleLumberTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
+        {"type": "trailerOfferProvider", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "emptySemiTrailers", "logisticTypes": ["trailerDeliveryConstructionMaterials"]},
+        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "emptySemiTrailers", "logisticTypes": ["trailerDeliveryConstructionMaterials"]}
+      ]
+    },
+    {
+      "id": "freshFish",
+      "name": "Seafood Dock",
+      "description": "Provides fresh seafood to local restaraunts and grocers.",
+      "facilityInformation": "Provides takeout supplies via delivery missions. ",
+      "associatedOrganization": "firwoodDeliveryAssociation",
+      "preview": "freshFish.png",
+      "manualAccessPoints": [
+        {"psName": "freshFish_parking", "isInspectSpot": true, "logisticTypesProvided": ["seafoodSupplies", "trailerDeliveryResidential"], "logisticTypesReceived": ["parcel", "takeout", "officeSupplies", "trailerDeliveryResidential"]}
+      ],
+      "sitesFile": "supplier.sites.json",
+      "logisticTypesProvided": ["seafoodSupplies"],
+      "logisticTypesReceived": ["parcel", "takeout", "officeSupplies"],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {"type": "parcelProvider", "logisticTypes": ["seafoodSupplies"], "min": 1, "max": 50, "interval": 60},
+        {"type": "parcelReceiver", "logisticTypes": ["parcel", "takeout", "officeSupplies"], "min": 1, "max": 5, "interval": 60},
+        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleEmptyTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
+        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "doubleAxleEmptyTrailer", "logisticTypes": ["trailerDeliveryResidential"]}
+      ]
+    },
+    {
+      "id": "jimsAutoParts",
+      "name": "Jim's Auto Parts",
+      "description": "Business within city limits",
+      "facilityInformation": "Receives various goods. Does not provide.",
+      "associatedOrganization": "jimsAutoParts",
+      "preview": "localFacilities_city.png",
+      "manualAccessPoints": [
+        {"psName": "jimsAutoParts_parking", "isInspectSpot": true, "logisticTypesProvided": ["mechanicalParts", "shopSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies"], "logisticTypesReceived": ["refundReturns", "takeout", "parcel", "shopSupplies", "mechanicalParts", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "trailerDeliveryResidential"]}
+      ],
+      "sitesFile": "supplier.sites.json",
+      "logisticTypesProvided": ["shopSupplies", "mechanicalParts", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies"],
+      "logisticTypesReceived": ["refundReturns", "vehForPrivate", "vehRepairFinished", "trailerDeliveryResidential", "takeout", "parcel", "shopSupplies", "mechanicalParts", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies"],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {"type": "parcelProvider", "logisticTypes": ["shopSupplies", "mechanicalParts", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies"], "min": 1, "max": 100, "interval": 60},
+        {"type": "parcelReceiver", "logisticTypes": ["refundReturns", "takeout", "parcel", "shopSupplies", "mechanicalParts", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies"], "min": 1, "max": 100, "interval": 60},
+        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleEmptyTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
+        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "doubleAxleEmptyTrailer", "logisticTypes": ["trailerDeliveryResidential"]}
+      ]
+    },
+    {
+      "id": "forestrySiteA",
+      "name": "Forestry Site A",
+      "description": "Harvests trees and ships to Sawmill",
+      "associatedOrganization": "sawmill",
+      "preview": "forestry.png",
+      "manualAccessPoints": [
+        {"psName": "forestrySiteA_parking", "isInspectSpot": true, "logisticTypesProvided": [], "logisticTypesReceived": ["trailerDeliveryloggingTrailers", "vehLargeTruck"]},
+        {"psName": "forestrySiteA_trailer", "isInspectSpot": false, "logisticTypesProvided": ["trailerDeliveryloggingMaterials", "vehLargeTruckNeedsRepair"], "logisticTypesReceived": []}
+      ],
+      "sitesFile": "supplier.sites.json",
+      "logisticTypesProvided": ["trailerDeliveryloggingMaterials", "vehLargeTruckNeedsRepair"],
+      "logisticTypesReceived": ["trailerDeliveryloggingTrailers", "vehLargeTruck"],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {"type": "vehOfferProvider", "interval": 300, "min": 1, "max": 3, "offerDuration": {"min": 300, "max": 300}, "filter": "semiVehFilter", "logisticTypes": ["vehLargeTruckNeedsRepair"]},
+        {"type": "vehOfferReceiver", "interval": 300, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 300}, "filter": "newSemiVehFilter", "logisticTypes": ["vehLargeTruck"]},
+        {"type": "trailerOfferProvider", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "loggingMaterials", "logisticTypes": ["trailerDeliveryloggingMaterials"]},
+        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "loggingTrailers", "logisticTypes": ["trailerDeliveryloggingTrailers"]}
+      ]
+    },
+    {
+      "id": "forestrySiteB",
+      "name": "Forestry Site B",
+      "description": "Harvests trees and ships to Sawmill",
+      "associatedOrganization": "sawmill",
+      "preview": "forestry.png",
+      "manualAccessPoints": [
+        {"psName": "forestrySiteB_parking", "isInspectSpot": true, "logisticTypesProvided": [], "logisticTypesReceived": ["trailerDeliveryloggingTrailers", "vehLargeTruck"]},
+        {"psName": "forestrySiteB_trailer", "isInspectSpot": false, "logisticTypesProvided": ["trailerDeliveryloggingMaterials", "vehLargeTruckNeedsRepair"], "logisticTypesReceived": []}
+      ],
+      "sitesFile": "supplier.sites.json",
+      "logisticTypesProvided": ["trailerDeliveryloggingMaterials", "vehLargeTruckNeedsRepair"],
+      "logisticTypesReceived": ["trailerDeliveryloggingTrailers", "vehLargeTruck"],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {"type": "vehOfferProvider", "interval": 300, "min": 1, "max": 3, "offerDuration": {"min": 300, "max": 300}, "filter": "semiVehFilter", "logisticTypes": ["vehLargeTruckNeedsRepair"]},
+        {"type": "vehOfferReceiver", "interval": 300, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 300}, "filter": "newSemiVehFilter", "logisticTypes": ["vehLargeTruck"]},
+        {"type": "trailerOfferProvider", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "loggingMaterials", "logisticTypes": ["trailerDeliveryloggingMaterials"]},
+        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "loggingTrailers", "logisticTypes": ["trailerDeliveryloggingTrailers"]}
+      ]
+    }
+  ]
+}

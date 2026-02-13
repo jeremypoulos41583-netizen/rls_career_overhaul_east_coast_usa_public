@@ -36,6 +36,24 @@
           "interval": 120
         },
         {
+          "type": "vehOfferReceiver",
+          "interval": 300,
+          "min": 1,
+          "max": 4,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "compactVehFilter",
+          "logisticTypes": ["vehNeedsRepair"]
+        },
+        {
+          "type": "vehOfferReceiver",
+          "interval": 300,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "junkVehFilter",
+          "logisticTypes": ["vehNeedsRepair"]
+        },
+        {
           "type": "vehOfferProvider",
           "interval": 300,
           "min": 1,
@@ -98,6 +116,15 @@
           "interval": 120
         },
         {
+          "type": "vehOfferReceiver",
+          "interval": 300,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "classicVehFilter",
+          "logisticTypes": ["vehNeedsRepair"]
+        },
+        {
           "type": "vehOfferProvider",
           "interval": 300,
           "min": 1,
@@ -158,6 +185,15 @@
           "min": 1,
           "max": 10,
           "interval": 120
+        },
+        {
+          "type": "vehOfferReceiver",
+          "interval": 300,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "customVehFilter",
+          "logisticTypes": ["vehNeedsRepair"]
         },
         {
           "type": "vehOfferProvider",
@@ -234,6 +270,15 @@
           "min": 1,
           "max": 10,
           "interval": 120
+        },
+        {
+          "type": "vehOfferReceiver",
+          "interval": 300,
+          "min": 1,
+          "max": 4,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "junkVehFilter",
+          "logisticTypes": ["vehNeedsRepair"]
         },
         {
           "type": "vehOfferProvider",
@@ -343,6 +388,15 @@
           "interval": 120
         },
         {
+          "type": "vehOfferReceiver",
+          "interval": 300,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "pickupVehFilter",
+          "logisticTypes": ["vehNeedsRepair"]
+        },
+        {
           "type": "vehOfferProvider",
           "interval": 300,
           "min": 3,
@@ -385,6 +439,15 @@
           "min": 1,
           "max": 10,
           "interval": 120
+        },
+        {
+          "type": "vehOfferReceiver",
+          "interval": 300,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "junkVehFilter",
+          "logisticTypes": ["vehNeedsRepair"]
         },
         {
           "type": "vehOfferProvider",
@@ -455,6 +518,15 @@
           "min": 1,
           "max": 10,
           "interval": 120
+        },
+        {
+          "type": "vehOfferReceiver",
+          "interval": 300,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 900},
+          "filter": "semiVehFilter",
+          "logisticTypes": ["vehLargeTruckNeedsRepair"]
         },
         {
           "type": "vehOfferProvider",
