@@ -12,15 +12,24 @@
         {
           "psName": "firwoodMotorCompany_delivery",
           "isInspectSpot": true,
-          "logisticTypesProvided": ["vehForScrap", "vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns"],
-          "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"]
+          "logisticTypesProvided": ["vehForScrap", "vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns", "trailer_emptyDryvanTrailers_firwoodMotorCompany_coastWarehouse"],
+          "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "trailer_loadedDryvanTrailers_coastWarehouse_firwoodMotorCompany"]
         }
       ],
       "sitesFile": "mechanics.sites.json",
-      "logisticTypesProvided": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns", "vehForScrap"],
-      "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"],
+      "logisticTypesProvided": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns", "vehForScrap", "trailer_emptyDryvanTrailers_firwoodMotorCompany_coastWarehouse"],
+      "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "trailer_loadedDryvanTrailers_coastWarehouse_firwoodMotorCompany"],
       "logisticMaxItems": 10,
       "logisticGenerators": [
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 600},
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": ["trailer_emptyDryvanTrailers_firwoodMotorCompany_coastWarehouse"]
+        },
         {
           "type": "parcelReceiver",
           "logisticTypes": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"],
@@ -92,15 +101,24 @@
         {
           "psName": "gemClassicsParking",
           "isInspectSpot": true,
-          "logisticTypesProvided": ["vehForScrap", "vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns"],
-          "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"]
+          "logisticTypesProvided": ["vehForScrap", "vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns", "trailer_emptyDryvanTrailers_gemClassics_coastWarehouse"],
+          "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "trailer_loadedDryvanTrailers_coastWarehouse_gemClassics"]
         }
       ],
       "sitesFile": "mechanics.sites.json",
-      "logisticTypesProvided": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns", "vehForScrap"],
-      "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"],
+      "logisticTypesProvided": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns", "vehForScrap", "trailer_emptyDryvanTrailers_gemClassics_coastWarehouse"],
+      "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "trailer_loadedDryvanTrailers_coastWarehouse_gemClassics"],
       "logisticMaxItems": 10,
       "logisticGenerators": [
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 600},
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": ["trailer_emptyDryvanTrailers_gemClassics_coastWarehouse"]
+        },
         {
           "type": "parcelReceiver",
           "logisticTypes": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"],
@@ -163,15 +181,24 @@
         {
           "psName": "hendersonsParking01",
           "isInspectSpot": true,
-          "logisticTypesProvided": ["vehForScrap", "vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns"],
-          "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"]
+          "logisticTypesProvided": ["vehForScrap", "vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns", "trailer_emptyDryvanTrailers_hendersonsGarage_coastWarehouse"],
+          "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "trailer_loadedDryvanTrailers_coastWarehouse_hendersonsGarage"]
         }
       ],
       "sitesFile": "mechanics.sites.json",
-      "logisticTypesProvided": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns", "vehForScrap"],
-      "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"],
+      "logisticTypesProvided": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns", "vehForScrap", "trailer_emptyDryvanTrailers_hendersonsGarage_coastWarehouse"],
+      "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "trailer_loadedDryvanTrailers_coastWarehouse_hendersonsGarage"],
       "logisticMaxItems": 10,
       "logisticGenerators": [
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 600},
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": ["trailer_emptyDryvanTrailers_hendersonsGarage_coastWarehouse"]
+        },
         {
           "type": "parcelReceiver",
           "logisticTypes": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"],
@@ -364,15 +391,24 @@
         {
           "psName": "tjShippingParking",
           "isInspectSpot": true,
-          "logisticTypesProvided": ["vehNeedsRepair", "vehRepairFinished", "vehForPrivate", "refundReturns"],
-          "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"]
+          "logisticTypesProvided": ["vehNeedsRepair", "vehRepairFinished", "vehForPrivate", "refundReturns", "trailer_emptyDryvanTrailers_tjsOffroadDealership_coastWarehouse"],
+          "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "trailer_loadedDryvanTrailers_coastWarehouse_tjsOffroadDealership"]
         }
       ],
       "sitesFile": "mechanics.sites.json",
-      "logisticTypesProvided": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns"],
-      "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"],
+      "logisticTypesProvided": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns", "trailer_emptyDryvanTrailers_tjsOffroadDealership_coastWarehouse"],
+      "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "trailer_loadedDryvanTrailers_coastWarehouse_tjsOffroadDealership"],
       "logisticMaxItems": 10,
       "logisticGenerators": [
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 600},
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": ["trailer_emptyDryvanTrailers_tjsOffroadDealership_coastWarehouse"]
+        },
         {
           "type": "parcelReceiver",
           "logisticTypes": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel"],
@@ -417,15 +453,24 @@
         {
           "psName": "firwoodGarage_parking",
           "isInspectSpot": true,
-          "logisticTypesProvided": ["vehForScrap", "vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns"],
-          "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "takeout"]
+          "logisticTypesProvided": ["vehForScrap", "vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns", "trailer_emptyDryvanTrailers_discountedDealership_coastWarehouse"],
+          "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "takeout", "trailer_loadedDryvanTrailers_coastWarehouse_discountedDealership"]
         }
       ],
       "sitesFile": "facilities.sites.json",
-      "logisticTypesProvided": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns", "vehForScrap"],
-      "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "takeout", "vehNeedsRepair"],
+      "logisticTypesProvided": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished", "refundReturns", "vehForScrap", "trailer_emptyDryvanTrailers_discountedDealership_coastWarehouse"],
+      "logisticTypesReceived": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "takeout", "vehNeedsRepair", "trailer_loadedDryvanTrailers_coastWarehouse_discountedDealership"],
       "logisticMaxItems": 10,
       "logisticGenerators": [
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 600},
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": ["trailer_emptyDryvanTrailers_discountedDealership_coastWarehouse"]
+        },
         {
           "type": "parcelReceiver",
           "logisticTypes": ["pcofficeSupplies", "carPartsLightSupplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "takeout"],
@@ -488,8 +533,8 @@
         {
           "psName": "logisticsGarage_parking",
           "isInspectSpot": true,
-          "logisticTypesProvided": ["vehLargeTruck", "refundReturns"],
-          "logisticTypesReceived": ["pcofficeSupplies", "freightSupplies", "freight2Supplies", "freight3Supplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "takeout", "vehLargeTruckNeedsRepair"]
+          "logisticTypesProvided": ["vehLargeTruck", "refundReturns", "trailer_emptyDryvanTrailers_logisticsGarage_coastWarehouse"],
+          "logisticTypesReceived": ["pcofficeSupplies", "freightSupplies", "freight2Supplies", "freight3Supplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "takeout", "vehLargeTruckNeedsRepair", "trailer_loadedDryvanTrailers_coastWarehouse_logisticsGarage"]
         },
         {
           "psName": "commercialRental_parking",
@@ -501,10 +546,19 @@
         }
       ],
       "sitesFile": "mechanics.sites.json",
-      "logisticTypesProvided": ["vehLargeTruck", "refundReturns", "vehForScrap"],
-      "logisticTypesReceived": ["pcofficeSupplies", "freightSupplies", "freight2Supplies", "freight3Supplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "takeout", "vehLargeTruckNeedsRepair"],
+      "logisticTypesProvided": ["vehLargeTruck", "refundReturns", "vehForScrap", "trailer_emptyDryvanTrailers_logisticsGarage_coastWarehouse"],
+      "logisticTypesReceived": ["pcofficeSupplies", "freightSupplies", "freight2Supplies", "freight3Supplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "takeout", "vehLargeTruckNeedsRepair", "trailer_loadedDryvanTrailers_coastWarehouse_logisticsGarage"],
       "logisticMaxItems": 10,
       "logisticGenerators": [
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {"min": 300, "max": 600},
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": ["trailer_emptyDryvanTrailers_logisticsGarage_coastWarehouse"]
+        },
         {
           "type": "parcelReceiver",
           "logisticTypes": ["pcofficeSupplies", "freightSupplies", "freight2Supplies", "freight3Supplies", "carPartsHeavySupplies", "tiresSupplies", "mechanicalParts", "parcel", "takeout"],

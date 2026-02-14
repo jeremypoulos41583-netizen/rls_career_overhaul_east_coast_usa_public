@@ -12,26 +12,158 @@
         {
           "psName": "officePax_parking",
           "isInspectSpot": false,
-          "logisticTypesProvided": [],
-          "logisticTypesReceived": ["vehForPrivate", "vehRepairFinished", "trailerDeliveryResidential", "takeout", "parcel", "officeSupplies", "bigOfficeSupplies"]
+          "logisticTypesProvided": [
+            "trailer_emptyDryvanTrailers_officePax_coastWarehouse"
+          ],
+          "logisticTypesReceived": [
+            "vehForPrivate",
+            "vehRepairFinished",
+            "takeout",
+            "parcel",
+            "officeSupplies",
+            "bigOfficeSupplies",
+            "trailer_loadedDryvanTrailers_coastWarehouse_officePax"
+          ]
         }
       ],
       "sitesFile": "retail.sites.json",
-      "logisticTypesProvided": [],
-      "logisticTypesReceived": ["vehForPrivate", "vehRepairFinished", "trailerDeliveryResidential", "takeout", "parcel", "officeSupplies", "bigOfficeSupplies"],
+      "logisticTypesProvided": [
+        "trailer_emptyDryvanTrailers_officePax_coastWarehouse"
+      ],
+      "logisticTypesReceived": [
+        "vehForPrivate",
+        "vehRepairFinished",
+        "takeout",
+        "parcel",
+        "officeSupplies",
+        "bigOfficeSupplies",
+        "trailer_loadedDryvanTrailers_coastWarehouse_officePax"
+      ],
       "logisticMaxItems": 10,
       "logisticGenerators": [
-        {"type": "parcelReceiver", "logisticTypes": ["takeout", "parcel", "officeSupplies", "bigOfficeSupplies", "pcofficeSupplies"], "min": -1, "max": 15, "interval": 60},
-        {"type": "vehOfferProvider", "interval": 300, "min": -1, "max": 5, "offerDuration": {"min": 300, "max": 900}, "filter": "compactVehFilter", "logisticTypes": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished"]},
-        {"type": "vehOfferProvider", "interval": 300, "min": -1, "max": 5, "offerDuration": {"min": 300, "max": 900}, "filter": "oldTimerVehFilter", "logisticTypes": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished"]},
-        {"type": "vehOfferProvider", "interval": 300, "min": -1, "max": 4, "offerDuration": {"min": 300, "max": 900}, "filter": "junkVehFilter", "logisticTypes": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished"]},
-        {"type": "vehOfferProvider", "interval": 300, "min": -1, "max": 4, "offerDuration": {"min": 300, "max": 900}, "filter": "pickupVehFilter", "logisticTypes": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished"]},
-        {"type": "vehOfferProvider", "interval": 300, "min": -1, "max": 4, "offerDuration": {"min": 300, "max": 900}, "filter": "highEndVehFilter", "logisticTypes": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished"]},
-        {"type": "vehOfferProvider", "interval": 300, "min": -1, "max": 4, "offerDuration": {"min": 300, "max": 900}, "filter": "customVehFilter", "logisticTypes": ["vehNeedsRepair", "vehForPrivate", "vehRepairFinished"]},
-        {"type": "trailerOfferReceiver", "interval": 210, "min": -1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleEmptyTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferReceiver", "interval": 210, "min": -1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleFurnitureTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferReceiver", "interval": 210, "min": -1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "mediumEmptyTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferReceiver", "interval": 210, "min": -1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "doubleAxleFurnitureTrailers", "logisticTypes": ["trailerDeliveryResidential"]}
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": [
+            "trailer_emptyDryvanTrailers_officePax_coastWarehouse"
+          ]
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "takeout",
+            "parcel",
+            "officeSupplies",
+            "bigOfficeSupplies",
+            "pcofficeSupplies"
+          ],
+          "min": -1,
+          "max": 15,
+          "interval": 60
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": -1,
+          "max": 5,
+          "offerDuration": {
+            "min": 300,
+            "max": 900
+          },
+          "filter": "compactVehFilter",
+          "logisticTypes": [
+            "vehNeedsRepair",
+            "vehForPrivate",
+            "vehRepairFinished"
+          ]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": -1,
+          "max": 5,
+          "offerDuration": {
+            "min": 300,
+            "max": 900
+          },
+          "filter": "oldTimerVehFilter",
+          "logisticTypes": [
+            "vehNeedsRepair",
+            "vehForPrivate",
+            "vehRepairFinished"
+          ]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": -1,
+          "max": 4,
+          "offerDuration": {
+            "min": 300,
+            "max": 900
+          },
+          "filter": "junkVehFilter",
+          "logisticTypes": [
+            "vehNeedsRepair",
+            "vehForPrivate",
+            "vehRepairFinished"
+          ]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": -1,
+          "max": 4,
+          "offerDuration": {
+            "min": 300,
+            "max": 900
+          },
+          "filter": "pickupVehFilter",
+          "logisticTypes": [
+            "vehNeedsRepair",
+            "vehForPrivate",
+            "vehRepairFinished"
+          ]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": -1,
+          "max": 4,
+          "offerDuration": {
+            "min": 300,
+            "max": 900
+          },
+          "filter": "highEndVehFilter",
+          "logisticTypes": [
+            "vehNeedsRepair",
+            "vehForPrivate",
+            "vehRepairFinished"
+          ]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": -1,
+          "max": 4,
+          "offerDuration": {
+            "min": 300,
+            "max": 900
+          },
+          "filter": "customVehFilter",
+          "logisticTypes": [
+            "vehNeedsRepair",
+            "vehForPrivate",
+            "vehRepairFinished"
+          ]
+        }
       ]
     },
     {
@@ -43,17 +175,45 @@
       "associatedOrganization": "firwoodParcelService",
       "preview": "localFacilities_city.png",
       "manualAccessPoints": [
-        {"psName": "firwoodParcelService_parking", "isInspectSpot": true, "logisticTypesProvided": ["parcel"], "logisticTypesReceived": ["takeout"]}
+        {
+          "psName": "firwoodParcelService_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "parcel"
+          ],
+          "logisticTypesReceived": [
+            "takeout"
+          ]
+        }
       ],
       "sitesFile": "retail.sites.json",
-      "logisticTypesProvided": ["parcel"],
-      "logisticTypesReceived": ["takeout"],
+      "logisticTypesProvided": [
+        "parcel"
+      ],
+      "logisticTypesReceived": [
+        "takeout"
+      ],
       "logisticMaxItems": 10,
       "logisticGenerators": [
-        {"type": "parcelProvider", "logisticTypes": ["parcel"], "min": 5, "max": 40, "slotsMin": 8, "interval": 180},
-        {"type": "parcelReceiver", "logisticTypes": ["takeout"], "min": 1, "max": 10, "interval": 60},
-        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleEmptyTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "doubleAxleEmptyTrailer", "logisticTypes": ["trailerDeliveryResidential"]}
+        {
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": 5,
+          "max": 40,
+          "slotsMin": 8,
+          "interval": 180
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "takeout"
+          ],
+          "min": 1,
+          "max": 10,
+          "interval": 60
+        }
       ]
     },
     {
@@ -65,15 +225,71 @@
       "associatedOrganization": "jujusComputers",
       "preview": "localFacilities_city.png",
       "manualAccessPoints": [
-        {"psName": "jujusComputers_parking", "isInspectSpot": true, "logisticTypesProvided": ["pcofficeSupplies"], "logisticTypesReceived": ["takeout", "parcel", "officeSupplies", "pcofficeSupplies"]}
+        {
+          "psName": "jujusComputers_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "pcofficeSupplies",
+            "trailer_emptyDryvanTrailers_jujusComputers_coastWarehouse"
+          ],
+          "logisticTypesReceived": [
+            "takeout",
+            "parcel",
+            "officeSupplies",
+            "pcofficeSupplies",
+            "trailer_loadedDryvanTrailers_coastWarehouse_jujusComputers"
+          ]
+        }
       ],
       "sitesFile": "retail.sites.json",
-      "logisticTypesProvided": ["pcofficeSupplies"],
-      "logisticTypesReceived": ["takeout", "parcel", "officeSupplies", "pcofficeSupplies"],
+      "logisticTypesProvided": [
+        "pcofficeSupplies",
+        "trailer_emptyDryvanTrailers_jujusComputers_coastWarehouse"
+      ],
+      "logisticTypesReceived": [
+        "takeout",
+        "parcel",
+        "officeSupplies",
+        "pcofficeSupplies",
+        "trailer_loadedDryvanTrailers_coastWarehouse_jujusComputers"
+      ],
       "logisticMaxItems": 10,
       "logisticGenerators": [
-        {"type": "parcelProvider", "logisticTypes": ["pcofficeSupplies"], "min": 5, "max": 20, "interval": 60},
-        {"type": "parcelReceiver", "logisticTypes": ["takeout", "parcel", "officeSupplies", "pcofficeSupplies"], "min": 5, "max": 20, "interval": 60}
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": [
+            "trailer_emptyDryvanTrailers_jujusComputers_coastWarehouse"
+          ]
+        },
+        {
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pcofficeSupplies"
+          ],
+          "min": 5,
+          "max": 20,
+          "interval": 60
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "takeout",
+            "parcel",
+            "officeSupplies",
+            "pcofficeSupplies"
+          ],
+          "min": 5,
+          "max": 20,
+          "interval": 60
+        }
       ]
     },
     {
@@ -85,25 +301,163 @@
       "associatedOrganization": "firwoodManufacturing",
       "preview": "localFacilities_city.png",
       "manualAccessPoints": [
-        {"psName": "firwoodManufacturing_parking", "isInspectSpot": true, "logisticTypesProvided": ["freightSupplies", "freight2Supplies", "freight3Supplies", "trailerDeliveryConstructionMaterials", "trailerDeliveryResidential", "vehLargeTruckNeedsRepair"], "logisticTypesReceived": ["vehLargeTruck", "vehRepairFinished", "trailerDeliveryConstructionMaterials", "trailerDeliveryResidential", "takeout", "parcel", "shopSupplies", "officeSupplies", "industrial"]}
+        {
+          "psName": "firwoodManufacturing_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "freightSupplies",
+            "freight2Supplies",
+            "freight3Supplies",
+            "trailer_emptyFlatbedTrailers_firwoodManufacturing_firwoodSupply",
+            "trailer_singleAxleFurnitureTrailers_firwoodManufacturing_FRS",
+            "trailer_doubleAxleFurnitureTrailers_firwoodManufacturing_FRS",
+            "trailer_singleAxleFurnitureTrailers_firwoodManufacturing_coastWarehouse",
+            "trailer_doubleAxleFurnitureTrailers_firwoodManufacturing_coastWarehouse",
+            "vehLargeTruckNeedsRepair"
+          ],
+          "logisticTypesReceived": [
+            "vehLargeTruck",
+            "vehRepairFinished",
+            "takeout",
+            "parcel",
+            "shopSupplies",
+            "officeSupplies",
+            "industrial",
+            "trailer_lumberFlatbed_firwoodSupply_firwoodManufacturing",
+            "trailer_singleAxleEmptyTrailers_FRS_firwoodManufacturing",
+            "trailer_doubleAxleEmptyTrailer_FRS_firwoodManufacturing",
+            "trailer_singleAxleEmptyTrailers_coastWarehouse_firwoodManufacturing",
+            "trailer_doubleAxleEmptyTrailer_coastWarehouse_firwoodManufacturing"
+          ]
+        }
       ],
       "sitesFile": "retail.sites.json",
-      "logisticTypesProvided": ["freightSupplies", "freight2Supplies", "freight3Supplies", "trailerDeliveryConstructionMaterials", "trailerDeliveryResidential", "vehLargeTruckNeedsRepair"],
-      "logisticTypesReceived": ["vehLargeTruck", "vehRepairFinished", "trailerDeliveryConstructionMaterials", "trailerDeliveryResidential", "takeout", "parcel", "shopSupplies", "officeSupplies", "industrial"],
+      "logisticTypesProvided": [
+        "freightSupplies",
+        "freight2Supplies",
+        "freight3Supplies",
+        "trailer_emptyFlatbedTrailers_firwoodManufacturing_firwoodSupply",
+        "trailer_singleAxleFurnitureTrailers_firwoodManufacturing_FRS",
+        "trailer_doubleAxleFurnitureTrailers_firwoodManufacturing_FRS",
+        "trailer_singleAxleFurnitureTrailers_firwoodManufacturing_coastWarehouse",
+        "trailer_doubleAxleFurnitureTrailers_firwoodManufacturing_coastWarehouse",
+        "vehLargeTruckNeedsRepair"
+      ],
+      "logisticTypesReceived": [
+        "vehLargeTruck",
+        "vehRepairFinished",
+        "takeout",
+        "parcel",
+        "shopSupplies",
+        "officeSupplies",
+        "industrial",
+        "trailer_lumberFlatbed_firwoodSupply_firwoodManufacturing",
+        "trailer_singleAxleEmptyTrailers_FRS_firwoodManufacturing",
+        "trailer_doubleAxleEmptyTrailer_FRS_firwoodManufacturing",
+        "trailer_singleAxleEmptyTrailers_coastWarehouse_firwoodManufacturing",
+        "trailer_doubleAxleEmptyTrailer_coastWarehouse_firwoodManufacturing"
+      ],
       "logisticMaxItems": 10,
       "logisticGenerators": [
-        {"type": "parcelReceiver", "logisticTypes": ["takeout", "parcel", "shopSupplies", "officeSupplies", "industrial"], "min": 1, "max": 3, "interval": 60},
-        {"type": "parcelProvider", "logisticTypes": ["freightSupplies", "freight2Supplies", "freight3Supplies", "industrial"], "min": 1, "max": 3, "interval": 60},
-        {"type": "vehOfferProvider", "interval": 300, "min": 3, "max": 8, "offerDuration": {"min": 300, "max": 900}, "filter": "semiVehFilter", "logisticTypes": ["vehLargeTruck", "vehLargeTruckNeedsRepair"]},
-        {"type": "vehOfferProvider", "interval": 300, "min": 3, "max": 8, "offerDuration": {"min": 300, "max": 900}, "filter": "newSemiVehFilter", "logisticTypes": ["vehLargeTruck", "vehLargeTruckNeedsRepair"]},
-        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 4, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleLumberTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 4, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleEmptyTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferProvider", "interval": 210, "min": 1, "max": 4, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleFurnitureTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferProvider", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "doubleAxleFurnitureTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 3, "offerDuration": {"min": 300, "max": 600}, "filter": "doubleAxleEmptyTrailer", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 3, "offerDuration": {"min": 300, "max": 600}, "filter": "doubleAxleLumberTrailer", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferProvider", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "emptySemiTrailers", "logisticTypes": ["trailerDeliveryConstructionMaterials"]},
-        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "emptySemiTrailers", "logisticTypes": ["trailerDeliveryConstructionMaterials"]}
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "takeout",
+            "parcel",
+            "shopSupplies",
+            "officeSupplies",
+            "industrial"
+          ],
+          "min": 1,
+          "max": 3,
+          "interval": 60
+        },
+        {
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "freightSupplies",
+            "freight2Supplies",
+            "freight3Supplies",
+            "industrial"
+          ],
+          "min": 1,
+          "max": 3,
+          "interval": 60
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 3,
+          "max": 8,
+          "offerDuration": {
+            "min": 300,
+            "max": 900
+          },
+          "filter": "semiVehFilter",
+          "logisticTypes": [
+            "vehLargeTruck",
+            "vehLargeTruckNeedsRepair"
+          ]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 3,
+          "max": 8,
+          "offerDuration": {
+            "min": 300,
+            "max": 900
+          },
+          "filter": "newSemiVehFilter",
+          "logisticTypes": [
+            "vehLargeTruck",
+            "vehLargeTruckNeedsRepair"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyFlatbedTrailers",
+          "logisticTypes": [
+            "trailer_emptyFlatbedTrailers_firwoodManufacturing_firwoodSupply"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "singleAxleFurnitureTrailers",
+          "logisticTypes": [
+            "trailer_singleAxleFurnitureTrailers_firwoodManufacturing_FRS",
+            "trailer_singleAxleFurnitureTrailers_firwoodManufacturing_coastWarehouse"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "doubleAxleFurnitureTrailers",
+          "logisticTypes": [
+            "trailer_doubleAxleFurnitureTrailers_firwoodManufacturing_FRS",
+            "trailer_doubleAxleFurnitureTrailers_firwoodManufacturing_coastWarehouse"
+          ]
+        }
       ]
     },
     {
@@ -115,19 +469,137 @@
       "associatedOrganization": "firwoodInn",
       "preview": "firwoodInn.png",
       "manualAccessPoints": [
-        {"psName": "firwoodInn_parking", "isInspectSpot": true, "logisticTypesProvided": ["takeout", "defectiveReturns", "trailerDeliveryResidential"], "logisticTypesReceived": ["parcel", "mealSupplies", "prepSupplies", "spiritsSupplies", "sideDishSupplies", "drinkSupplies", "seafoodSupplies", "trailerDeliveryResidential"]}
+        {
+          "psName": "firwoodInn_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "takeout",
+            "defectiveReturns",
+            "trailer_emptyDryvanTrailers_firwoodInn_FRS",
+            "trailer_tastiColaDryvan_firwoodInn_FRS",
+            "trailer_singleAxleEmptyTrailers_firwoodInn_FRS",
+            "trailer_doubleAxleEmptyTrailer_firwoodInn_FRS"
+          ],
+          "logisticTypesReceived": [
+            "parcel",
+            "mealSupplies",
+            "prepSupplies",
+            "spiritsSupplies",
+            "sideDishSupplies",
+            "drinkSupplies",
+            "seafoodSupplies",
+            "trailer_tastiColaDryvan_FRS_firwoodInn",
+            "trailer_loadedDryvanTrailers_FRS_firwoodInn",
+            "trailer_singleAxleFurnitureTrailers_FRS_firwoodInn",
+            "trailer_doubleAxleFurnitureTrailers_FRS_firwoodInn"
+          ]
+        }
       ],
       "sitesFile": "retail.sites.json",
-      "logisticTypesProvided": ["takeout", "defectiveReturns", "trailerDeliveryResidential"],
-      "logisticTypesReceived": ["parcel", "mealSupplies", "prepSupplies", "spiritsSupplies", "sideDishSupplies", "drinkSupplies", "seafoodSupplies", "trailerDeliveryResidential"],
+      "logisticTypesProvided": [
+        "takeout",
+        "defectiveReturns",
+        "trailer_emptyDryvanTrailers_firwoodInn_FRS",
+        "trailer_tastiColaDryvan_firwoodInn_FRS",
+        "trailer_singleAxleEmptyTrailers_firwoodInn_FRS",
+        "trailer_doubleAxleEmptyTrailer_firwoodInn_FRS"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "mealSupplies",
+        "prepSupplies",
+        "spiritsSupplies",
+        "sideDishSupplies",
+        "drinkSupplies",
+        "seafoodSupplies",
+        "trailer_tastiColaDryvan_FRS_firwoodInn",
+        "trailer_loadedDryvanTrailers_FRS_firwoodInn",
+        "trailer_singleAxleFurnitureTrailers_FRS_firwoodInn",
+        "trailer_doubleAxleFurnitureTrailers_FRS_firwoodInn"
+      ],
       "logisticMaxItems": 10,
       "logisticGenerators": [
-        {"type": "parcelProvider", "logisticTypes": ["takeout", "defectiveReturns"], "min": 1, "max": 7, "interval": 60},
-        {"type": "parcelReceiver", "logisticTypes": ["parcel", "mealSupplies", "prepSupplies", "spiritsSupplies", "sideDishSupplies", "drinkSupplies", "seafoodSupplies"], "min": 1, "max": 13, "interval": 60},
-        {"type": "trailerOfferProvider", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleEmptyTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferProvider", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "doubleAxleEmptyTrailer", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleFurnitureTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "mediumFurnitureTrailer", "logisticTypes": ["trailerDeliveryResidential"]}
+        {
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "takeout",
+            "defectiveReturns"
+          ],
+          "min": 1,
+          "max": 7,
+          "interval": 60
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "parcel",
+            "mealSupplies",
+            "prepSupplies",
+            "spiritsSupplies",
+            "sideDishSupplies",
+            "drinkSupplies",
+            "seafoodSupplies"
+          ],
+          "min": 1,
+          "max": 13,
+          "interval": 60
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": [
+            "trailer_emptyDryvanTrailers_firwoodInn_FRS"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "tastiColaDryvan",
+          "logisticTypes": [
+            "trailer_tastiColaDryvan_firwoodInn_FRS"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "singleAxleEmptyTrailers",
+          "logisticTypes": [
+            "trailer_singleAxleEmptyTrailers_firwoodInn_FRS"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "doubleAxleEmptyTrailer",
+          "logisticTypes": [
+            "trailer_doubleAxleEmptyTrailer_firwoodInn_FRS"
+          ]
+        }
       ]
     },
     {
@@ -139,19 +611,137 @@
       "associatedOrganization": "watchtowerInn",
       "preview": "watchtowerInn.png",
       "manualAccessPoints": [
-        {"psName": "watchtowerInn_parking", "isInspectSpot": true, "logisticTypesProvided": ["takeout", "defectiveReturns", "trailerDeliveryResidential"], "logisticTypesReceived": ["parcel", "mealSupplies", "prepSupplies", "spiritsSupplies", "sideDishSupplies", "drinkSupplies", "seafoodSupplies", "trailerDeliveryResidential"]}
+        {
+          "psName": "watchtowerInn_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "takeout",
+            "defectiveReturns",
+            "trailer_emptyDryvanTrailers_watchtowerInn_FRS",
+            "trailer_tastiColaDryvan_watchtowerInn_FRS",
+            "trailer_singleAxleEmptyTrailers_watchtowerInn_FRS",
+            "trailer_doubleAxleEmptyTrailer_watchtowerInn_FRS"
+          ],
+          "logisticTypesReceived": [
+            "parcel",
+            "mealSupplies",
+            "prepSupplies",
+            "spiritsSupplies",
+            "sideDishSupplies",
+            "drinkSupplies",
+            "seafoodSupplies",
+            "trailer_tastiColaDryvan_FRS_watchtowerInn",
+            "trailer_loadedDryvanTrailers_FRS_watchtowerInn",
+            "trailer_singleAxleFurnitureTrailers_FRS_watchtowerInn",
+            "trailer_doubleAxleFurnitureTrailers_FRS_watchtowerInn"
+          ]
+        }
       ],
       "sitesFile": "retail.sites.json",
-      "logisticTypesProvided": ["takeout", "defectiveReturns", "trailerDeliveryResidential"],
-      "logisticTypesReceived": ["parcel", "mealSupplies", "prepSupplies", "spiritsSupplies", "sideDishSupplies", "drinkSupplies", "seafoodSupplies", "trailerDeliveryResidential"],
+      "logisticTypesProvided": [
+        "takeout",
+        "defectiveReturns",
+        "trailer_emptyDryvanTrailers_watchtowerInn_FRS",
+        "trailer_tastiColaDryvan_watchtowerInn_FRS",
+        "trailer_singleAxleEmptyTrailers_watchtowerInn_FRS",
+        "trailer_doubleAxleEmptyTrailer_watchtowerInn_FRS"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "mealSupplies",
+        "prepSupplies",
+        "spiritsSupplies",
+        "sideDishSupplies",
+        "drinkSupplies",
+        "seafoodSupplies",
+        "trailer_tastiColaDryvan_FRS_watchtowerInn",
+        "trailer_loadedDryvanTrailers_FRS_watchtowerInn",
+        "trailer_singleAxleFurnitureTrailers_FRS_watchtowerInn",
+        "trailer_doubleAxleFurnitureTrailers_FRS_watchtowerInn"
+      ],
       "logisticMaxItems": 10,
       "logisticGenerators": [
-        {"type": "parcelProvider", "logisticTypes": ["takeout", "defectiveReturns"], "min": 1, "max": 7, "interval": 60},
-        {"type": "parcelReceiver", "logisticTypes": ["parcel", "mealSupplies", "prepSupplies", "spiritsSupplies", "sideDishSupplies", "drinkSupplies", "seafoodSupplies"], "min": 1, "max": 13, "interval": 60},
-        {"type": "trailerOfferProvider", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleEmptyTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferProvider", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "doubleAxleEmptyTrailer", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleFurnitureTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "mediumFurnitureTrailer", "logisticTypes": ["trailerDeliveryResidential"]}
+        {
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "takeout",
+            "defectiveReturns"
+          ],
+          "min": 1,
+          "max": 7,
+          "interval": 60
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "parcel",
+            "mealSupplies",
+            "prepSupplies",
+            "spiritsSupplies",
+            "sideDishSupplies",
+            "drinkSupplies",
+            "seafoodSupplies"
+          ],
+          "min": 1,
+          "max": 13,
+          "interval": 60
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": [
+            "trailer_emptyDryvanTrailers_watchtowerInn_FRS"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "tastiColaDryvan",
+          "logisticTypes": [
+            "trailer_tastiColaDryvan_watchtowerInn_FRS"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "singleAxleEmptyTrailers",
+          "logisticTypes": [
+            "trailer_singleAxleEmptyTrailers_watchtowerInn_FRS"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "doubleAxleEmptyTrailer",
+          "logisticTypes": [
+            "trailer_doubleAxleEmptyTrailer_watchtowerInn_FRS"
+          ]
+        }
       ]
     },
     {
@@ -163,19 +753,137 @@
       "associatedOrganization": "kikisDiner",
       "preview": "kikisDiner.png",
       "manualAccessPoints": [
-        {"psName": "kikisDiner_parking", "isInspectSpot": true, "logisticTypesProvided": ["takeout", "defectiveReturns", "trailerDeliveryResidential"], "logisticTypesReceived": ["parcel", "mealSupplies", "prepSupplies", "spiritsSupplies", "sideDishSupplies", "drinkSupplies", "seafoodSupplies", "trailerDeliveryResidential"]}
+        {
+          "psName": "kikisDiner_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "takeout",
+            "defectiveReturns",
+            "trailer_emptyDryvanTrailers_kikisDiner_FRS",
+            "trailer_tastiColaDryvan_kikisDiner_FRS",
+            "trailer_singleAxleEmptyTrailers_kikisDiner_FRS",
+            "trailer_doubleAxleEmptyTrailer_kikisDiner_FRS"
+          ],
+          "logisticTypesReceived": [
+            "parcel",
+            "mealSupplies",
+            "prepSupplies",
+            "spiritsSupplies",
+            "sideDishSupplies",
+            "drinkSupplies",
+            "seafoodSupplies",
+            "trailer_tastiColaDryvan_FRS_kikisDiner",
+            "trailer_loadedDryvanTrailers_FRS_kikisDiner",
+            "trailer_singleAxleFurnitureTrailers_FRS_kikisDiner",
+            "trailer_doubleAxleFurnitureTrailers_FRS_kikisDiner"
+          ]
+        }
       ],
       "sitesFile": "retail.sites.json",
-      "logisticTypesProvided": ["takeout", "defectiveReturns", "trailerDeliveryResidential"],
-      "logisticTypesReceived": ["parcel", "mealSupplies", "prepSupplies", "spiritsSupplies", "sideDishSupplies", "drinkSupplies", "seafoodSupplies", "trailerDeliveryResidential"],
+      "logisticTypesProvided": [
+        "takeout",
+        "defectiveReturns",
+        "trailer_emptyDryvanTrailers_kikisDiner_FRS",
+        "trailer_tastiColaDryvan_kikisDiner_FRS",
+        "trailer_singleAxleEmptyTrailers_kikisDiner_FRS",
+        "trailer_doubleAxleEmptyTrailer_kikisDiner_FRS"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "mealSupplies",
+        "prepSupplies",
+        "spiritsSupplies",
+        "sideDishSupplies",
+        "drinkSupplies",
+        "seafoodSupplies",
+        "trailer_tastiColaDryvan_FRS_kikisDiner",
+        "trailer_loadedDryvanTrailers_FRS_kikisDiner",
+        "trailer_singleAxleFurnitureTrailers_FRS_kikisDiner",
+        "trailer_doubleAxleFurnitureTrailers_FRS_kikisDiner"
+      ],
       "logisticMaxItems": 10,
       "logisticGenerators": [
-        {"type": "parcelProvider", "logisticTypes": ["takeout", "defectiveReturns"], "min": 1, "max": 7, "interval": 60},
-        {"type": "parcelReceiver", "logisticTypes": ["parcel", "mealSupplies", "prepSupplies", "spiritsSupplies", "sideDishSupplies", "drinkSupplies", "seafoodSupplies"], "min": 1, "max": 13, "interval": 60},
-        {"type": "trailerOfferProvider", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleEmptyTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferProvider", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "doubleAxleEmptyTrailer", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleFurnitureTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "mediumFurnitureTrailer", "logisticTypes": ["trailerDeliveryResidential"]}
+        {
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "takeout",
+            "defectiveReturns"
+          ],
+          "min": 1,
+          "max": 7,
+          "interval": 60
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "parcel",
+            "mealSupplies",
+            "prepSupplies",
+            "spiritsSupplies",
+            "sideDishSupplies",
+            "drinkSupplies",
+            "seafoodSupplies"
+          ],
+          "min": 1,
+          "max": 13,
+          "interval": 60
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": [
+            "trailer_emptyDryvanTrailers_kikisDiner_FRS"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "tastiColaDryvan",
+          "logisticTypes": [
+            "trailer_tastiColaDryvan_kikisDiner_FRS"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "singleAxleEmptyTrailers",
+          "logisticTypes": [
+            "trailer_singleAxleEmptyTrailers_kikisDiner_FRS"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "doubleAxleEmptyTrailer",
+          "logisticTypes": [
+            "trailer_doubleAxleEmptyTrailer_kikisDiner_FRS"
+          ]
+        }
       ]
     },
     {
@@ -187,15 +895,84 @@
       "associatedOrganization": "nodeoline",
       "preview": "nodeolineStore.png",
       "manualAccessPoints": [
-        {"psName": "nodeolineStoreDelivery", "isInspectSpot": true, "logisticTypesProvided": ["drinkSupplies", "snackSupplies"], "logisticTypesReceived": ["takeout", "parcel"]}
+        {
+          "psName": "nodeolineStoreDelivery",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "drinkSupplies",
+            "snackSupplies",
+            "trailer_emptyDryvanTrailers_nodeolineStore_FRS",
+            "trailer_tastiColaDryvan_nodeolineStore_FRS"
+          ],
+          "logisticTypesReceived": [
+            "takeout",
+            "parcel",
+            "trailer_tastiColaDryvan_FRS_nodeolineStore"
+          ]
+        }
       ],
       "sitesFile": "retail.sites.json",
-      "logisticTypesProvided": ["drinkSupplies", "snackSupplies"],
-      "logisticTypesReceived": ["takeout", "parcel"],
+      "logisticTypesProvided": [
+        "drinkSupplies",
+        "snackSupplies",
+        "trailer_emptyDryvanTrailers_nodeolineStore_FRS",
+        "trailer_tastiColaDryvan_nodeolineStore_FRS"
+      ],
+      "logisticTypesReceived": [
+        "takeout",
+        "parcel",
+        "trailer_tastiColaDryvan_FRS_nodeolineStore"
+      ],
       "logisticMaxItems": 10,
       "logisticGenerators": [
-        {"type": "parcelProvider", "logisticTypes": ["drinkSupplies", "snackSupplies"], "min": -1, "max": 5, "interval": 60},
-        {"type": "parcelReceiver", "logisticTypes": ["parcel", "takeout"], "min": -1, "max": 5, "interval": 60}
+        {
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "drinkSupplies",
+            "snackSupplies"
+          ],
+          "min": -1,
+          "max": 5,
+          "interval": 60
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "parcel",
+            "takeout"
+          ],
+          "min": -1,
+          "max": 5,
+          "interval": 60
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": [
+            "trailer_emptyDryvanTrailers_nodeolineStore_FRS"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "tastiColaDryvan",
+          "logisticTypes": [
+            "trailer_tastiColaDryvan_nodeolineStore_FRS"
+          ]
+        }
       ]
     },
     {
@@ -207,15 +984,84 @@
       "associatedOrganization": "nodeoline",
       "preview": "nodeolineStore.png",
       "manualAccessPoints": [
-        {"psName": "firwoodNodeolineStore_parking", "isInspectSpot": true, "logisticTypesProvided": ["drinkSupplies", "snackSupplies"], "logisticTypesReceived": ["takeout", "parcel"]}
+        {
+          "psName": "firwoodNodeolineStore_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "drinkSupplies",
+            "snackSupplies",
+            "trailer_emptyDryvanTrailers_firwoodNodeolineStore_FRS",
+            "trailer_tastiColaDryvan_firwoodNodeolineStore_FRS"
+          ],
+          "logisticTypesReceived": [
+            "takeout",
+            "parcel",
+            "trailer_tastiColaDryvan_FRS_firwoodNodeolineStore"
+          ]
+        }
       ],
       "sitesFile": "retail.sites.json",
-      "logisticTypesProvided": ["drinkSupplies", "snackSupplies"],
-      "logisticTypesReceived": ["parcel", "takeout"],
+      "logisticTypesProvided": [
+        "drinkSupplies",
+        "snackSupplies",
+        "trailer_emptyDryvanTrailers_firwoodNodeolineStore_FRS",
+        "trailer_tastiColaDryvan_firwoodNodeolineStore_FRS"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "takeout",
+        "trailer_tastiColaDryvan_FRS_firwoodNodeolineStore"
+      ],
       "logisticMaxItems": 10,
       "logisticGenerators": [
-        {"type": "parcelProvider", "logisticTypes": ["drinkSupplies", "snackSupplies"], "min": -1, "max": 5, "interval": 60},
-        {"type": "parcelReceiver", "logisticTypes": ["parcel", "takeout"], "min": -1, "max": 5, "interval": 60}
+        {
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "drinkSupplies",
+            "snackSupplies"
+          ],
+          "min": -1,
+          "max": 5,
+          "interval": 60
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "parcel",
+            "takeout"
+          ],
+          "min": -1,
+          "max": 5,
+          "interval": 60
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": [
+            "trailer_emptyDryvanTrailers_firwoodNodeolineStore_FRS"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "tastiColaDryvan",
+          "logisticTypes": [
+            "trailer_tastiColaDryvan_firwoodNodeolineStore_FRS"
+          ]
+        }
       ]
     },
     {
@@ -227,16 +1073,75 @@
       "associatedOrganization": "firwoodDeliveryAssociation",
       "preview": "baitShop.png",
       "manualAccessPoints": [
-        {"psName": "baitShop_parking", "isInspectSpot": false, "logisticTypesProvided": [], "logisticTypesReceived": ["parcel", "takeout", "pcofficeSupplies", "trailerDeliveryResidential"]}
+        {
+          "psName": "baitShop_parking",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "trailer_emptyDryvanTrailers_baitShop_FRS",
+            "trailer_tastiColaDryvan_baitShop_FRS"
+          ],
+          "logisticTypesReceived": [
+            "parcel",
+            "takeout",
+            "pcofficeSupplies",
+            "trailer_tastiColaDryvan_FRS_baitShop"
+          ]
+        }
       ],
       "sitesFile": "retail.sites.json",
-      "logisticTypesProvided": [],
-      "logisticTypesReceived": ["parcel", "takeout", "prepSupplies", "pcofficeSupplies", "trailerDeliveryResidential"],
+      "logisticTypesProvided": [
+        "trailer_emptyDryvanTrailers_baitShop_FRS",
+        "trailer_tastiColaDryvan_baitShop_FRS"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "takeout",
+        "prepSupplies",
+        "pcofficeSupplies",
+        "trailer_tastiColaDryvan_FRS_baitShop"
+      ],
       "logisticMaxItems": 10,
       "logisticGenerators": [
-        {"type": "parcelReceiver", "logisticTypes": ["parcel", "takeout", "prepSupplies", "pcofficeSupplies"], "min": -1, "max": 5, "interval": 60},
-        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "singleAxleEmptyTrailers", "logisticTypes": ["trailerDeliveryResidential"]},
-        {"type": "trailerOfferReceiver", "interval": 210, "min": 1, "max": 2, "offerDuration": {"min": 300, "max": 600}, "filter": "doubleAxleEmptyTrailer", "logisticTypes": ["trailerDeliveryResidential"]}
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "parcel",
+            "takeout",
+            "prepSupplies",
+            "pcofficeSupplies"
+          ],
+          "min": -1,
+          "max": 5,
+          "interval": 60
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": [
+            "trailer_emptyDryvanTrailers_baitShop_FRS"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "tastiColaDryvan",
+          "logisticTypes": [
+            "trailer_tastiColaDryvan_baitShop_FRS"
+          ]
+        }
       ]
     }
   ]
