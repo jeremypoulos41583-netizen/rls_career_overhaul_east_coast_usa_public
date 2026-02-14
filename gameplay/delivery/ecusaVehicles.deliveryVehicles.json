@@ -399,20 +399,6 @@
     }
   }
   },
-  "emptyTastiColaDryvan": {
-  "type": "trailer",
-  "unlockTag": "loadedDryvanTrailers",
-  "filterName": "Empty TastiCola Trailer",
-  "connector": "towhitch",
-  "baseReward": 1000,
-  "rewardPerKm": 400,
-  "filter": {
-    "whiteList": {
-      "model_key": ["dryvan"],
-      "Configuration": ["28ft TastiCola Empty", "48ft TastiCola Empty"]
-    }
-  }
-  },
   "emptyTanker": {
   "type": "trailer",
   "unlockTag": "tankerTrailers",

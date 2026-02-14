@@ -490,7 +490,6 @@
           "logisticTypesReceived": [
             "trailer_emptyDryvanTrailers_coastWarehouse_port",
             "trailer_emptyDryvanTrailers_FRS_port",
-            "trailer_emptyTastiColaDryvan_FRS_port",
             "vehForRecycle",
             "vehLargeTruck"
           ]
@@ -558,7 +557,6 @@
       "logisticTypesReceived": [
         "trailer_emptyDryvanTrailers_coastWarehouse_port",
         "trailer_emptyDryvanTrailers_FRS_port",
-        "trailer_emptyTastiColaDryvan_FRS_port",
         "vehForRecycle",
         "freight2Supplies",
         "freight3Supplies",

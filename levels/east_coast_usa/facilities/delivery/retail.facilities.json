@@ -476,7 +476,6 @@
             "takeout",
             "defectiveReturns",
             "trailer_emptyDryvanTrailers_firwoodInn_FRS",
-            "trailer_tastiColaDryvan_firwoodInn_FRS",
             "trailer_singleAxleEmptyTrailers_firwoodInn_FRS",
             "trailer_doubleAxleEmptyTrailer_firwoodInn_FRS"
           ],
@@ -500,7 +499,6 @@
         "takeout",
         "defectiveReturns",
         "trailer_emptyDryvanTrailers_firwoodInn_FRS",
-        "trailer_tastiColaDryvan_firwoodInn_FRS",
         "trailer_singleAxleEmptyTrailers_firwoodInn_FRS",
         "trailer_doubleAxleEmptyTrailer_firwoodInn_FRS"
       ],
@@ -567,20 +565,6 @@
             "min": 300,
             "max": 600
           },
-          "filter": "emptyTastiColaDryvan",
-          "logisticTypes": [
-            "trailer_tastiColaDryvan_firwoodInn_FRS"
-          ]
-        },
-        {
-          "type": "trailerOfferProvider",
-          "interval": 210,
-          "min": 1,
-          "max": 3,
-          "offerDuration": {
-            "min": 300,
-            "max": 600
-          },
           "filter": "singleAxleEmptyTrailers",
           "logisticTypes": [
             "trailer_singleAxleEmptyTrailers_firwoodInn_FRS"
@@ -618,7 +602,6 @@
             "takeout",
             "defectiveReturns",
             "trailer_emptyDryvanTrailers_watchtowerInn_FRS",
-            "trailer_tastiColaDryvan_watchtowerInn_FRS",
             "trailer_singleAxleEmptyTrailers_watchtowerInn_FRS",
             "trailer_doubleAxleEmptyTrailer_watchtowerInn_FRS"
           ],
@@ -642,7 +625,6 @@
         "takeout",
         "defectiveReturns",
         "trailer_emptyDryvanTrailers_watchtowerInn_FRS",
-        "trailer_tastiColaDryvan_watchtowerInn_FRS",
         "trailer_singleAxleEmptyTrailers_watchtowerInn_FRS",
         "trailer_doubleAxleEmptyTrailer_watchtowerInn_FRS"
       ],
@@ -709,20 +691,6 @@
             "min": 300,
             "max": 600
           },
-          "filter": "emptyTastiColaDryvan",
-          "logisticTypes": [
-            "trailer_tastiColaDryvan_watchtowerInn_FRS"
-          ]
-        },
-        {
-          "type": "trailerOfferProvider",
-          "interval": 210,
-          "min": 1,
-          "max": 3,
-          "offerDuration": {
-            "min": 300,
-            "max": 600
-          },
           "filter": "singleAxleEmptyTrailers",
           "logisticTypes": [
             "trailer_singleAxleEmptyTrailers_watchtowerInn_FRS"
@@ -760,7 +728,6 @@
             "takeout",
             "defectiveReturns",
             "trailer_emptyDryvanTrailers_kikisDiner_FRS",
-            "trailer_tastiColaDryvan_kikisDiner_FRS",
             "trailer_singleAxleEmptyTrailers_kikisDiner_FRS",
             "trailer_doubleAxleEmptyTrailer_kikisDiner_FRS"
           ],
@@ -784,7 +751,6 @@
         "takeout",
         "defectiveReturns",
         "trailer_emptyDryvanTrailers_kikisDiner_FRS",
-        "trailer_tastiColaDryvan_kikisDiner_FRS",
         "trailer_singleAxleEmptyTrailers_kikisDiner_FRS",
         "trailer_doubleAxleEmptyTrailer_kikisDiner_FRS"
       ],
@@ -851,20 +817,6 @@
             "min": 300,
             "max": 600
           },
-          "filter": "emptyTastiColaDryvan",
-          "logisticTypes": [
-            "trailer_tastiColaDryvan_kikisDiner_FRS"
-          ]
-        },
-        {
-          "type": "trailerOfferProvider",
-          "interval": 210,
-          "min": 1,
-          "max": 3,
-          "offerDuration": {
-            "min": 300,
-            "max": 600
-          },
           "filter": "singleAxleEmptyTrailers",
           "logisticTypes": [
             "trailer_singleAxleEmptyTrailers_kikisDiner_FRS"
@@ -901,8 +853,7 @@
           "logisticTypesProvided": [
             "drinkSupplies",
             "snackSupplies",
-            "trailer_emptyDryvanTrailers_nodeolineStore_FRS",
-            "trailer_tastiColaDryvan_nodeolineStore_FRS"
+            "trailer_emptyDryvanTrailers_nodeolineStore_FRS"
           ],
           "logisticTypesReceived": [
             "takeout",
@@ -915,8 +866,7 @@
       "logisticTypesProvided": [
         "drinkSupplies",
         "snackSupplies",
-        "trailer_emptyDryvanTrailers_nodeolineStore_FRS",
-        "trailer_tastiColaDryvan_nodeolineStore_FRS"
+        "trailer_emptyDryvanTrailers_nodeolineStore_FRS"
       ],
       "logisticTypesReceived": [
         "takeout",
@@ -959,20 +909,6 @@
             "trailer_emptyDryvanTrailers_nodeolineStore_FRS"
           ]
         },
-        {
-          "type": "trailerOfferProvider",
-          "interval": 210,
-          "min": 1,
-          "max": 3,
-          "offerDuration": {
-            "min": 300,
-            "max": 600
-          },
-          "filter": "emptyTastiColaDryvan",
-          "logisticTypes": [
-            "trailer_tastiColaDryvan_nodeolineStore_FRS"
-          ]
-        }
       ]
     },
     {
@@ -990,8 +926,7 @@
           "logisticTypesProvided": [
             "drinkSupplies",
             "snackSupplies",
-            "trailer_emptyDryvanTrailers_firwoodNodeolineStore_FRS",
-            "trailer_tastiColaDryvan_firwoodNodeolineStore_FRS"
+            "trailer_emptyDryvanTrailers_firwoodNodeolineStore_FRS"
           ],
           "logisticTypesReceived": [
             "takeout",
@@ -1004,8 +939,7 @@
       "logisticTypesProvided": [
         "drinkSupplies",
         "snackSupplies",
-        "trailer_emptyDryvanTrailers_firwoodNodeolineStore_FRS",
-        "trailer_tastiColaDryvan_firwoodNodeolineStore_FRS"
+        "trailer_emptyDryvanTrailers_firwoodNodeolineStore_FRS"
       ],
       "logisticTypesReceived": [
         "parcel",
@@ -1048,20 +982,6 @@
             "trailer_emptyDryvanTrailers_firwoodNodeolineStore_FRS"
           ]
         },
-        {
-          "type": "trailerOfferProvider",
-          "interval": 210,
-          "min": 1,
-          "max": 3,
-          "offerDuration": {
-            "min": 300,
-            "max": 600
-          },
-          "filter": "emptyTastiColaDryvan",
-          "logisticTypes": [
-            "trailer_tastiColaDryvan_firwoodNodeolineStore_FRS"
-          ]
-        }
       ]
     },
     {
@@ -1077,8 +997,7 @@
           "psName": "baitShop_parking",
           "isInspectSpot": false,
           "logisticTypesProvided": [
-            "trailer_emptyDryvanTrailers_baitShop_FRS",
-            "trailer_tastiColaDryvan_baitShop_FRS"
+            "trailer_emptyDryvanTrailers_baitShop_FRS"
           ],
           "logisticTypesReceived": [
             "parcel",
@@ -1090,8 +1009,7 @@
       ],
       "sitesFile": "retail.sites.json",
       "logisticTypesProvided": [
-        "trailer_emptyDryvanTrailers_baitShop_FRS",
-        "trailer_tastiColaDryvan_baitShop_FRS"
+        "trailer_emptyDryvanTrailers_baitShop_FRS"
       ],
       "logisticTypesReceived": [
         "parcel",
@@ -1128,20 +1046,6 @@
             "trailer_emptyDryvanTrailers_baitShop_FRS"
           ]
         },
-        {
-          "type": "trailerOfferProvider",
-          "interval": 210,
-          "min": 1,
-          "max": 3,
-          "offerDuration": {
-            "min": 300,
-            "max": 600
-          },
-          "filter": "emptyTastiColaDryvan",
-          "logisticTypes": [
-            "trailer_tastiColaDryvan_baitShop_FRS"
-          ]
-        }
       ]
     }
   ]
