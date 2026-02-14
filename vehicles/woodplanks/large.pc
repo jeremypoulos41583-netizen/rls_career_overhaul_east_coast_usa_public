@@ -1,9 +1,0 @@
-{
-"vars":{
-
-},
-"parts":{
-  "woodplanks":"woodplanks_large"
-},
-"format":2
-}
