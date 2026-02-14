@@ -24,8 +24,10 @@
       ],
       "sitesFile": "roleplay.sites.json",
       "logisticTypesProvided": [],
-      "logisticTypesReceived": [],
-      "logisticGenerators": []
+      "logisticTypesReceived": ["parcel"],
+      "logisticGenerators": [
+        {"type": "parcelReceiver", "logisticTypes": ["parcel"], "min": 1, "max": 5, "interval": 120}
+      ]
     },
 	{
       "id": "frmc",
@@ -51,9 +53,10 @@
       ],
       "sitesFile": "roleplay.sites.json",
       "logisticTypesProvided": [],
-      "logisticTypesReceived": [],
-      "logisticGenerators": []
-    },
-    
+      "logisticTypesReceived": ["parcel"],
+      "logisticGenerators": [
+        {"type": "parcelReceiver", "logisticTypes": ["parcel"], "min": 1, "max": 5, "interval": 120}
+      ]
+    }
   ]
 }

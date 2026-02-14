@@ -766,7 +766,7 @@
       }
     ]
   },
-  "bigWarehouse": {
+  "FRS": {
     "name":"Firwood Restaurant Supply",
     "description":"Handles all restaurant related supplies",
     "icon":"garage02",

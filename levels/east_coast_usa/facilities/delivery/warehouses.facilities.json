@@ -1,0 +1,675 @@
+{
+  "deliveryProviders": [
+    {
+      "id": "sawmill",
+      "name": "sawmill",
+      "description": "Ships and receives a wide variety of cargo types.",
+      "associatedOrganization": "sawmill",
+      "preview": "sawmill.png",
+      "manualAccessPoints": [
+        {
+          "psName": "sawmillParking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "freight2Supplies",
+            "freight3Supplies",
+            "freightSupplies"
+          ],
+          "logisticTypesReceived": [
+            "parcel",
+            "shopSupplies",
+            "officeSupplies",
+            "industrial"
+          ]
+        },
+        {
+          "psName": "loggingLoaner",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1,
+          "loanerNonTrailerPriority": 1
+        },
+        {
+          "psName": "sawmillTrailerParking",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "trailer_emptyLogTrailers_sawmill_forestrySiteA",
+            "trailer_emptyLogTrailers_sawmill_forestrySiteB",
+            "trailer_lumberFlatbed_sawmill_firwoodSupply",
+            "vehLargeTruckNeedsRepair"
+          ],
+          "logisticTypesReceived": [
+            "trailer_loadedLogTrailers_forestrySiteA_sawmill",
+            "trailer_loadedLogTrailers_forestrySiteB_sawmill",
+            "trailer_emptyFlatbedTrailers_firwoodSupply_sawmill",
+            "vehLargeTruck"
+          ]
+        }
+      ],
+      "sitesFile": "warehouses.sites.json",
+      "logisticTypesProvided": [
+        "trailer_emptyLogTrailers_sawmill_forestrySiteA",
+        "trailer_emptyLogTrailers_sawmill_forestrySiteB",
+        "trailer_lumberFlatbed_sawmill_firwoodSupply",
+        "freight2Supplies",
+        "freight3Supplies",
+        "freightSupplies",
+        "vehLargeTruckNeedsRepair"
+      ],
+      "logisticTypesReceived": [
+        "trailer_loadedLogTrailers_forestrySiteA_sawmill",
+        "trailer_loadedLogTrailers_forestrySiteB_sawmill",
+        "trailer_emptyFlatbedTrailers_firwoodSupply_sawmill",
+        "freight2Supplies",
+        "freight3Supplies",
+        "freightSupplies",
+        "parcel",
+        "shopSupplies",
+        "officeSupplies",
+        "mechanicalParts",
+        "industrial",
+        "vehLargeTruck"
+      ],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "freight2Supplies",
+            "freight3Supplies",
+            "freightSupplies"
+          ],
+          "min": 1,
+          "max": 10,
+          "interval": 60
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "freight2Supplies",
+            "freight3Supplies",
+            "freightSupplies",
+            "parcel",
+            "takeout",
+            "industrial",
+            "officeSupplies"
+          ],
+          "min": 1,
+          "max": 12,
+          "interval": 60
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 1,
+          "max": 4,
+          "offerDuration": {
+            "min": 300,
+            "max": 300
+          },
+          "filter": "semiVehFilter",
+          "logisticTypes": [
+            "vehLargeTruck",
+            "vehLargeTruckNeedsRepair"
+          ]
+        },
+        {
+          "type": "vehOfferReceiver",
+          "interval": 300,
+          "min": 1,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 300
+          },
+          "filter": "newSemiVehFilter",
+          "logisticTypes": [
+            "vehLargeTruck"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 4,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyLogTrailers",
+          "logisticTypes": [
+            "trailer_emptyLogTrailers_sawmill_forestrySiteA",
+            "trailer_emptyLogTrailers_sawmill_forestrySiteB"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "lumberFlatbed",
+          "logisticTypes": [
+            "trailer_lumberFlatbed_sawmill_firwoodSupply"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coastWarehouse",
+      "name": "Coast Warehouse",
+      "description": "Ships and receives a wide variety of cargo types.",
+      "associatedOrganization": "coastWarehouse",
+      "preview": "coastWarehouse.png",
+      "manualAccessPoints": [
+        {
+          "psName": "coastWarehouseParking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "parcel"
+          ]
+        },
+        {
+          "psName": "coastWarehouseTrailer_parking",
+          "logisticTypesProvided": [
+            "trailer_emptyDryvanTrailers_coastWarehouse_port",
+            "trailer_singleAxleFurnitureTrailers_coastWarehouse_residential",
+            "trailer_doubleAxleFurnitureTrailers_coastWarehouse_residential",
+            "trailer_loadedDryvanTrailers_coastWarehouse_jimsAutoParts",
+            "trailer_loadedDryvanTrailers_coastWarehouse_jujusComputers",
+            "trailer_loadedDryvanTrailers_coastWarehouse_officePax",
+            "trailer_loadedDryvanTrailers_coastWarehouse_firwoodSupply",
+            "trailer_loadedDryvanTrailers_coastWarehouse_firwoodMotorCompany",
+            "trailer_loadedDryvanTrailers_coastWarehouse_gemClassics",
+            "trailer_loadedDryvanTrailers_coastWarehouse_hendersonsGarage",
+            "trailer_loadedDryvanTrailers_coastWarehouse_tjsOffroadDealership",
+            "trailer_loadedDryvanTrailers_coastWarehouse_discountedDealership",
+            "trailer_loadedDryvanTrailers_coastWarehouse_logisticsGarage",
+            "vehLargeTruckNeedsRepair"
+          ],
+          "logisticTypesReceived": [
+            "trailer_loadedDryvanTrailers_port_coastWarehouse",
+            "trailer_singleAxleFurnitureTrailers_firwoodManufacturing_coastWarehouse",
+            "trailer_doubleAxleFurnitureTrailers_firwoodManufacturing_coastWarehouse",
+            "trailer_singleAxleEmptyTrailers_residential_coastWarehouse",
+            "trailer_doubleAxleEmptyTrailer_residential_coastWarehouse",
+            "trailer_emptyDryvanTrailers_jimsAutoParts_coastWarehouse",
+            "trailer_emptyDryvanTrailers_jujusComputers_coastWarehouse",
+            "trailer_emptyDryvanTrailers_officePax_coastWarehouse",
+            "trailer_emptyDryvanTrailers_firwoodSupply_coastWarehouse",
+            "trailer_emptyDryvanTrailers_firwoodMotorCompany_coastWarehouse",
+            "trailer_emptyDryvanTrailers_gemClassics_coastWarehouse",
+            "trailer_emptyDryvanTrailers_hendersonsGarage_coastWarehouse",
+            "trailer_emptyDryvanTrailers_tjsOffroadDealership_coastWarehouse",
+            "trailer_emptyDryvanTrailers_discountedDealership_coastWarehouse",
+            "trailer_emptyDryvanTrailers_logisticsGarage_coastWarehouse",
+            "vehLargeTruck"
+          ]
+        },
+        {
+          "psName": "ps_auto_12",
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "coastWarehousePickup_parking",
+          "logisticTypesProvided": [
+            "freight2Supplies",
+            "freight3Supplies",
+            "freightSupplies",
+            "pcofficeSupplies",
+            "shopSupplies",
+            "officeSupplies",
+            "bigOfficeSupplies",
+            "hugeOfficeSupplies",
+            "mechanicalParts",
+            "industrial"
+          ],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "coastWarehouseDelivery_parking",
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "freight2Supplies",
+            "freight3Supplies",
+            "freightSupplies",
+            "parcel",
+            "pcofficeSupplies",
+            "shopSupplies",
+            "officeSupplies",
+            "mechanicalParts",
+            "industrial"
+          ]
+        }
+      ],
+      "sitesFile": "warehouses.sites.json",
+      "logisticTypesProvided": [
+        "trailer_emptyDryvanTrailers_coastWarehouse_port",
+        "trailer_singleAxleFurnitureTrailers_coastWarehouse_residential",
+        "trailer_doubleAxleFurnitureTrailers_coastWarehouse_residential",
+        "trailer_loadedDryvanTrailers_coastWarehouse_jimsAutoParts",
+        "trailer_loadedDryvanTrailers_coastWarehouse_jujusComputers",
+        "trailer_loadedDryvanTrailers_coastWarehouse_officePax",
+        "trailer_loadedDryvanTrailers_coastWarehouse_firwoodSupply",
+        "trailer_loadedDryvanTrailers_coastWarehouse_firwoodMotorCompany",
+        "trailer_loadedDryvanTrailers_coastWarehouse_gemClassics",
+        "trailer_loadedDryvanTrailers_coastWarehouse_hendersonsGarage",
+        "trailer_loadedDryvanTrailers_coastWarehouse_tjsOffroadDealership",
+        "trailer_loadedDryvanTrailers_coastWarehouse_discountedDealership",
+        "trailer_loadedDryvanTrailers_coastWarehouse_logisticsGarage",
+        "freight2Supplies",
+        "freight3Supplies",
+        "freightSupplies",
+        "pcofficeSupplies",
+        "officeSupplies",
+        "shopSupplies",
+        "mechanicalParts",
+        "industrial",
+        "bigOfficeSupplies",
+        "vehLargeTruckNeedsRepair"
+      ],
+      "logisticTypesReceived": [
+        "trailer_loadedDryvanTrailers_port_coastWarehouse",
+        "trailer_singleAxleFurnitureTrailers_firwoodManufacturing_coastWarehouse",
+        "trailer_doubleAxleFurnitureTrailers_firwoodManufacturing_coastWarehouse",
+        "trailer_singleAxleEmptyTrailers_residential_coastWarehouse",
+        "trailer_doubleAxleEmptyTrailer_residential_coastWarehouse",
+        "trailer_emptyDryvanTrailers_jimsAutoParts_coastWarehouse",
+        "trailer_emptyDryvanTrailers_jujusComputers_coastWarehouse",
+        "trailer_emptyDryvanTrailers_officePax_coastWarehouse",
+        "trailer_emptyDryvanTrailers_firwoodSupply_coastWarehouse",
+        "trailer_emptyDryvanTrailers_firwoodMotorCompany_coastWarehouse",
+        "trailer_emptyDryvanTrailers_gemClassics_coastWarehouse",
+        "trailer_emptyDryvanTrailers_hendersonsGarage_coastWarehouse",
+        "trailer_emptyDryvanTrailers_tjsOffroadDealership_coastWarehouse",
+        "trailer_emptyDryvanTrailers_discountedDealership_coastWarehouse",
+        "trailer_emptyDryvanTrailers_logisticsGarage_coastWarehouse",
+        "freight2Supplies",
+        "freight3Supplies",
+        "freightSupplies",
+        "parcel",
+        "shopSupplies",
+        "officeSupplies",
+        "industrial",
+        "vehLargeTruck"
+      ],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": [
+            "trailer_emptyDryvanTrailers_coastWarehouse_port"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "singleAxleFurnitureTrailers",
+          "logisticTypes": [
+            "trailer_singleAxleFurnitureTrailers_coastWarehouse_residential"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "doubleAxleFurnitureTrailers",
+          "logisticTypes": [
+            "trailer_doubleAxleFurnitureTrailers_coastWarehouse_residential"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "singleAxleEmptyTrailers",
+          "logisticTypes": [
+            "trailer_singleAxleEmptyTrailers_coastWarehouse_firwoodManufacturing"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "doubleAxleEmptyTrailer",
+          "logisticTypes": [
+            "trailer_doubleAxleEmptyTrailer_coastWarehouse_firwoodManufacturing"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "loadedDryvanTrailers",
+          "logisticTypes": [
+            "trailer_loadedDryvanTrailers_coastWarehouse_jimsAutoParts",
+            "trailer_loadedDryvanTrailers_coastWarehouse_jujusComputers",
+            "trailer_loadedDryvanTrailers_coastWarehouse_officePax",
+            "trailer_loadedDryvanTrailers_coastWarehouse_firwoodSupply",
+            "trailer_loadedDryvanTrailers_coastWarehouse_firwoodMotorCompany",
+            "trailer_loadedDryvanTrailers_coastWarehouse_gemClassics",
+            "trailer_loadedDryvanTrailers_coastWarehouse_hendersonsGarage",
+            "trailer_loadedDryvanTrailers_coastWarehouse_tjsOffroadDealership",
+            "trailer_loadedDryvanTrailers_coastWarehouse_discountedDealership",
+            "trailer_loadedDryvanTrailers_coastWarehouse_logisticsGarage"
+          ]
+        },
+        {
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "freight2Supplies",
+            "freight3Supplies",
+            "freightSupplies",
+            "pcofficeSupplies",
+            "officeSupplies",
+            "bigOfficeSupplies",
+            "shopSupplies",
+            "mechanicalParts",
+            "industrial"
+          ],
+          "min": 10,
+          "max": 50,
+          "interval": 60
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "freight2Supplies",
+            "freight3Supplies",
+            "freightSupplies",
+            "parcel",
+            "pcofficeSupplies",
+            "officeSupplies",
+            "bigOfficeSupplies",
+            "shopSupplies",
+            "mechanicalParts",
+            "industrial"
+          ],
+          "min": 10,
+          "max": 50,
+          "interval": 60
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 1,
+          "max": 4,
+          "offerDuration": {
+            "min": 300,
+            "max": 300
+          },
+          "filter": "semiVehFilter",
+          "logisticTypes": [
+            "vehLargeTruck",
+            "vehLargeTruckNeedsRepair"
+          ]
+        },
+        {
+          "type": "vehOfferReceiver",
+          "interval": 300,
+          "min": 1,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 300
+          },
+          "filter": "newSemiVehFilter",
+          "logisticTypes": [
+            "vehLargeTruck"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "port",
+      "name": "Port",
+      "description": "Ships and receives a wide variety of cargo types.",
+      "associatedOrganization": "port",
+      "preview": "port.png",
+      "manualAccessPoints": [
+        {
+          "psName": "port_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "portTrailerPickup_parking",
+          "logisticTypesProvided": [
+            "trailer_loadedDryvanTrailers_port_coastWarehouse",
+            "trailer_loadedDryvanTrailers_port_FRS",
+            "vehLargeTruckNeedsRepair"
+          ],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1,
+          "loanerNonTrailerPriority": 1
+        },
+        {
+          "psName": "portTrailerDropoff_parking",
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "trailer_emptyDryvanTrailers_coastWarehouse_port",
+            "trailer_emptyDryvanTrailers_FRS_port",
+            "vehForRecycle",
+            "vehLargeTruck"
+          ]
+        },
+        {
+          "psName": "portParcel_parking",
+          "logisticTypesProvided": [
+            "freight2Supplies",
+            "freight3Supplies",
+            "freightSupplies",
+            "pcofficeSupplies",
+            "carPartsLightSupplies",
+            "carPartsHeavySupplies",
+            "tiresSupplies",
+            "mealSupplies",
+            "drinkSupplies",
+            "snackSupplies",
+            "sideDishSupplies",
+            "shopSupplies",
+            "officeSupplies",
+            "mechanicalParts",
+            "prepSupplies",
+            "industrial",
+            "cropsSupplies",
+            "vehLargeTruckNeedsRepair"
+          ],
+          "logisticTypesReceived": [
+            "freight2Supplies",
+            "freight3Supplies",
+            "freightSupplies",
+            "cropsSupplies",
+            "parcel",
+            "shopSupplies",
+            "officeSupplies",
+            "mechanicalParts",
+            "prepSupplies",
+            "industrial",
+            "vehLargeTruck"
+          ]
+        }
+      ],
+      "sitesFile": "warehouses.sites.json",
+      "logisticTypesProvided": [
+        "trailer_loadedDryvanTrailers_port_coastWarehouse",
+        "trailer_loadedDryvanTrailers_port_FRS",
+        "freight2Supplies",
+        "freight3Supplies",
+        "freightSupplies",
+        "carPartsLightSupplies",
+        "carPartsHeavySupplies",
+        "tiresSupplies",
+        "mealSupplies",
+        "drinkSupplies",
+        "snackSupplies",
+        "sideDishSupplies",
+        "parcel",
+        "shopSupplies",
+        "officeSupplies",
+        "mechanicalParts",
+        "prepSupplies",
+        "industrial",
+        "cropsSupplies",
+        "vehLargeTruckNeedsRepair"
+      ],
+      "logisticTypesReceived": [
+        "trailer_emptyDryvanTrailers_coastWarehouse_port",
+        "trailer_emptyDryvanTrailers_FRS_port",
+        "vehForRecycle",
+        "freight2Supplies",
+        "freight3Supplies",
+        "freightSupplies",
+        "cropsSupplies",
+        "parcel",
+        "shopSupplies",
+        "officeSupplies",
+        "mechanicalParts",
+        "prepSupplies",
+        "industrial",
+        "vehLargeTruck"
+      ],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "loadedDryvanTrailers",
+          "logisticTypes": [
+            "trailer_loadedDryvanTrailers_port_coastWarehouse",
+            "trailer_loadedDryvanTrailers_port_FRS"
+          ]
+        },
+        {
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "freight2Supplies",
+            "freight3Supplies",
+            "freightSupplies",
+            "carPartsLightSupplies",
+            "carPartsHeavySupplies",
+            "tiresSupplies",
+            "mealSupplies",
+            "drinkSupplies",
+            "snackSupplies",
+            "sideDishSupplies",
+            "shopSupplies",
+            "officeSupplies",
+            "mechanicalParts",
+            "prepSupplies",
+            "industrial",
+            "cropsSupplies"
+          ],
+          "min": 10,
+          "max": 50,
+          "interval": 60
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "freight2Supplies",
+            "freight3Supplies",
+            "freightSupplies",
+            "parcel",
+            "cropsSupplies",
+            "shopSupplies",
+            "officeSupplies"
+          ],
+          "min": 10,
+          "max": 45,
+          "interval": 60
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 1,
+          "max": 4,
+          "offerDuration": {
+            "min": 300,
+            "max": 300
+          },
+          "filter": "semiVehFilter",
+          "logisticTypes": [
+            "vehLargeTruck",
+            "vehLargeTruckNeedsRepair"
+          ]
+        },
+        {
+          "type": "vehOfferReceiver",
+          "interval": 300,
+          "min": 1,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 300
+          },
+          "filter": "newSemiVehFilter",
+          "logisticTypes": [
+            "vehLargeTruck"
+          ]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 3,
+          "max": 8,
+          "offerDuration": {
+            "min": 300,
+            "max": 900
+          },
+          "filter": "joesJunkshellVehFilter",
+          "logisticTypes": [
+            "vehForRecycle"
+          ]
+        }
+      ]
+    }
+  ]
+}

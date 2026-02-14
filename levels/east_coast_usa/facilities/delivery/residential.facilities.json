@@ -7,8 +7,8 @@
       "preview":"localFacilities_city.png",
       "multiDropOffSpotFilter":[{"type":"byZone","zoneName":"Town"}],
       "sitesFile":"residential.sites.json",
-      "logisticTypesProvided":["vehNeedsRepair"],
-      "logisticTypesReceived":["pcofficeSupplies","takeout","parcel","vehForPrivate", "trailerDeliveryEmpty", "trailerDeliveryResidential", "soil", "gravel","vehRepairFinished"],
+      "logisticTypesProvided":["vehNeedsRepair","trailer_singleAxleEmptyTrailers_residential_firwoodSupply","trailer_doubleAxleEmptyTrailer_residential_firwoodSupply","trailer_singleAxleEmptyTrailers_residential_coastWarehouse","trailer_doubleAxleEmptyTrailer_residential_coastWarehouse"],
+      "logisticTypesReceived":["pcofficeSupplies","takeout","parcel","vehForPrivate", "soil", "gravel","vehRepairFinished","trailer_singleAxleLumberTrailers_firwoodSupply_residential","trailer_doubleAxleLumberTrailers_firwoodSupply_residential","trailer_singleAxleFurnitureTrailers_coastWarehouse_residential","trailer_doubleAxleFurnitureTrailers_coastWarehouse_residential"],
       "logisticGenerators":[
 		{
           "type":"parcelReceiver",
@@ -30,7 +30,7 @@
           "max": 8,
           "offerDuration":{"min":300,"max":900},
           "filter":"junkVehFilter",
-          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"],
+          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"]
         },
 		{
           "type":"vehOfferProvider",
@@ -39,7 +39,7 @@
           "max": 5,
           "offerDuration":{"min":300,"max":900},
           "filter":"compactVehFilter",
-          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"],
+          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"]
         },
 		{
           "type":"vehOfferProvider",
@@ -48,7 +48,7 @@
           "max": 5,
           "offerDuration":{"min":300,"max":900},
           "filter":"oldTimerVehFilter",
-          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"],
+          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"]
         },
 		{
           "type":"vehOfferProvider",
@@ -57,7 +57,7 @@
           "max": 4,
           "offerDuration":{"min":300,"max":900},
           "filter":"junkVehFilter",
-          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"],
+          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"]
         },
 		{
           "type":"vehOfferProvider",
@@ -66,7 +66,7 @@
           "max": 4,
           "offerDuration":{"min":300,"max":900},
           "filter":"pickupVehFilter",
-          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"],
+          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"]
         },
 		{
           "type":"vehOfferProvider",
@@ -75,7 +75,7 @@
           "max": 4,
           "offerDuration":{"min":300,"max":900},
           "filter":"highEndVehFilter",
-          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"],
+          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"]
         },
 		{
           "type":"vehOfferProvider",
@@ -84,46 +84,55 @@
           "max": 4,
           "offerDuration":{"min":300,"max":900},
           "filter":"customVehFilter",
-          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"],
+          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"]
         },
-		{
-          "type":"trailerOfferReceiver",
+        {
+          "type":"trailerOfferProvider",
           "interval":210,
-          "min": 1,
-          "max": 2,
+          "min":1,
+          "max":3,
           "offerDuration":{"min":300,"max":600},
           "filter":"singleAxleEmptyTrailers",
-          "logisticTypes":["trailerDeliveryResidential"],
+          "logisticTypes":["trailer_singleAxleEmptyTrailers_residential_firwoodSupply"]
         },
         {
-          "type":"trailerOfferReceiver",
-          "interval":180,
-          "min": 1,
-          "max": 3,
-          "offerDuration":{"min":300,"max":600},
-          "filter":"singleAxleFurnitureTrailers",
-          "logisticTypes":["trailerDeliveryResidential"],
-        },
-        {
-          "type":"trailerOfferReceiver",
+          "type":"trailerOfferProvider",
           "interval":210,
-          "min": 1,
-          "max": 3,
+          "min":1,
+          "max":3,
           "offerDuration":{"min":300,"max":600},
-          "filter":"singleAxleLumberTrailers",
-          "logisticTypes":["trailerDeliveryConstructionMaterials", "trailerDeliveryResidential"],
+          "filter":"doubleAxleEmptyTrailer",
+          "logisticTypes":["trailer_doubleAxleEmptyTrailer_residential_firwoodSupply"]
         },
-		],
-	},
-	{
+        {
+          "type":"trailerOfferProvider",
+          "interval":210,
+          "min":1,
+          "max":3,
+          "offerDuration":{"min":300,"max":600},
+          "filter":"singleAxleEmptyTrailers",
+          "logisticTypes":["trailer_singleAxleEmptyTrailers_residential_coastWarehouse"]
+        },
+        {
+          "type":"trailerOfferProvider",
+          "interval":210,
+          "min":1,
+          "max":3,
+          "offerDuration":{"min":300,"max":600},
+          "filter":"doubleAxleEmptyTrailer",
+          "logisticTypes":["trailer_doubleAxleEmptyTrailer_residential_coastWarehouse"]
+        }
+      ]
+    },
+    {
       "id":"fishingVillage",
       "name":"Fishing Village",
       "description":"Receives vehicles and other goods.",
       "preview":"localFacilities_fishingVillage.png",
       "multiDropOffSpotFilter":[{"type":"byZone","zoneName":"Fishing Village"}],
       "sitesFile":"residential.sites.json",
-      "logisticTypesProvided":["vehNeedsRepair"],
-      "logisticTypesReceived":["pcofficeSupplies","takeout","parcel","vehForPrivate", "trailerDeliveryEmpty", "trailerDeliveryResidential", "soil", "gravel","vehRepairFinished"],
+      "logisticTypesProvided":["vehNeedsRepair","trailer_singleAxleEmptyTrailers_residential_firwoodSupply","trailer_doubleAxleEmptyTrailer_residential_firwoodSupply","trailer_singleAxleEmptyTrailers_residential_coastWarehouse","trailer_doubleAxleEmptyTrailer_residential_coastWarehouse"],
+      "logisticTypesReceived":["pcofficeSupplies","takeout","parcel","vehForPrivate", "soil", "gravel","vehRepairFinished","trailer_singleAxleLumberTrailers_firwoodSupply_residential","trailer_doubleAxleLumberTrailers_firwoodSupply_residential","trailer_singleAxleFurnitureTrailers_coastWarehouse_residential","trailer_doubleAxleFurnitureTrailers_coastWarehouse_residential"],
       "logisticGenerators":[
 		{
           "type":"parcelReceiver",
@@ -145,7 +154,7 @@
           "max": 8,
           "offerDuration":{"min":300,"max":900},
           "filter":"junkVehFilter",
-          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"],
+          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"]
         },
 		{
           "type":"vehOfferProvider",
@@ -154,7 +163,7 @@
           "max": 5,
           "offerDuration":{"min":300,"max":900},
           "filter":"compactVehFilter",
-          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"],
+          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"]
         },
 		{
           "type":"vehOfferProvider",
@@ -163,7 +172,7 @@
           "max": 5,
           "offerDuration":{"min":300,"max":900},
           "filter":"oldTimerVehFilter",
-          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"],
+          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"]
         },
 		{
           "type":"vehOfferProvider",
@@ -172,7 +181,7 @@
           "max": 4,
           "offerDuration":{"min":300,"max":900},
           "filter":"junkVehFilter",
-          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"],
+          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"]
         },
 		{
           "type":"vehOfferProvider",
@@ -181,7 +190,7 @@
           "max": 4,
           "offerDuration":{"min":300,"max":900},
           "filter":"pickupVehFilter",
-          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"],
+          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"]
         },
 		{
           "type":"vehOfferProvider",
@@ -190,7 +199,7 @@
           "max": 4,
           "offerDuration":{"min":300,"max":900},
           "filter":"highEndVehFilter",
-          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"],
+          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"]
         },
 		{
           "type":"vehOfferProvider",
@@ -199,36 +208,45 @@
           "max": 4,
           "offerDuration":{"min":300,"max":900},
           "filter":"customVehFilter",
-          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"],
+          "logisticTypes":["vehNeedsRepair","vehForPrivate","vehRepairFinished"]
         },
-		{
-          "type":"trailerOfferReceiver",
+        {
+          "type":"trailerOfferProvider",
           "interval":210,
-          "min": 1,
-          "max": 2,
+          "min":1,
+          "max":3,
           "offerDuration":{"min":300,"max":600},
           "filter":"singleAxleEmptyTrailers",
-          "logisticTypes":["trailerDeliveryResidential"],
+          "logisticTypes":["trailer_singleAxleEmptyTrailers_residential_firwoodSupply"]
         },
         {
-          "type":"trailerOfferReceiver",
-          "interval":180,
-          "min": 1,
-          "max": 3,
-          "offerDuration":{"min":300,"max":600},
-          "filter":"singleAxleFurnitureTrailers",
-          "logisticTypes":["trailerDeliveryResidential"],
-        },
-        {
-          "type":"trailerOfferReceiver",
+          "type":"trailerOfferProvider",
           "interval":210,
-          "min": 1,
-          "max": 3,
+          "min":1,
+          "max":3,
           "offerDuration":{"min":300,"max":600},
-          "filter":"singleAxleLumberTrailers",
-          "logisticTypes":["trailerDeliveryConstructionMaterials", "trailerDeliveryResidential"],
+          "filter":"doubleAxleEmptyTrailer",
+          "logisticTypes":["trailer_doubleAxleEmptyTrailer_residential_firwoodSupply"]
+        },
+        {
+          "type":"trailerOfferProvider",
+          "interval":210,
+          "min":1,
+          "max":3,
+          "offerDuration":{"min":300,"max":600},
+          "filter":"singleAxleEmptyTrailers",
+          "logisticTypes":["trailer_singleAxleEmptyTrailers_residential_coastWarehouse"]
+        },
+        {
+          "type":"trailerOfferProvider",
+          "interval":210,
+          "min":1,
+          "max":3,
+          "offerDuration":{"min":300,"max":600},
+          "filter":"doubleAxleEmptyTrailer",
+          "logisticTypes":["trailer_doubleAxleEmptyTrailer_residential_coastWarehouse"]
         }
-	]
+      ]
     }
-   ]
+  ]
 }
