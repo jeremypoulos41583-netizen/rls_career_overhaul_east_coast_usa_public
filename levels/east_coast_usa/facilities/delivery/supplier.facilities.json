@@ -19,7 +19,7 @@
             "trailer_singleAxleEmptyTrailers_FRS_firwoodManufacturing",
             "trailer_doubleAxleEmptyTrailer_FRS_firwoodManufacturing",
             "trailer_emptyDryvanTrailers_FRS_port",
-            "trailer_tastiColaDryvan_FRS_port",
+            "trailer_emptyTastiColaDryvan_FRS_port",
             "trailer_tastiColaDryvan_FRS_firwoodInn",
             "trailer_tastiColaDryvan_FRS_watchtowerInn",
             "trailer_tastiColaDryvan_FRS_kikisDiner",
@@ -103,7 +103,7 @@
         "trailer_singleAxleEmptyTrailers_FRS_firwoodManufacturing",
         "trailer_doubleAxleEmptyTrailer_FRS_firwoodManufacturing",
         "trailer_emptyDryvanTrailers_FRS_port",
-        "trailer_tastiColaDryvan_FRS_port",
+        "trailer_emptyTastiColaDryvan_FRS_port",
         "trailer_tastiColaDryvan_FRS_firwoodInn",
         "trailer_tastiColaDryvan_FRS_watchtowerInn",
         "trailer_tastiColaDryvan_FRS_kikisDiner",
@@ -226,9 +226,9 @@
             "min": 300,
             "max": 600
           },
-          "filter": "tastiColaDryvan",
+          "filter": "emptyTastiColaDryvan",
           "logisticTypes": [
-            "trailer_tastiColaDryvan_FRS_port"
+            "trailer_emptyTastiColaDryvan_FRS_port"
           ]
         },
         {
