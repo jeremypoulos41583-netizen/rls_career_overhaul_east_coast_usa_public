@@ -1,0 +1,19 @@
+id,Name,receives from,provides to,"Provided-agent; do not use these names, use the id's from ecusaVehicles.deliveryVehicles.json and keep logisticTypes consistent with American Road","Received-agent; do not use these names, use the id's from ecusaVehicles.deliveryVehicles.json and keep logisticTypes consistent with American Road"
+sawmill,Sawmill,forestry sites,firwood supply,"lumber flatbeds, small lumber trailers, medium lumber trailers, empty log trailers","empty flatbeds, empty small trailers, empty medium trailers, loaded log trailers"
+coastWarehouse,Coast Warehouse,port,retail.facilities,"empty flatbeds, retail dryvans, empty dryvans, small furniture trailers, medium furniture trailers","retail dryvans, empty dryvans, small furniture trailers, medium furniture trailers"
+port,Port,only receives return trailers (empties) from warehouse.facilities,warehouse.facilities,every trailer type  except log trailers,every trailer type except log trailers
+firwoodSupply,Firwood Supply Corporation,"sawmill, port","small and medium trailers to residential.facilities, loaded lumber trailers to firwood manufacturing","empty flatbeds, empty dryvans, small lumber trailers, medium lumber trailers ","lumber flatbeds, empty small trailers, empty medium trailers, retail dryvans"
+forestryA/B,,sawmill ,sawmill,loaded log trailers ,receives empty log trailers 
+frs,Firwood Restaurant Supply,"port and empties from firwoodInn, watchtowerInn, kikisDiner, nodeolineStore, firwoodNodeolineStore",retail.facilities," empty dryvans, small furniture trailers, medium furniture trailers, tastiCola dryvans, empty flatbeds","retail dryvans, empty small trailers, empty medium trailers, tastiCola dryvans, "
+freshFish,seafood Dock,"only receives return trailers (empties) from firwoodInn,watchTowerInn, kikisDiner","firwoodInn, watchtowerInn, kikisDiner",retail dryvans ,empty dryvans
+jimsAutoParts,Jim's Auto Parts,port and empties from mechanics.facilities,mechanics.facilities,retail dryvans ,empty dryvans
+officePax,Office Pax,coastWarehouse,,retail dryvans,empty dryvans
+firwoodParcelService,Firwood Parcel Service,port,port,retail dryvans,empty dryvans
+jujusComputers,Juju's Computers,coastWarehouse,coastWarehouse,retail dryvans,empty dryvans
+firwoodManufacturing,Firwood Manufacturing,firwoodSupply,"emptyFlatbeds to firwoodSupply, small and medium trailers to residential.facilities","small furniture trailers, medium furniture trailers, lumber flatbeds ","empty dryvans, empty flatbeds, empty small trailers, empty medium trailers"
+firwoodInn,Firwood Inn,frs,frs,"retail dryvans, tastiCola dryvans, small furniture trailers, medium furniture trailers","empty dryvans, tastiCola dryvans, empty small trailers, empty medium trailers"
+watchtowerInn,Watchtower Inn,frs,frs,"retail dryvans, tastiCola dryvans, small furniture trailers, medium furniture trailers","empty dryvans, tastiCola dryvans, empty small trailers, empty medium trailers"
+kikisDiner,Kiki's Diner,frs,frs,"retail dryvans, tastiCola dryvans, small furniture trailers, medium furniture trailers","empty dryvans, tastiCola dryvans, empty small trailers, empty medium trailers"
+nodeolineStore,Convenience Store,"frs, coastWarehouse","frs, coastWarehouse"," retail dryvans, tasticola dryvans","empty dryvans, tastiCola dryvans"
+firwoodNodeolineStore,Convenience Store,"frs, coastWarehouse","frs, coastWarehouse","retail dryvans, tasticola dryvans","empty dryvans, tastiCola dryvans"
+baitShop,Bait Shop and Country Store,"frs, coastWarehouse","frs, coastWarehouse","tastiCola Dryvans, receives from Coast warehouse: retail dryvans","empty dryvans, tastiCola dryvans"
