@@ -207,14 +207,9 @@
             "min": 300,
             "max": 600
           },
-          "filter": "tastiColaDryvan",
+          "filter": "emptyTastiColaDryvan",
           "logisticTypes": [
-            "trailer_tastiColaDryvan_FRS_firwoodInn",
-            "trailer_tastiColaDryvan_FRS_watchtowerInn",
-            "trailer_tastiColaDryvan_FRS_kikisDiner",
-            "trailer_tastiColaDryvan_FRS_nodeolineStore",
-            "trailer_tastiColaDryvan_FRS_firwoodNodeolineStore",
-            "trailer_tastiColaDryvan_FRS_baitShop"
+            "trailer_emptyTastiColaDryvan_FRS_port"
           ]
         },
         {
@@ -226,9 +221,14 @@
             "min": 300,
             "max": 600
           },
-          "filter": "emptyTastiColaDryvan",
+          "filter": "tastiColaDryvan",
           "logisticTypes": [
-            "trailer_emptyTastiColaDryvan_FRS_port"
+            "trailer_tastiColaDryvan_FRS_firwoodInn",
+            "trailer_tastiColaDryvan_FRS_watchtowerInn",
+            "trailer_tastiColaDryvan_FRS_kikisDiner",
+            "trailer_tastiColaDryvan_FRS_nodeolineStore",
+            "trailer_tastiColaDryvan_FRS_firwoodNodeolineStore",
+            "trailer_tastiColaDryvan_FRS_baitShop"
           ]
         },
         {
