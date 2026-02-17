@@ -1,0 +1,3 @@
+# Code owners are automatically requested for review when a PR touches these paths.
+# Together with the ruleset protecting main, merges require their approval.
+* @Bigred2998
