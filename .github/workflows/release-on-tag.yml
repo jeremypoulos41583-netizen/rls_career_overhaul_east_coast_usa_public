@@ -1,6 +1,6 @@
 # Create a GitHub Release with a BeamNG-ready zip.
 # Run manually: choose major, minor, or patch bump (e.g. v4.8.1 + patch -> v4.8.2).
-# Same folder structure as the PR zip: gameplay/, levels/, lua/, vehicles/, scripts/, ui/
+# Zip has one top-level folder rls_career_overhaul_east_coast_usa/ with gameplay/, levels/, lua/, vehicles/, scripts/, ui/ inside.
 name: Release on tag
 
 on:
@@ -32,14 +32,16 @@ jobs:
         id: version
         run: |
           BUMP="${{ github.event.inputs.bump }}"
-          PREV=$(git tag -l 'v*' --sort=-v:refname | head -1)
+          # Consider both v* tags and plain version tags (e.g. 4.8, 4.7.5)
+          PREV=$( (git tag -l 'v*'; git tag -l | grep -E '^[0-9]+\.[0-9]+(\.[0-9]+)?$') | sort -V | tail -1)
           if [ -z "$PREV" ]; then
-            PREV="v0.0.0"
+            PREV="v4.8.0"
           fi
           V="${PREV#v}"
           MAJOR=$(echo "$V" | cut -d. -f1)
           MINOR=$(echo "$V" | cut -d. -f2)
           PATCH=$(echo "$V" | cut -d. -f3)
+          [ -z "$PATCH" ] && PATCH=0
           case "$BUMP" in
             major) MAJOR=$((MAJOR + 1)); MINOR=0; PATCH=0 ;;
             minor) MINOR=$((MINOR + 1)); PATCH=0 ;;
@@ -59,9 +61,11 @@ jobs:
 
       - name: Create BeamNG mod zip
         run: |
-          zip -r rls_career_overhaul_east_coast_usa-${{ steps.version.outputs.new_tag }}.zip \
-            gameplay/ levels/ lua/ vehicles/ scripts/ ui/ \
-            -x "*.git*"
+          MOD_DIR="rls_career_overhaul_east_coast_usa"
+          mkdir -p "zip_temp/$MOD_DIR"
+          cp -r gameplay levels lua vehicles scripts ui "zip_temp/$MOD_DIR/"
+          cd zip_temp && zip -r "../rls_career_overhaul_east_coast_usa-${{ steps.version.outputs.new_tag }}.zip" "$MOD_DIR" -x "*.git*" && cd ..
+          rm -rf zip_temp
 
       - name: Create Release and upload zip
         uses: softprops/action-gh-release@v2
@@ -74,3 +78,4 @@ jobs:
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
