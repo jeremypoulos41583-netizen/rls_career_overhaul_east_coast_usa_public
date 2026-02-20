@@ -1,6 +1,6 @@
 # Create a GitHub Release with a BeamNG-ready zip.
 # Run manually: choose major, minor, or patch bump.
-# Zip has one top-level folder rls_career_overhaul_american_road/ with gameplay/, levels/, lua/, vehicles/, scripts/, ui/ inside.
+# Zip has one top-level folder rls_career_overhaul_east_coast_usa/ with gameplay/, levels/, lua/, vehicles/, scripts/, ui/ inside.
 name: Release on tag
 
 on:
@@ -33,15 +33,15 @@ jobs:
         id: version
         run: |
           BUMP="${{ github.event.inputs.bump }}"
-          # Use most recent tag by date (not highest version) so edited/repointed releases are used
-          PREV=$(git tag -l 'v*' --sort=-creatordate | head -1)
+          # Use highest existing version so patch after 4.8.3 gives 4.8.4
+          PREV=$(git tag -l 'v*' | sed 's/^v//' | sort -V | tail -1)
           if [ -z "$PREV" ]; then
             PREV=$(git tag -l | grep -E '^[0-9]+\.[0-9]+(\.[0-9]+)?$' | sort -V | tail -1)
           fi
           if [ -z "$PREV" ]; then
-            PREV="v0.3.0"
+            PREV="0.3.0"
           fi
-          case "$PREV" in v*) ;; *) PREV="v$PREV" ;; esac
+          [ "${PREV#v}" = "$PREV" ] && PREV="v$PREV"
           V="${PREV#v}"
           MAJOR=$(echo "$V" | cut -d. -f1)
           MINOR=$(echo "$V" | cut -d. -f2)
