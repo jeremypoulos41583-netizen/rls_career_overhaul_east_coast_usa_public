@@ -1,0 +1,1052 @@
+{
+  "deliveryProviders": [
+    {
+      "id": "officePax",
+      "alwaysVisible": false,
+      "name": "OfficePax",
+      "description": "Business within city limits",
+      "facilityInformation": "Office supply business serving Firwood",
+      "associatedOrganization": "officePax",
+      "preview": "localFacilities_city.png",
+      "manualAccessPoints": [
+        {
+          "psName": "officePax_parking",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "trailer_emptyDryvanTrailers_officePax_coastWarehouse"
+          ],
+          "logisticTypesReceived": [
+            "vehForPrivate",
+            "vehRepairFinished",
+            "takeout",
+            "parcel",
+            "officeSupplies",
+            "bigOfficeSupplies",
+            "trailer_loadedDryvanTrailers_coastWarehouse_officePax"
+          ]
+        }
+      ],
+      "sitesFile": "retail.sites.json",
+      "logisticTypesProvided": [
+        "trailer_emptyDryvanTrailers_officePax_coastWarehouse"
+      ],
+      "logisticTypesReceived": [
+        "vehForPrivate",
+        "vehRepairFinished",
+        "takeout",
+        "parcel",
+        "officeSupplies",
+        "bigOfficeSupplies",
+        "trailer_loadedDryvanTrailers_coastWarehouse_officePax"
+      ],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": [
+            "trailer_emptyDryvanTrailers_officePax_coastWarehouse"
+          ]
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "takeout",
+            "parcel",
+            "officeSupplies",
+            "bigOfficeSupplies",
+            "pcofficeSupplies"
+          ],
+          "min": -1,
+          "max": 15,
+          "interval": 60
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": -1,
+          "max": 5,
+          "offerDuration": {
+            "min": 300,
+            "max": 900
+          },
+          "filter": "compactVehFilter",
+          "logisticTypes": [
+            "vehNeedsRepair",
+            "vehForPrivate",
+            "vehRepairFinished"
+          ]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": -1,
+          "max": 5,
+          "offerDuration": {
+            "min": 300,
+            "max": 900
+          },
+          "filter": "oldTimerVehFilter",
+          "logisticTypes": [
+            "vehNeedsRepair",
+            "vehForPrivate",
+            "vehRepairFinished"
+          ]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": -1,
+          "max": 4,
+          "offerDuration": {
+            "min": 300,
+            "max": 900
+          },
+          "filter": "junkVehFilter",
+          "logisticTypes": [
+            "vehNeedsRepair",
+            "vehForPrivate",
+            "vehRepairFinished"
+          ]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": -1,
+          "max": 4,
+          "offerDuration": {
+            "min": 300,
+            "max": 900
+          },
+          "filter": "pickupVehFilter",
+          "logisticTypes": [
+            "vehNeedsRepair",
+            "vehForPrivate",
+            "vehRepairFinished"
+          ]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": -1,
+          "max": 4,
+          "offerDuration": {
+            "min": 300,
+            "max": 900
+          },
+          "filter": "highEndVehFilter",
+          "logisticTypes": [
+            "vehNeedsRepair",
+            "vehForPrivate",
+            "vehRepairFinished"
+          ]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": -1,
+          "max": 4,
+          "offerDuration": {
+            "min": 300,
+            "max": 900
+          },
+          "filter": "customVehFilter",
+          "logisticTypes": [
+            "vehNeedsRepair",
+            "vehForPrivate",
+            "vehRepairFinished"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "firwoodParcelService",
+      "alwaysVisible": true,
+      "name": "Firwood Parcel Service",
+      "description": "Distributes parcels to all of ECUSA",
+      "facilityInformation": "Receives various goods. Does not provide.",
+      "associatedOrganization": "firwoodParcelService",
+      "preview": "localFacilities_city.png",
+      "manualAccessPoints": [
+        {
+          "psName": "firwoodParcelService_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "parcel"
+          ],
+          "logisticTypesReceived": [
+            "takeout"
+          ]
+        }
+      ],
+      "sitesFile": "retail.sites.json",
+      "logisticTypesProvided": [
+        "parcel"
+      ],
+      "logisticTypesReceived": [
+        "takeout"
+      ],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": 5,
+          "max": 40,
+          "slotsMin": 8,
+          "interval": 180
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "takeout"
+          ],
+          "min": 1,
+          "max": 10,
+          "interval": 60
+        }
+      ]
+    },
+    {
+      "id": "jujusComputers",
+      "alwaysVisible": false,
+      "name": "Juju's Computers",
+      "description": "Business within city limits",
+      "facilityInformation": "Computer sales and service",
+      "associatedOrganization": "jujusComputers",
+      "preview": "localFacilities_city.png",
+      "manualAccessPoints": [
+        {
+          "psName": "jujusComputers_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "pcofficeSupplies",
+            "trailer_emptyDryvanTrailers_jujusComputers_coastWarehouse"
+          ],
+          "logisticTypesReceived": [
+            "takeout",
+            "parcel",
+            "officeSupplies",
+            "pcofficeSupplies",
+            "trailer_loadedDryvanTrailers_coastWarehouse_jujusComputers"
+          ]
+        }
+      ],
+      "sitesFile": "retail.sites.json",
+      "logisticTypesProvided": [
+        "pcofficeSupplies",
+        "trailer_emptyDryvanTrailers_jujusComputers_coastWarehouse"
+      ],
+      "logisticTypesReceived": [
+        "takeout",
+        "parcel",
+        "officeSupplies",
+        "pcofficeSupplies",
+        "trailer_loadedDryvanTrailers_coastWarehouse_jujusComputers"
+      ],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": [
+            "trailer_emptyDryvanTrailers_jujusComputers_coastWarehouse"
+          ]
+        },
+        {
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pcofficeSupplies"
+          ],
+          "min": 5,
+          "max": 20,
+          "interval": 60
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "takeout",
+            "parcel",
+            "officeSupplies",
+            "pcofficeSupplies"
+          ],
+          "min": 5,
+          "max": 20,
+          "interval": 60
+        }
+      ]
+    },
+    {
+      "id": "firwoodManufacturing",
+      "alwaysVisible": true,
+      "name": "Firwood Manufacturing",
+      "description": "Business within city limits",
+      "facilityInformation": "Industrial tooling and product manufacturer",
+      "associatedOrganization": "firwoodManufacturing",
+      "preview": "localFacilities_city.png",
+      "manualAccessPoints": [
+        {
+          "psName": "firwoodManufacturing_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "freightSupplies",
+            "freight2Supplies",
+            "freight3Supplies",
+            "trailer_emptyFlatbedTrailers_firwoodManufacturing_firwoodSupply",
+            "trailer_singleAxleFurnitureTrailers_firwoodManufacturing_FRS",
+            "trailer_doubleAxleFurnitureTrailers_firwoodManufacturing_FRS",
+            "trailer_singleAxleFurnitureTrailers_firwoodManufacturing_coastWarehouse",
+            "trailer_doubleAxleFurnitureTrailers_firwoodManufacturing_coastWarehouse",
+            "vehLargeTruckNeedsRepair"
+          ],
+          "logisticTypesReceived": [
+            "vehLargeTruck",
+            "vehRepairFinished",
+            "takeout",
+            "parcel",
+            "shopSupplies",
+            "officeSupplies",
+            "industrial",
+            "trailer_lumberFlatbed_firwoodSupply_firwoodManufacturing",
+            "trailer_singleAxleEmptyTrailers_FRS_firwoodManufacturing",
+            "trailer_doubleAxleEmptyTrailer_FRS_firwoodManufacturing",
+            "trailer_singleAxleEmptyTrailers_coastWarehouse_firwoodManufacturing",
+            "trailer_doubleAxleEmptyTrailer_coastWarehouse_firwoodManufacturing"
+          ]
+        }
+      ],
+      "sitesFile": "retail.sites.json",
+      "logisticTypesProvided": [
+        "freightSupplies",
+        "freight2Supplies",
+        "freight3Supplies",
+        "trailer_emptyFlatbedTrailers_firwoodManufacturing_firwoodSupply",
+        "trailer_singleAxleFurnitureTrailers_firwoodManufacturing_FRS",
+        "trailer_doubleAxleFurnitureTrailers_firwoodManufacturing_FRS",
+        "trailer_singleAxleFurnitureTrailers_firwoodManufacturing_coastWarehouse",
+        "trailer_doubleAxleFurnitureTrailers_firwoodManufacturing_coastWarehouse",
+        "vehLargeTruckNeedsRepair"
+      ],
+      "logisticTypesReceived": [
+        "vehLargeTruck",
+        "vehRepairFinished",
+        "takeout",
+        "parcel",
+        "shopSupplies",
+        "officeSupplies",
+        "industrial",
+        "trailer_lumberFlatbed_firwoodSupply_firwoodManufacturing",
+        "trailer_singleAxleEmptyTrailers_FRS_firwoodManufacturing",
+        "trailer_doubleAxleEmptyTrailer_FRS_firwoodManufacturing",
+        "trailer_singleAxleEmptyTrailers_coastWarehouse_firwoodManufacturing",
+        "trailer_doubleAxleEmptyTrailer_coastWarehouse_firwoodManufacturing"
+      ],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "takeout",
+            "parcel",
+            "shopSupplies",
+            "officeSupplies",
+            "industrial"
+          ],
+          "min": 1,
+          "max": 3,
+          "interval": 60
+        },
+        {
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "freightSupplies",
+            "freight2Supplies",
+            "freight3Supplies",
+            "industrial"
+          ],
+          "min": 1,
+          "max": 3,
+          "interval": 60
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 3,
+          "max": 8,
+          "offerDuration": {
+            "min": 300,
+            "max": 900
+          },
+          "filter": "semiVehFilter",
+          "logisticTypes": [
+            "vehLargeTruck",
+            "vehLargeTruckNeedsRepair"
+          ]
+        },
+        {
+          "type": "vehOfferProvider",
+          "interval": 300,
+          "min": 3,
+          "max": 8,
+          "offerDuration": {
+            "min": 300,
+            "max": 900
+          },
+          "filter": "newSemiVehFilter",
+          "logisticTypes": [
+            "vehLargeTruck",
+            "vehLargeTruckNeedsRepair"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyFlatbedTrailers",
+          "logisticTypes": [
+            "trailer_emptyFlatbedTrailers_firwoodManufacturing_firwoodSupply"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "singleAxleFurnitureTrailers",
+          "logisticTypes": [
+            "trailer_singleAxleFurnitureTrailers_firwoodManufacturing_FRS",
+            "trailer_singleAxleFurnitureTrailers_firwoodManufacturing_coastWarehouse"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "doubleAxleFurnitureTrailers",
+          "logisticTypes": [
+            "trailer_doubleAxleFurnitureTrailers_firwoodManufacturing_FRS",
+            "trailer_doubleAxleFurnitureTrailers_firwoodManufacturing_coastWarehouse"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "firwoodInn",
+      "alwaysVisible": true,
+      "name": "Firwood Inn",
+      "description": "Beautiful country setting outside Firwood.",
+      "facilityInformation": "Receives parcels and takeout supplies. Delivers foods to various locations across ECUSA",
+      "associatedOrganization": "firwoodInn",
+      "preview": "firwoodInn.png",
+      "manualAccessPoints": [
+        {
+          "psName": "firwoodInn_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "takeout",
+            "defectiveReturns",
+            "trailer_emptyDryvanTrailers_firwoodInn_FRS",
+            "trailer_singleAxleEmptyTrailers_firwoodInn_FRS",
+            "trailer_doubleAxleEmptyTrailer_firwoodInn_FRS"
+          ],
+          "logisticTypesReceived": [
+            "parcel",
+            "mealSupplies",
+            "prepSupplies",
+            "spiritsSupplies",
+            "sideDishSupplies",
+            "drinkSupplies",
+            "seafoodSupplies",
+            "trailer_tastiColaDryvan_FRS_firwoodInn",
+            "trailer_loadedDryvanTrailers_FRS_firwoodInn",
+            "trailer_singleAxleFurnitureTrailers_FRS_firwoodInn",
+            "trailer_doubleAxleFurnitureTrailers_FRS_firwoodInn"
+          ]
+        }
+      ],
+      "sitesFile": "retail.sites.json",
+      "logisticTypesProvided": [
+        "takeout",
+        "defectiveReturns",
+        "trailer_emptyDryvanTrailers_firwoodInn_FRS",
+        "trailer_singleAxleEmptyTrailers_firwoodInn_FRS",
+        "trailer_doubleAxleEmptyTrailer_firwoodInn_FRS"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "mealSupplies",
+        "prepSupplies",
+        "spiritsSupplies",
+        "sideDishSupplies",
+        "drinkSupplies",
+        "seafoodSupplies",
+        "trailer_tastiColaDryvan_FRS_firwoodInn",
+        "trailer_loadedDryvanTrailers_FRS_firwoodInn",
+        "trailer_singleAxleFurnitureTrailers_FRS_firwoodInn",
+        "trailer_doubleAxleFurnitureTrailers_FRS_firwoodInn"
+      ],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "takeout",
+            "defectiveReturns"
+          ],
+          "min": 1,
+          "max": 7,
+          "interval": 60
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "parcel",
+            "mealSupplies",
+            "prepSupplies",
+            "spiritsSupplies",
+            "sideDishSupplies",
+            "drinkSupplies",
+            "seafoodSupplies"
+          ],
+          "min": 1,
+          "max": 13,
+          "interval": 60
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": [
+            "trailer_emptyDryvanTrailers_firwoodInn_FRS"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "singleAxleEmptyTrailers",
+          "logisticTypes": [
+            "trailer_singleAxleEmptyTrailers_firwoodInn_FRS"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "doubleAxleEmptyTrailer",
+          "logisticTypes": [
+            "trailer_doubleAxleEmptyTrailer_firwoodInn_FRS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "watchtowerInn",
+      "alwaysVisible": true,
+      "name": "Watchtower Inn",
+      "description": "Restaraunt and AirBnB. ",
+      "facilityInformation": "Receives parcels and takeout supplies. Sends takeout to various locations across ECUSA",
+      "associatedOrganization": "watchtowerInn",
+      "preview": "watchtowerInn.png",
+      "manualAccessPoints": [
+        {
+          "psName": "watchtowerInn_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "takeout",
+            "defectiveReturns",
+            "trailer_emptyDryvanTrailers_watchtowerInn_FRS",
+            "trailer_singleAxleEmptyTrailers_watchtowerInn_FRS",
+            "trailer_doubleAxleEmptyTrailer_watchtowerInn_FRS"
+          ],
+          "logisticTypesReceived": [
+            "parcel",
+            "mealSupplies",
+            "prepSupplies",
+            "spiritsSupplies",
+            "sideDishSupplies",
+            "drinkSupplies",
+            "seafoodSupplies",
+            "trailer_tastiColaDryvan_FRS_watchtowerInn",
+            "trailer_loadedDryvanTrailers_FRS_watchtowerInn",
+            "trailer_singleAxleFurnitureTrailers_FRS_watchtowerInn",
+            "trailer_doubleAxleFurnitureTrailers_FRS_watchtowerInn"
+          ]
+        }
+      ],
+      "sitesFile": "retail.sites.json",
+      "logisticTypesProvided": [
+        "takeout",
+        "defectiveReturns",
+        "trailer_emptyDryvanTrailers_watchtowerInn_FRS",
+        "trailer_singleAxleEmptyTrailers_watchtowerInn_FRS",
+        "trailer_doubleAxleEmptyTrailer_watchtowerInn_FRS"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "mealSupplies",
+        "prepSupplies",
+        "spiritsSupplies",
+        "sideDishSupplies",
+        "drinkSupplies",
+        "seafoodSupplies",
+        "trailer_tastiColaDryvan_FRS_watchtowerInn",
+        "trailer_loadedDryvanTrailers_FRS_watchtowerInn",
+        "trailer_singleAxleFurnitureTrailers_FRS_watchtowerInn",
+        "trailer_doubleAxleFurnitureTrailers_FRS_watchtowerInn"
+      ],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "takeout",
+            "defectiveReturns"
+          ],
+          "min": 1,
+          "max": 7,
+          "interval": 60
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "parcel",
+            "mealSupplies",
+            "prepSupplies",
+            "spiritsSupplies",
+            "sideDishSupplies",
+            "drinkSupplies",
+            "seafoodSupplies"
+          ],
+          "min": 1,
+          "max": 13,
+          "interval": 60
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": [
+            "trailer_emptyDryvanTrailers_watchtowerInn_FRS"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "singleAxleEmptyTrailers",
+          "logisticTypes": [
+            "trailer_singleAxleEmptyTrailers_watchtowerInn_FRS"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "doubleAxleEmptyTrailer",
+          "logisticTypes": [
+            "trailer_doubleAxleEmptyTrailer_watchtowerInn_FRS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kikisDiner",
+      "alwaysVisible": true,
+      "name": "Kiki's Diner",
+      "description": "Greasy spoon in Firwood",
+      "facilityInformation": "Receives parcels and takeout supplies. Delivers foods to various locations across ECUSA",
+      "associatedOrganization": "kikisDiner",
+      "preview": "kikisDiner.png",
+      "manualAccessPoints": [
+        {
+          "psName": "kikisDiner_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "takeout",
+            "defectiveReturns",
+            "trailer_emptyDryvanTrailers_kikisDiner_FRS",
+            "trailer_singleAxleEmptyTrailers_kikisDiner_FRS",
+            "trailer_doubleAxleEmptyTrailer_kikisDiner_FRS"
+          ],
+          "logisticTypesReceived": [
+            "parcel",
+            "mealSupplies",
+            "prepSupplies",
+            "spiritsSupplies",
+            "sideDishSupplies",
+            "drinkSupplies",
+            "seafoodSupplies",
+            "trailer_tastiColaDryvan_FRS_kikisDiner",
+            "trailer_loadedDryvanTrailers_FRS_kikisDiner",
+            "trailer_singleAxleFurnitureTrailers_FRS_kikisDiner",
+            "trailer_doubleAxleFurnitureTrailers_FRS_kikisDiner"
+          ]
+        }
+      ],
+      "sitesFile": "retail.sites.json",
+      "logisticTypesProvided": [
+        "takeout",
+        "defectiveReturns",
+        "trailer_emptyDryvanTrailers_kikisDiner_FRS",
+        "trailer_singleAxleEmptyTrailers_kikisDiner_FRS",
+        "trailer_doubleAxleEmptyTrailer_kikisDiner_FRS"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "mealSupplies",
+        "prepSupplies",
+        "spiritsSupplies",
+        "sideDishSupplies",
+        "drinkSupplies",
+        "seafoodSupplies",
+        "trailer_tastiColaDryvan_FRS_kikisDiner",
+        "trailer_loadedDryvanTrailers_FRS_kikisDiner",
+        "trailer_singleAxleFurnitureTrailers_FRS_kikisDiner",
+        "trailer_doubleAxleFurnitureTrailers_FRS_kikisDiner"
+      ],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "takeout",
+            "defectiveReturns"
+          ],
+          "min": 1,
+          "max": 7,
+          "interval": 60
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "parcel",
+            "mealSupplies",
+            "prepSupplies",
+            "spiritsSupplies",
+            "sideDishSupplies",
+            "drinkSupplies",
+            "seafoodSupplies"
+          ],
+          "min": 1,
+          "max": 13,
+          "interval": 60
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": [
+            "trailer_emptyDryvanTrailers_kikisDiner_FRS"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "singleAxleEmptyTrailers",
+          "logisticTypes": [
+            "trailer_singleAxleEmptyTrailers_kikisDiner_FRS"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "doubleAxleEmptyTrailer",
+          "logisticTypes": [
+            "trailer_doubleAxleEmptyTrailer_kikisDiner_FRS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nodeolineStore",
+      "alwaysVisible": true,
+      "name": "Convenience Store",
+      "description": "Your favorite snacks ready anytime",
+      "facilityInformation": "Receives parcels and takeout supplies. Delivers to locals across ECUSA.",
+      "associatedOrganization": "nodeoline",
+      "preview": "nodeolineStore.png",
+      "manualAccessPoints": [
+        {
+          "psName": "nodeolineStoreDelivery",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "drinkSupplies",
+            "snackSupplies",
+            "trailer_emptyDryvanTrailers_nodeolineStore_FRS"
+          ],
+          "logisticTypesReceived": [
+            "takeout",
+            "parcel",
+            "trailer_tastiColaDryvan_FRS_nodeolineStore"
+          ]
+        }
+      ],
+      "sitesFile": "retail.sites.json",
+      "logisticTypesProvided": [
+        "drinkSupplies",
+        "snackSupplies",
+        "trailer_emptyDryvanTrailers_nodeolineStore_FRS"
+      ],
+      "logisticTypesReceived": [
+        "takeout",
+        "parcel",
+        "trailer_tastiColaDryvan_FRS_nodeolineStore"
+      ],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "drinkSupplies",
+            "snackSupplies"
+          ],
+          "min": -1,
+          "max": 5,
+          "interval": 60
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "parcel",
+            "takeout"
+          ],
+          "min": -1,
+          "max": 5,
+          "interval": 60
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": [
+            "trailer_emptyDryvanTrailers_nodeolineStore_FRS"
+          ]
+        },
+      ]
+    },
+    {
+      "id": "firwoodNodeolineStore",
+      "alwaysVisible": true,
+      "name": "Convenience Store",
+      "description": "Your favorite snacks ready anytime",
+      "facilityInformation": "Receives parcels and takeout supplies. Delivers to locals across ECUSA.",
+      "associatedOrganization": "nodeoline",
+      "preview": "nodeolineStore.png",
+      "manualAccessPoints": [
+        {
+          "psName": "firwoodNodeolineStore_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "drinkSupplies",
+            "snackSupplies",
+            "trailer_emptyDryvanTrailers_firwoodNodeolineStore_FRS"
+          ],
+          "logisticTypesReceived": [
+            "takeout",
+            "parcel",
+            "trailer_tastiColaDryvan_FRS_firwoodNodeolineStore"
+          ]
+        }
+      ],
+      "sitesFile": "retail.sites.json",
+      "logisticTypesProvided": [
+        "drinkSupplies",
+        "snackSupplies",
+        "trailer_emptyDryvanTrailers_firwoodNodeolineStore_FRS"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "takeout",
+        "trailer_tastiColaDryvan_FRS_firwoodNodeolineStore"
+      ],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "drinkSupplies",
+            "snackSupplies"
+          ],
+          "min": -1,
+          "max": 5,
+          "interval": 60
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "parcel",
+            "takeout"
+          ],
+          "min": -1,
+          "max": 5,
+          "interval": 60
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": [
+            "trailer_emptyDryvanTrailers_firwoodNodeolineStore_FRS"
+          ]
+        },
+      ]
+    },
+    {
+      "id": "baitShop",
+      "alwaysVisible": false,
+      "name": "Bait Shop and Country Store.",
+      "description": "Bait shop and store conveniently located for your backwoods adventure.",
+      "facilityInformation": "Receives various goods via delivery missions. ",
+      "associatedOrganization": "firwoodDeliveryAssociation",
+      "preview": "baitShop.png",
+      "manualAccessPoints": [
+        {
+          "psName": "baitShop_parking",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "trailer_emptyDryvanTrailers_baitShop_FRS"
+          ],
+          "logisticTypesReceived": [
+            "parcel",
+            "takeout",
+            "pcofficeSupplies",
+            "trailer_tastiColaDryvan_FRS_baitShop"
+          ]
+        }
+      ],
+      "sitesFile": "retail.sites.json",
+      "logisticTypesProvided": [
+        "trailer_emptyDryvanTrailers_baitShop_FRS"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "takeout",
+        "prepSupplies",
+        "pcofficeSupplies",
+        "trailer_tastiColaDryvan_FRS_baitShop"
+      ],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "parcel",
+            "takeout",
+            "prepSupplies",
+            "pcofficeSupplies"
+          ],
+          "min": -1,
+          "max": 5,
+          "interval": 60
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 1,
+          "max": 3,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyDryvanTrailers",
+          "logisticTypes": [
+            "trailer_emptyDryvanTrailers_baitShop_FRS"
+          ]
+        },
+      ]
+    }
+  ]
+}

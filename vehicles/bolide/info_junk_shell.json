@@ -1,6 +1,6 @@
 {
   "Config Type":"joesJunkshell",
-  "Population":600,  
+  "Population":0,  
   "Configuration":"( Junk Shell )",
   "Description":"Bolide that burnt to the ground and the surviving parts were taken off, leaving only the structure.",
   "Drivetrain":"RWD",
@@ -15,4 +15,5 @@
     "max":1988,
     "min":1981
   },
+  "isAuxiliary": true
 }

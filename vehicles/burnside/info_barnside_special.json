@@ -1,6 +1,6 @@
 {
   "Config Type":"joesJunk",
-  "Population":600,  
+  "Population":0,  
   "Configuration":"Barn Side Special",
   "Description":"Sat next to a barn in East Coast for the last 47 years, it cannot be that bad, right?",
   "Drivetrain":"RWD",
@@ -15,4 +15,5 @@
     "max":1963,
     "min":1957
   },
+  "isAuxiliary": true
 }

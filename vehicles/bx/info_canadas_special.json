@@ -1,6 +1,6 @@
 {
   "Config Type":"joesJunk",
-  "Population":600,  
+  "Population":0,  
   "Configuration":"Canada's Special",
   "Description":"This is what the aftermath of a BX colliding with a moose covered in maple syrup looks like. Yep. Happens all the time here in Canada",
   "Drivetrain":"RWD",
@@ -15,4 +15,5 @@
     "max":1994,
     "min":1990
   },
+  "isAuxiliary": true
 }

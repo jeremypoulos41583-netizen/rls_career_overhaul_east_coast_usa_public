@@ -1,6 +1,6 @@
 {
   "Config Type":"joesJunkshell",
-  "Population":600,  
+  "Population":0,  
   "Configuration":"( Junk Shell )",
   "Description":"BX empty shell.",
   "Drivetrain":"RWD",
@@ -15,4 +15,5 @@
     "max":1994,
     "min":1990
   },
+  "isAuxiliary": true
 }

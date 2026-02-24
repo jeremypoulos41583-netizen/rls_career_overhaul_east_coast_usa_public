@@ -1,6 +1,6 @@
 {
   "Config Type":"joesJunkshell",
-  "Population":600,  
+  "Population":0,  
   "Configuration":" ( Alternate Junk Shell )",
   "Description":"This car is perfect for someone who needs interior parts. Or for someone that have a car crusher to feed.",
   "Drivetrain":"RWD",
@@ -15,4 +15,5 @@
     "max":1963,
     "min":1957
   },
+  "isAuxiliary": true
 }

@@ -1,0 +1,11 @@
+{
+  "format":2,
+  "mainPartName":"marble_block",
+  "mainPartPath":"/marble_block",
+  "model":"marble_block",
+  "parts":{
+    "marble_block_mod":"",
+    "marble_block_rails":"marble_block_rails",
+    "marble_block_type":"marble_block_large"
+  }
+}
