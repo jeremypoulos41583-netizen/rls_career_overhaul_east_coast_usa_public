@@ -1,6 +1,6 @@
 {
   "Config Type":"joesJunk",
-  "Population":600,  
+  "Population":0,  
   "Configuration":"Race Over",
   "Description":"The former owner, an online content creator focused on gaming and racing, crashed it while skid marking during an online live stream then fixed it back using tape, tears, zip files and hope.",
   "Drivetrain":"RWD",
@@ -15,4 +15,5 @@
     "max":1988,
     "min":1981
   },
+  "isAuxiliary": true
 }

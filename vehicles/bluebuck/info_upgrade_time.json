@@ -1,6 +1,6 @@
 {
   "Config Type":"joesJunk",
-  "Population":600,  
+  "Population":0,  
   "Configuration":"Upgrade Time",
   "Description":"Even asking your parents for a ride is an upgrade compared to driving this.",
   "Drivetrain":"RWD",
@@ -15,4 +15,5 @@
     "max":1963,
     "min":1962
   },
+  "isAuxiliary": true
 }

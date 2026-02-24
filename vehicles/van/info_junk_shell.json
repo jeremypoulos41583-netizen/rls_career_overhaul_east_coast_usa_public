@@ -1,6 +1,6 @@
 {
   "Config Type":"joesJunkshell",
-  "Population":500,  
+  "Population":0,  
   "Configuration":"( Junk Shell )",
   "Description":"H Series shell that some homeless people used to sleep in.",
   "Drivetrain":"RWD",
@@ -15,4 +15,5 @@
     "max":2005,
     "min":1993
   },
+  "isAuxiliary": true
 }

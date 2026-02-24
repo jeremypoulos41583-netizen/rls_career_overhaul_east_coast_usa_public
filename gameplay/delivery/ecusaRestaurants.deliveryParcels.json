@@ -155,7 +155,7 @@
     "modChance":{"large":1},
   },
   "diningFurniture": {
-    "names":[,"Furniture Set"],
+    "names":["Furniture Set"],
     "logisticTypes":["prepSupplies"],
     "slots":64,
     "cargoType":"parcel",

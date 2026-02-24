@@ -1,6 +1,6 @@
 {
   "Config Type":"joesJunkshell",
-  "Population":500,  
+  "Population":0,  
   "Configuration":"( Alternate Junk Shell )",
   "Description":"Shell of a prototype Covet MR Evolution",
   "Drivetrain":"RWD",
@@ -15,4 +15,5 @@
     "max":2022,
     "min":2016
   },
+  "isAuxiliary": true
 }

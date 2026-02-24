@@ -1,2 +1,4 @@
 # Local utility scripts (not part of the mod)
 fix_license_plates.lua
+*.log
+ecusa_facility_trailers.csv

@@ -55,7 +55,7 @@
 	  
         "farmHouse_parking1",
 		"farmHouse_parking2",
-		"farmHouse_parking3"
+		"farmHouse_parking3",
 		"farmHouse_parking4"
       ],
       "icon": "poi_garage_2_round",
@@ -77,11 +77,11 @@
       ],
       "parkingSpotNames": [
 	  
-        "smithsAutoRepairParking1",
+		"smithsAutoRepairParking1",
 		"smithsAutoRepairParking2",
 		"smithsAutoRepairParking3",
 		"smithsAutoRepairParking4",
-		"smithsAutoRepairParking5",
+		"smithsAutoRepairParking5"
       ],
       "icon": "poi_garage_2_round",
       "tags": [
@@ -89,7 +89,7 @@
       ],
       "defaultPrice": 500000,
       "capacity": 5,
-      "starterGarage": false,
+      "starterGarage": false
 	},
 	{
       "id": "logisticsGarage",
@@ -117,7 +117,7 @@
       ],
       "defaultPrice": 750000,
       "capacity": 8,
-      "starterGarage": false,
+      "starterGarage": false
 	},
 	{
       "id": "451LanieRd",
@@ -546,7 +546,7 @@
       "iconOffsetHeight": 0.24,
       "iconLift": 0.24,
       "icon": "poi_laptop_round"
-	},
+	}
   ],
   "gasStations":[
     {
@@ -557,7 +557,7 @@
       "energyTypes":["gasoline","diesel","unknown"],
       "pumps":[
         ["fuel_node_city_pump_area_1", "fuel_node_city_pump_icon_1"],
-        ["fuel_node_city_pump_area_2", "fuel_node_city_pump_icon_2"]
+        ["fuel_node_city_pump_area_2", "fuel_node_city_pump_icon_2"],
         ["fuel_node_city_pump_area_3", "fuel_node_city_pump_icon_3"]
       ],
 	  "prices":{
@@ -565,13 +565,13 @@
           "priceBaseline": 10.37,
           "priceRandomnessGain": 0.100,
           "priceRandomnessBias": 0.2,
-          "us_9_10_tax":true,
+          "us_9_10_tax":true
        },
 	    "diesel":{
           "priceBaseline": 10.53,
           "priceRandomnessGain": 0.100,
           "priceRandomnessBias": 0.2,
-          "us_9_10_tax":true,
+          "us_9_10_tax":true
         }
       }
     },{
@@ -582,7 +582,7 @@
       "energyTypes":["gasoline","diesel","unknown"],
       "pumps":[
         ["fuel_node_dealer_pump_area_1", "fuel_node_dealer_pump_icon_1"],
-        ["fuel_node_dealer_pump_area_2", "fuel_node_dealer_pump_icon_2"]
+        ["fuel_node_dealer_pump_area_2", "fuel_node_dealer_pump_icon_2"],
         ["fuel_node_dealer_pump_area_3", "fuel_node_dealer_pump_icon_3"]
       ],
       "prices":{
@@ -590,13 +590,13 @@
           "priceBaseline": 10.37,
           "priceRandomnessGain": 0.100,
           "priceRandomnessBias": 0.2,
-          "us_9_10_tax":true,
+          "us_9_10_tax":true
        },
 	    "diesel":{
           "priceBaseline": 10.53,
           "priceRandomnessGain": 0.100,
           "priceRandomnessBias": 0.2,
-          "us_9_10_tax":true,
+          "us_9_10_tax":true
         }
      }
 	},{
@@ -607,8 +607,8 @@
       "energyTypes":["electricEnergy"],
       "pumps":[
         ["fuel_charging_station_city_area_1", "fuel_charging_station_city_icon_1"],
-        ["fuel_charging_station_city_area_2", "fuel_charging_station_city_icon_2"]
-        ["fuel_charging_station_city_area_3", "fuel_charging_station_city_icon_3"]
+        ["fuel_charging_station_city_area_2", "fuel_charging_station_city_icon_2"],
+        ["fuel_charging_station_city_area_3", "fuel_charging_station_city_icon_3"],
         ["fuel_charging_station_city_area_4", "fuel_charging_station_city_icon_4"]
       ],
       "prices":{
