@@ -1,17 +1,18 @@
 {
-  "Config Type": "joesJunk",
-  "Population": 0,
-  "Configuration": "Over Used",
-  "Description": "Well used and beated by the BeamCom Delivery Company, that van has delivered more packages than Santa Claus.",
-  "Drivetrain": "RWD",
-  "Fuel Type": "Gasoline",
-  "Power": 125,
-  "Torque": 127,
-  "Value": 1550,
-  "Weight": 2549,
-  "Years": {
-    "max": 2005,
-    "min": 1993
-  },
-  "isAuxiliary": true
+    "Config Type": "joesJunk",
+    "Population": 0,
+    "Configuration": "Over Used",
+    "Description": "Well used and beated by the BeamCom Delivery Company, that van has delivered more packages than Santa Claus.",
+    "Drivetrain": "RWD",
+    "Fuel Type": "Gasoline",
+    "Power": 125,
+    "Torque": 127,
+    "Value": 1550,
+    "Weight": 2549,
+    "Years": {
+      "max": 2005,
+      "min": 1993
+    }  
 }
+
+
