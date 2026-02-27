@@ -1,17 +1,17 @@
 {
-  "Config Type": "joesJunk",
-  "Population": 0,
-  "Configuration": "Vintage Junk",
-  "Description": "I dont even know where the piano comes from to be honest.",
-  "Drivetrain": "RWD",
-  "Fuel Type": "Gasoline",
-  "Power": 54,
-  "Torque": 54,
-  "Value": 1750,
-  "Weight": 1564,
-  "Years": {
-    "max": 1934,
-    "min": 1933
-  },
-  "isAuxiliary": true
+    "Config Type": "joesJunk","Population":0,
+    "Configuration": "Vintage Junk",
+    "Description": "I dont even know where the piano comes from to be honest.",
+    "Drivetrain": "RWD",
+    "Fuel Type": "Gasoline",
+    "Power": 54,
+    "Torque": 54,
+    "Value": 1750,
+    "Weight": 1564,
+    "Years": {
+      "max": 1934,
+      "min": 1933
+    }  
 }
+
+
