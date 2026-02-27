@@ -21,7 +21,7 @@
     "baseReward":350,
     "rewardPerKm":140,
     "filter": {
-      "whiteList":{"Years": {"min":1900, "max":2020}, "Mileage":{"min":300000000, "max":650000000}, "Value":{"min":100, "max":30000},"Config Type":["joesJunk"],"Population":{"min":500}},
+      "whiteList":{"Years": {"min":1900, "max":2020}, "Mileage":{"min":300000000, "max":650000000}, "Value":{"min":100, "max":30000},"Config Type":["joesJunk"],"Population":{"min":0}},
       "blackList":{"Type":["Trailer"]}
     },
     "subFilters": [
@@ -34,7 +34,7 @@
     "baseReward":350,
     "rewardPerKm":140,
     "filter": {
-      "whiteList":{"Years": {"min":1900, "max":2020}, "Mileage":{"min":300000000, "max":650000000}, "Value":{"min":100, "max":30000},"Config Type":["joesJunkshell"],"Population":{"min":500}},
+      "whiteList":{"Years": {"min":1900, "max":2020}, "Mileage":{"min":300000000, "max":650000000}, "Value":{"min":100, "max":30000},"Config Type":["joesJunkshell"],"Population":{"min":0}},
       "blackList":{"Type":["Trailer"]}
     },
     "subFilters": [
