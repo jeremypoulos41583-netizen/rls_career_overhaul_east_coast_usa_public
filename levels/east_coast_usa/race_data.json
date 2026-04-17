@@ -2,7 +2,7 @@
   "races":{
     "backwoodsCrawl1":{
       "apexOffset":1,
-      "bestTime":120,
+      "bestTime":133,
       "checkpointIndexs":[
         4,
         8,
@@ -23,31 +23,28 @@
       ],
       "damageFactor":0.5,
       "label":"Backwoods Overlander",
-      "reward":2600,
+      "reward":500,
       "type":[
-        "motorsport",
-        "offroad",
-        "crawl"
+        "crawling"
       ]
     },
     "backwoodsCrawl2":{
-      "bestTime":60,
+      "bestTime":70,
       "checkpointRoad":[
         "backwoodsTrail2"
       ],
       "damageFactor":0.5,
       "label":"Backwoods Overlander 2",
       "reverse":true,
-      "reward":2000,
+      "reward":500,
       "runningStart":true,
       "type":[
-        "motorsport",
-        "crawl"
+        "crawling"
       ]
     },
     "countryCircuit":{
       "apexOffset":1,
-      "bestTime":70,
+      "bestTime":80,
       "checkpointIndexs":[
         6,
         10,
@@ -64,33 +61,30 @@
       "checkpointRoad":[
         "countryCircuit"
       ],
-      "hotlap":63,
+      "hotlap":67,
       "label":"Country Circuit",
       "reverse":false,
-      "reward":1000,
+      "reward":500,
       "type":[
-        "motorsport",
-        "circuit"
+        "roadracing"
       ]
     },
     "ditchDwellerCrawl":{
-      "bestTime":0,
+      "bestTime":180,
       "checkpointRoad":[
         "ditchDweller",
         "ditchDweller2"
       ],
       "damageFactor":1,
       "label":"Ditch Dweller Crawl",
-      "reward":2600,
+      "reward":600,
       "type":[
-        "motorsport",
-        "crawl",
-        "offroad"
+       "crawling"
       ]
     },
     "firwoodCircuit":{
       "apexOffset":-0.5000000596,
-      "bestTime":55,
+      "bestTime":60,
       "checkpointIndexs":[
         7,
         11,
@@ -105,14 +99,13 @@
       ],
       "hotlap":36,
       "label":"Firwood Circuit",
-      "reward":1000,
+      "reward":400,
       "type":[
-        "motorsport",
-        "circuit"
+        "roadracing"
       ]
     },
     "lookoutPointOverlander":{
-      "bestTime":100,
+      "bestTime":110,
       "checkpointIndexs":[
         5,
         9,
@@ -134,11 +127,9 @@
       ],
       "damageFactor":0.5,
       "label":"Lookout Point Overlander",
-      "reward":2200,
+      "reward":500,
       "type":[
-        "motorsport",
-        "crawl",
-        "offroad"
+        "crawling"
       ]
     },
     "noPrepDrag":{
@@ -148,15 +139,14 @@
         "noPrepDrag"
       ],
       "label":"No Prep Drag",
-      "reward":2400,
+      "reward":600,
       "type":[
-        "motorsport",
         "drag"
       ]
     },
     "portDrift":{
       "apexOffset":1,
-      "bestTime":150,
+      "bestTime":165,
       "checkpointIndexs":[
         5,
         9,
@@ -187,31 +177,28 @@
       ],
       "driftGoal":23000,
       "label":"Port Drift",
-      "reward":2500,
+      "reward":500,
       "type":[
-        "motorsport",
         "drift"
       ]
     },
     "seasideTrail":{
       "apexOffset":1,
-      "bestTime":110,
+      "bestTime":125,
       "checkpointRoad":[
         "seasideTrail"
       ],
       "damageFactor":0.5,
       "label":"Seaside Overlander",
       "reverse":false,
-      "reward":2200,
+      "reward":400,
       "runningStart":false,
       "type":[
-        "motorsport",
-        "offroad",
-        "crawl"
+        "crawling"
       ]
     },
     "summitOverlander":{
-      "bestTime":100,
+      "bestTime":115,
       "checkpointIndexs":[
         2,
         6,
@@ -234,11 +221,9 @@
       ],
       "damageFactor":0.5,
       "label":"Summit Overlander",
-      "reward":2600,
+      "reward":600,
       "type":[
-        "motorsport",
-        "offroad",
-        "crawl"
+        "crawling"
       ]
     },
     "widowmaker":{
@@ -249,10 +234,9 @@
       ],
       "damageFactor":1,
       "label":"Widowmaker Crawl",
-      "reward":2500,
+      "reward":800,
       "type":[
-        "motorsport",
-        "crawl"
+        "crawling"
       ]
     }
   }

@@ -1,4 +1,4 @@
-{
+﻿{
   "garages": [
     {
       "id": "watersideShack",
@@ -237,7 +237,10 @@
         "partShop": false,
         "partInventory": false,
         "insurances": false,
-        "sleep": true
+        "sleep": true,
+
+      "playerAbstract": true
+
       },
       "activityAcceptProps": [
         {
@@ -274,7 +277,10 @@
         "partShop": true,
         "partInventory": true,
         "insurances": true,
-        "sleep": true
+        "sleep": true,
+
+      "playerAbstract": true
+
       },
       "activityAcceptProps": [
         {
@@ -311,7 +317,10 @@
         "partShop": true,
         "partInventory": true,
         "insurances": true,
-        "sleep": true
+        "sleep": true,
+
+      "playerAbstract": true
+
       },
       "activityAcceptProps": [
         {
@@ -348,7 +357,10 @@
         "partShop": true,
         "partInventory": true,
         "insurances": true,
-        "sleep": true
+        "sleep": true,
+
+      "playerAbstract": true
+
       },
       "activityAcceptProps": [
         {
@@ -385,7 +397,10 @@
         "partShop": true,
         "partInventory": true,
         "insurances": true,
-        "sleep": true
+        "sleep": true,
+
+      "playerAbstract": true
+
       },
       "activityAcceptProps": [
         {
@@ -422,7 +437,10 @@
         "partShop": true,
         "partInventory": true,
         "insurances": true,
-        "sleep": true
+        "sleep": true,
+
+      "playerAbstract": true
+
       },
       "activityAcceptProps": [
         {
@@ -459,7 +477,10 @@
         "partShop": true,
         "partInventory": true,
         "insurances": true,
-        "sleep": true
+        "sleep": true,
+
+      "playerAbstract": true
+
       },
       "activityAcceptProps": [
         {
@@ -496,7 +517,10 @@
         "partShop": true,
         "partInventory": true,
         "insurances": true,
-        "sleep": true
+        "sleep": true,
+
+      "playerAbstract": true
+
       },
       "activityAcceptProps": [
         {
@@ -533,7 +557,10 @@
         "partShop": true,
         "partInventory": true,
         "insurances": true,
-        "sleep": true
+        "sleep": true,
+
+      "playerAbstract": true
+
       },
       "activityAcceptProps": [
         {
@@ -621,3 +648,4 @@
     }  
   ]
 }
+
