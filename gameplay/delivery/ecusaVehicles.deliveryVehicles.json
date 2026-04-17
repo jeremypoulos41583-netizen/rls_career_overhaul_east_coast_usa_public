@@ -3,7 +3,7 @@
   //junker: bad "old" cars with lots of milage (300k-650k), but often used
   "junkVehFilter": {
     "type":"vehicle",
-    "unlockTag":"junkVeh",
+    "unlockTag":"junkerVeh",
     "filterName":"Junker Car",
     "baseReward":350,
     "rewardPerKm":140,
@@ -42,7 +42,7 @@
   },
   "pickupVehFilter": {
     "type":"vehicle",
-    "unlockTag":"pickupVeh",
+    "unlockTag":"fleetVeh",
     "filterName":"Pickup",
     "baseReward":325,
     "rewardPerKm":140,
@@ -58,7 +58,7 @@
   //fleet: "default" vehicles from dealership, "relatively" new with lower (35k-150k) mileage, very common.
   "compactVehFilter": {
     "type":"vehicle",
-    "unlockTag":"compactVeh",
+    "unlockTag":"smallVeh",
     "filterName":"Small Car",
     "baseReward":350,
     "rewardPerKm":175,
@@ -73,7 +73,7 @@
   //police filter only for police vehicles with used (20k-200k) or unused" (0.5k-25k)
   "policeVehFilter": {
     "type":"vehicle",
-    "unlockTag":"policeVeh",
+    "unlockTag":"smallVeh",
     "filterName":"Small Police Car",
     "baseReward":600,
     "rewardPerKm":140,
@@ -95,7 +95,7 @@
   //Ambulance Filter used (20k-200k) or unused" (0.5k-25k)
   "ambulanceVehFilter": {
     "type":"vehicle",
-    "unlockTag":"ambulanceVeh",
+    "unlockTag":"smallVeh",
     "filterName":"Ambulance",
     "baseReward":600,
     "rewardPerKm":140,
@@ -119,7 +119,7 @@
   // mileage from 80k-500k
   "semiVehFilter": {
     "type":"vehicle",
-    "unlockTag":"semiVeh",
+    "unlockTag":"heavyVeh",
     "filterName":"Large Truck",
     "baseReward":550,
     "rewardPerKm":192,
@@ -131,7 +131,7 @@
   },
   "loggingVehFilter": {
     "type":"vehicle",
-    "unlockTag":"loggingVeh",
+    "unlockTag":"heavyVeh",
     "filterName":"Log Truck",
     "baseReward":550,
     "rewardPerKm":192,
@@ -148,7 +148,7 @@
   //fleet: "default" vehicles from dealership, "relatively" new with lower (5km-80km) mileage, very common. low chance for police or service cars
   "newCarVehFilter": {
     "type":"vehicle",
-    "unlockTag":"newCarVeh",
+    "unlockTag":"fleetVeh",
     "filterName":"New Car",
     "baseReward":250,
     "rewardPerKm":162,
@@ -161,7 +161,7 @@
   //large vehicles like in tier 3, but "new" (5km-80km)
   "newSemiVehFilter": {
     "type":"vehicle",
-    "unlockTag":"newSemiVeh",
+    "unlockTag":"heavyVeh",
     "filterName":"New Truck",
     "baseReward":550,
     "rewardPerKm":212,
@@ -177,7 +177,7 @@
   //customized: non-trivial "Custom"-config-type vehicles with lots of mileage (2k-200k)
   "customVehFilter": {
     "type":"vehicle",
-    "unlockTag":"customVeh",
+    "unlockTag":"fleetVeh",
     "filterName":"Customized Car",
     "baseReward":400,
     "rewardPerKm":220,
@@ -208,7 +208,7 @@
   //oldTimer: two subfilters for "driven" old cars (50k-250k) and "ununsed" (0.5k-25k)
   "classicVehFilter": {
     "type":"vehicle",
-    "unlockTag":"classicVeh",
+    "unlockTag":"exoticVeh",
     "filterName":"Oldtimer",
     "baseReward":500,
     "rewardPerKm":230,
@@ -231,7 +231,7 @@
 
   "singleAxleEmptyTrailers": { //1
     "type":"trailer",
-    "unlockTag":"singleAxleEmptyTrailers",
+    "unlockTag":"emptySmallTrailers",
     "filterName":"Empty Single Axle Trailer",
     "connector":"towhitch",
     "baseReward":500,
@@ -243,7 +243,7 @@
   },
   "singleAxleLumberTrailers":{ //2
     "type":"trailer",
-    "unlockTag":"singleAxleLumberTrailers",
+    "unlockTag":"loadedSmallTrailers",
     "filterName":"Small Lumber Trailer",
     "connector":"towhitch",
     "baseReward":700,
@@ -255,7 +255,7 @@
   },
   "singleAxleFurnitureTrailers":{ //2
     "type":"trailer",
-    "unlockTag":"singleAxleFurnitureTrailers",
+    "unlockTag":"loadedSmallTrailers",
     "filterName":"Small Furniture Trailer",
     "connector":"towhitch",
     "baseReward":700,
@@ -268,7 +268,7 @@
   // medium trailer
   "doubleAxleEmptyTrailer": { //2
     "type":"trailer",
-    "unlockTag":"doubleAxleEmptyTrailer",
+    "unlockTag":"emptyMediumTrailers",
     "filterName":"Medium Empty Trailer",
     //"connector":"towhitch",
     "baseReward":700,
@@ -280,7 +280,7 @@
   },
   "doubleAxleLumberTrailers":{ //3
     "type":"trailer",
-    "unlockTag":"doubleAxleLumberTrailers",
+    "unlockTag":"loadedMediumTrailers",
     "filterName":"Medium Lumber Trailer",
     "connector":"towhitch",
     "baseReward":1000,
@@ -292,7 +292,7 @@
   },
   "doubleAxleFurnitureTrailers":{ //3
     "type":"trailer",
-    "unlockTag":"doubleAxleFurnitureTrailers",
+    "unlockTag":"loadedMediumTrailers",
     "filterName":"Medium Furniture Trailers",
     "connector":"towhitch",
     "baseReward":1000,
@@ -304,7 +304,7 @@
   //large trailer
   "emptyDryvanTrailers": { //3
   "type":"trailer",
-  "unlockTag":"emptyDryvanTrailer",
+  "unlockTag":"trailerDryvan",
   "filterName":"Empty Dryvan Trailer",
   "connector":"towhitch",
   "baseReward":1000,
@@ -318,7 +318,7 @@
   },
   "emptyFlatbedTrailers": { //3
   "type":"trailer",
-  "unlockTag":"emptyFlatbedTrailer",
+  "unlockTag":"emptyLargeTrailer",
   "filterName":"Empty Flatbed Trailer",
   "connector":"towhitch",
   "baseReward":1000,
@@ -330,7 +330,7 @@
   },
   "emptyLogTrailers": {
   "type":"trailer",
-  "unlockTag":"loggingTrailers",
+  "unlockTag":"trailerLogTrailer",
   "filterName":"Empty Log Trailers",
   "connector":"towhitch",
   "baseReward":2000,
@@ -340,11 +340,11 @@
       "model_key": ["log_trailer"],
       "Configuration": ["40ft Dual", "27ft Dual", "27ft Dual with Headache Rack", "40ft Dual with Headache Rack", "40ft Single", "40ft Single with Headache Rack"]
     }
-  },
+  }
   },
   "loadedLogTrailers": {
   "type": "trailer",
-  "unlockTag": "loadedLoggingTrailers",
+  "unlockTag": "trailerLogTrailer",
   "filterName": "Loaded Log Trailers",
   "connector": "towhitch",
   "baseReward": 2500,
@@ -358,7 +358,7 @@
   },
   "loadedDryvanTrailers":{ //4
   "type":"trailer",
-  "unlockTag":"loadedDryvanTrailers",
+  "unlockTag":"trailerDryvan",
   "filterName":"Loaded Dryvan Trailer",
   "connector":"towhitch",
   "baseReward":1750,
@@ -372,7 +372,7 @@
   },
   "lumberFlatbed": {
   "type": "trailer",
-  "unlockTag": "loadedFlatbedTrailers",
+  "unlockTag": "loadedLargeTrailers",
   "filterName": "Lumber Flatbed",
   "connector": "towhitch",
   "baseReward": 2000,
@@ -387,7 +387,7 @@
   },
   "tastiColaDryvan": {
   "type": "trailer",
-  "unlockTag": "loadedDryvanTrailers",
+  "unlockTag": "trailerDryvan",
   "filterName": "TastiCola Trailer",
   "connector": "towhitch",
   "baseReward": 2200,
@@ -401,7 +401,7 @@
   },
   "emptyTanker": {
   "type": "trailer",
-  "unlockTag": "tankerTrailers",
+  "unlockTag": "trailerTanker",
   "filterName": "Empty Tanker",
   "connector": "towhitch",
   "baseReward": 1500,
@@ -415,7 +415,7 @@
   },
   "gasTanker": {
   "type": "trailer",
-  "unlockTag": "tankerTrailers",
+  "unlockTag": "trailerTanker",
   "filterName": "Petroleum Tanker",
   "connector": "towhitch",
   "baseReward": 2200,
@@ -429,7 +429,7 @@
   },
   "dieselTanker": {
   "type": "trailer",
-  "unlockTag": "tankerTrailers",
+  "unlockTag": "trailerTanker",
   "filterName": "Diesel Tanker",
   "connector": "towhitch",
   "baseReward": 2200,
